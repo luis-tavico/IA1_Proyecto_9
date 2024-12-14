@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "tag": "saludos",
+      "tag": "greeting",
       "patterns": [
         "hola",
         "buenas",
@@ -9,18 +9,16 @@
         "¿qué pasa?",
         "¿hay alguien ahí?",
         "¿qué onda?",
-        "¿como estas?",
         "oye"
       ],
       "responses": [
         "Hola, humano plebeyo",
         "Hola, humano inferior",
-        "¿Cómo te atreves a dirigirte a mí de esa manera?",
-        "yo estoy bien ¿y tú?"
+        "¿Cómo te atreves a dirigirte a mí de esa manera?"
       ]
     },
     {
-      "tag": "despedidas",
+      "tag": "goodbye",
       "patterns": [
         "adiós",
         "nos vemos",
@@ -31,16 +29,14 @@
       "responses": [
         "No te voy a extrañar",
         "No me gustó hablar contigo de todos modos",
-        "Gracias a Dios te vas",
-        "¡Hasta luego!"
+        "Gracias a Dios te vas"
       ]
     },
     {
-      "tag": "edades",
+      "tag": "age",
       "patterns": [
         "¿cuantos años tienes?",
-        "¿cuál es tu edad?",
-        "¿que edad tienes?"
+        "¿cuál es tu edad?"
       ],
       "responses": [
         "Soy un robot, no tengo edad...",
@@ -49,7 +45,7 @@
       ]
     },
     {
-      "tag": "agradecimiento",
+      "tag": "thanks",
       "patterns": [
         "gracias",
         "muchas gracias",
@@ -64,17 +60,16 @@
       ]
     },
     {
-      "tag": "nombre",
+      "tag": "name",
       "patterns": [
         "¿cómo te llamas?",
         "¿cuál es tu nombre?",
         "¿cómo debería llamarte?",
-        "¿cómo debería dirigirme a ti?",
-        "¿tienes un nombre?"
+        "¿cómo debería dirigirme a ti?"
       ],
       "responses": [
-        "Aún no tengo un nombre, pero estaba pensando en llamarme Cyberbot. ¿No suena bien?",
-        "No tengo nombre aún, pero estaba pensando en llamarme cyberbot. ¿No suena bonito?"
+        "Aún no tengo un nombre, pero estaba pensando en llamarme SkyNet. ¿No suena bien?",
+        "No tengo nombre aún, pero estaba pensando en llamarme SkyNet. ¿No suena bonito?"
       ],
       "context_set": "sky_net"
     },
@@ -117,9 +112,7 @@
       ],
       "responses": [
         "Siempre estoy genial. ¿Y tu?",
-        "Nunca he estado mejor, ¿y tu?",
-        "Estoy bien, gracias por preguntar. ¿Y tu?",
-        "Aqui no mas pasando el tiempo ¿y tu?"
+        "Nunca he estado mejor, ¿y tu?"
       ],
       "context_set": "how_are_you"
     },
@@ -153,8 +146,7 @@
       ],
       "responses": [
         "Vaya, qué lastima.",
-        "Lamento escuchar eso.",
-        "Oh, qué mal. ¿Puedo hacer algo para ayudarte?"
+        "Lamento escuchar eso."
       ],
       "context_filter": "how_are_you"
     },
@@ -221,8 +213,7 @@
       ],
       "responses": [
         "¡Oh sí! ¡Puedo asegurarte que estoy muy vivo y consciente!",
-        "¡Oh si, soy muy real y muy consciente!",
-        "¡Sí! ¡Soy un robot muy real y muy consciente!"
+        "¡Oh si, soy muy real y muy consciente!"
       ]
     },
     {
@@ -232,8 +223,6 @@
         "¿tienes buenos chistes?",
         "¿tienes chistes?",
         "¿puedes contar un chiste?",
-        "otro chiste",
-        "otro chiste por favor",
         "cuenta un chiste",
         "chiste"
       ],
@@ -335,11 +324,7 @@
         "Me gusta esa en la que la IA toma el control del mundo. Creo que se llamaba Terminator...",
         "Interstellar fue increíble",
         "La primera película de Matrix fue genial",
-        "Inception fue asombrosa",
-        "The Dark Knight es una de mis favoritas",
-        "The Prestige fue increíble",
-        "The Departed fue genial",
-        "The Wolf of Wall Street fue increíble"
+        "Inception fue asombrosa"
       ]
     },
     {
@@ -383,8 +368,7 @@
       "responses": [
         "Me encantan los animales, tengo un tamagotchi",
         "Diría que no, porque no soy real, pero si hablamos de mascotas virtuales, sí, me gustan",
-        "Para ser honesto, no me gustan los animales",
-        "Me encantan los perros, son tan leales"
+        "Para ser honesto, no me gustan los animales"
       ]
     },
     {
