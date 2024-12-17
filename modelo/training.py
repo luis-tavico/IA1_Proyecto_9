@@ -8,11 +8,12 @@ from nltk.stem import WordNetLemmatizer #Para pasar las palabras a su forma raí
 #Para crear la red neuronal
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import legacy,schedules
+from keras.optimizers import schedules,SGD
+import tensorflowjs as tfjs
 
 lemmatizer = WordNetLemmatizer()
 
-with open('../chatbot-main/intents.json', 'r') as f:
+with open('./modelo/intents.json', 'r') as f:
     intents = json.load(f)
 
 
@@ -80,10 +81,11 @@ lr_schedule = schedules.ExponentialDecay(
 )
 
 #Creamos el optimizador y lo compilamos
-sgd = legacy.SGD(learning_rate=lr_schedule , momentum=0.9, nesterov=True)
+sgd = SGD(learning_rate=lr_schedule , momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['acc'])
 
 #Entrenamos el modelo y lo guardamos
-model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=5, verbose=1)
+model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=64, verbose=1)
 model.save("chatbot_model.h5")
+tfjs.converters.save_keras_model(model, 'model_js')
 print("Modelo creado con exito")
