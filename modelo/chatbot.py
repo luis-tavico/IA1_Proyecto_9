@@ -12,7 +12,7 @@ intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbot_model.h5')
-
+model.summary()
 #Pasamos las palabras de oración a su forma raíz
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -58,4 +58,4 @@ print("*        chat bot running    *")
 print("******************************")
 while True:
     message = input("You: ")
-    print('bot dice: ',respuesta(message))
+    print('bot dice: ',respuesta(message.lower()))

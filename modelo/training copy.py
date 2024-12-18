@@ -4,7 +4,7 @@ import pickle
 import keras_tuner
 import numpy as np
 import nltk
-from nltk.stem import WordNetLemmatizer #Para pasar las palabras a su forma raíz
+from nltk.stem import WordNetLemmatizer,SnowballStemmer #Para pasar las palabras a su forma raíz
 from keras.callbacks import EarlyStopping
 #Para crear la red neuronal
 from keras.models import Sequential
@@ -13,7 +13,11 @@ from keras.optimizers import schedules,SGD
 import tensorflowjs as tfjs
 import re
 
+spanish_stemmer = SnowballStemmer('spanish')
+english_stemmer = SnowballStemmer('english')
+
 lemmatizer = WordNetLemmatizer()
+
 
 with open('./intents.json', 'r') as f:
     intents = json.load(f)
@@ -25,11 +29,16 @@ nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 
+
 def expand_contractions(text, contractions_dict):
     pattern = re.compile(r'\b(' + '|'.join(re.escape(key) for key in contractions_dict.keys()) + r')\b')
     return pattern.sub(lambda match: contractions_dict[match.group()], text)
 
-
+def stem_word(word, lenguaje):
+    if lenguaje == "es":
+        return spanish_stemmer.stem(word)
+    else:
+        return english_stemmer.stem(word)
 
 words = []
 classes = []
@@ -47,7 +56,8 @@ for intent in intents['intents']:
         if intent["tag"] not in classes:
             classes.append(intent["tag"])
 
-words = [lemmatizer.lemmatize(word) for word in words if word not in ignore_letters]
+# Detectar el idioma de las palabras y aplicar el stemmer correspondiente
+words = [stem_word(word, "es") if re.search(r'[áéíóúñ]', word) else stem_word(word, "en") for word in words if word not in ignore_letters]
 words = sorted(set(words))
 
 pickle.dump(words, open('words.pkl', 'wb'))
@@ -59,7 +69,7 @@ output_empty = [0]*len(classes)
 for document in documents:
     bag = []
     word_patterns = document[0]
-    word_patterns = [lemmatizer.lemmatize(word.lower()) for word in word_patterns]
+    word_patterns = [stem_word(word.lower(), "spanish") if re.search(r'[áéíóúñ]', word) else stem_word(word.lower(), "english") for word in word_patterns]
     for word in words:
         bag.append(1) if word in word_patterns else bag.append(0)
     output_row = list(output_empty)
@@ -97,21 +107,13 @@ sgd = SGD(learning_rate=lr_schedule , momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['acc'])
 
 # Definimos el callback de early stopping
-early_stopping = EarlyStopping(monitor='val_loss', patience=200, restore_best_weights=True)
+early_stopping = EarlyStopping(monitor='val_loss', patience=100, restore_best_weights=True)
 
 
 #Entrenamos el modelo y lo guardamos
-model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=8, verbose=1,validation_split=0.2, callbacks=[early_stopping])
+model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=5, verbose=1,validation_split=0.2, callbacks=[early_stopping])
 model.save("chatbot_model.h5")
 model.summary()
 
 tfjs.converters.save_keras_model(model, 'model_js')
-
-# Guardar como .json
-with open('words.json', 'w') as file:
-    json.dump(words, file, ensure_ascii=False, indent=4)  # Indent para formato legible
-
-with open('classes.json', 'w') as file:
-    json.dump(classes, file,ensure_ascii=False, indent=4)
-
 print("Modelo creado con exito")
