@@ -11,12 +11,25 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.optimizers import schedules,SGD
 import tensorflowjs as tfjs
-import re
+import re, os
 
 lemmatizer = WordNetLemmatizer()
 
-with open('./intents.json', 'r') as f:
-    intents = json.load(f)
+#with open('./intents.json', 'r') as f:
+#    intents = json.load(f)
+
+def load_intents(files, dir_path):
+    conbine_intents={"intents":[]}
+    for file in files:
+        with open(dir_path+os.sep+file, 'rb') as f:
+            intents = json.load(f)
+            conbine_intents["intents"].extend(intents["intents"])
+    return conbine_intents
+
+dir_path='./file_intents'
+files_list = os.listdir(dir_path+os.sep)
+
+intents = load_intents(files_list, dir_path)
 
 with open('./constractions.json', 'r') as f:
     contractions = json.load(f)
@@ -34,7 +47,7 @@ def expand_contractions(text, contractions_dict):
 words = []
 classes = []
 documents = []
-ignore_letters = ['?', '!', '¿', '.', ',']
+ignore_letters = ['?', '.', '!', ',', ':', ';', '...', '(', ')', '[', ']', '{', '}', '-', '_', '/', '|', '\\', '*', '=', '"', "'", '«', '»']
 
 #Clasifica los patrones y las categorías
 for intent in intents['intents']:
@@ -97,7 +110,7 @@ sgd = SGD(learning_rate=lr_schedule , momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['acc'])
 
 # Definimos el callback de early stopping
-early_stopping = EarlyStopping(monitor='val_loss', patience=200, restore_best_weights=True)
+early_stopping = EarlyStopping(monitor='val_loss', patience=20, restore_best_weights=True)
 
 
 #Entrenamos el modelo y lo guardamos
@@ -113,5 +126,8 @@ with open('words.json', 'w') as file:
 
 with open('classes.json', 'w') as file:
     json.dump(classes, file,ensure_ascii=False, indent=4)
+    
+with open('intents_combinate.json', 'w') as file:
+    json.dump(intents, file,ensure_ascii=False, indent=4)
 
 print("Modelo creado con exito")
