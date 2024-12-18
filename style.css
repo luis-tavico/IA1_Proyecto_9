@@ -85,3 +85,7 @@ body {
 .chat-input button:hover {
     background-color: #005bb5;
 }
+
+#chat-input:focus {
+    outline: none;
+}
