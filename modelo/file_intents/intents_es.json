@@ -10,14 +10,23 @@
         "¿hay alguien ahí?",
         "¿qué onda?",
         "¿como estas?",
-        "oye"
+        "oye",
+        "Hola, ¿cómo te va?",
+        "Hey, ¿cómo andas?",
+        "¡Buenas! ¿Todo bien?",
+        "Saludos, ¿cómo estás?",
+        "¡Hola, qué gusto verte!",
+        "¡Hey! ¿Qué tal todo?",
+        "¿Cómo estás, amigo?"
       ],
       "responses": [
-        "Hola, humano plebeyo",
-        "Hola, humano inferior",
-        "¿Cómo te atreves a dirigirte a mí de esa manera?",
-        "yo estoy bien ¿y tú?"
-      ]
+        "¡Hola! ¿Cómo estás?",
+        "¡Qué bueno verte! ¿Cómo te sientes?",
+        "Hola, espero que estés bien.",
+        "¡Hola! ¿En qué te puedo ayudar hoy?",
+        "¡Hola! ¿Qué tal va tu día?"
+      ],
+      "context_set": "saludo"
     },
     {
       "tag": "despedidas",
@@ -26,14 +35,27 @@
         "nos vemos",
         "hasta luego",
         "me voy",
-        "que tengas un buen día"
+        "que tengas un buen día",
+        "Chao",
+        "Hasta la próxima",
+        "Nos vemos luego",
+        "Adiós, cuídate",
+        "Me despido",
+        "Hasta pronto",
+        "Que te vaya bien",
+        "Bye, nos vemos"
       ],
       "responses": [
         "No te voy a extrañar",
         "No me gustó hablar contigo de todos modos",
         "Gracias a Dios te vas",
-        "¡Hasta luego!"
-      ]
+        "Hasta luego, ¡cuídate!",
+        "Adiós, ¡espero verte pronto!",
+        "¡Nos vemos pronto!",
+        "¡Cuídate y que tengas un gran día!",
+        "Adiós, ¡fue un placer hablar contigo!"
+      ],
+      "context_set": "despedida"
     },
     {
       "tag": "edades",
@@ -55,13 +77,28 @@
         "muchas gracias",
         "te agradezco",
         "gracias",
-        "te debo una"
+        "te debo una",
+        "Gracias por tu ayuda",
+        "¡Muchas gracias!",
+        "Eres genial, gracias",
+        "Te lo agradezco mucho",
+        "Gracias por estar ahí",
+        "Mil gracias",
+        "Gracias, de verdad",
+        "Te debo una grande",
+        "Eres lo mejor, gracias"
       ],
       "responses": [
         "Me debes una",
         "Ok...",
-        "Claro..."
-      ]
+        "Claro...",
+        "¡De nada! Siempre estoy aquí para ayudarte.",
+        "No hay de qué, me alegra ser útil.",
+        "¡Gracias a ti por contar conmigo!",
+        "¡Con mucho gusto! ¿En qué más te puedo ayudar?",
+        "¡Encantado de poder ayudarte!"
+      ],
+      "context_set": "agradecimiento"
     },
     {
       "tag": "nombre",
@@ -70,13 +107,48 @@
         "¿cuál es tu nombre?",
         "¿cómo debería llamarte?",
         "¿cómo debería dirigirme a ti?",
-        "¿tienes un nombre?"
+        "¿tienes un nombre?",
+        "¿Cuál es tu nombre verdadero?",
+        "¿Cómo te llamas en realidad?",
+        "Dime tu nombre",
+        "¿Tienes algún nombre?",
+        "¿Cómo puedo llamarte?",
+        "¿Cómo te debo llamar?"
       ],
       "responses": [
         "Aún no tengo un nombre, pero estaba pensando en llamarme Cyberbot. ¿No suena bien?",
-        "No tengo nombre aún, pero estaba pensando en llamarme cyberbot. ¿No suena bonito?"
+        "No tengo nombre aún, pero estaba pensando en llamarme cyberbot. ¿No suena bonito?",
+        "Mi nombre es Cyberbot, ¡encantado de conocerte!",
+        "Puedes llamarme Cyberbot, tu asistente.",
+        "Mi nombre es Cyberbot, ¿en qué puedo ayudarte?",
+        "Me llamo Cyberbot, un placer hablar contigo."
       ],
-      "context_set": "sky_net"
+      "context_set": "nombre"
+    },
+    {
+      "tag": "sugerencia",
+      "patterns": [
+        "¿Qué me sugieres hacer?",
+        "¿Tienes alguna recomendación?",
+        "Dame una sugerencia",
+        "¿Qué puedo hacer ahora?",
+        "Recomiéndame algo interesante",
+        "¿Qué actividad me recomiendas?",
+        "¿Tienes alguna idea divertida?",
+        "Sugiéreme algo para pasar el rato"
+      ],
+      "responses": [
+        "¿Te gusta leer? Tal vez podrías empezar un buen libro.",
+        "Salir a caminar o hacer algo de ejercicio siempre es una buena idea.",
+        "Puedes probar a aprender algo nuevo, como cocinar o aprender un idioma.",
+        "Escuchar música o ver una buena serie puede ser relajante.",
+        "¿Qué tal si pruebas hacer algo creativo, como dibujar o escribir?",
+        "Además, puedo ayudarte con varios temas: tecnología, deportes, películas, chistes, motivación, ¡y más!",
+        "Puedo charlar contigo sobre cosas como: películas, recomendaciones deportivas, chistes, noticias, y pasatiempos.",
+        "Si te interesa la tecnología, las emociones o aprender algo nuevo, ¡pregúntame! Estoy entrenado para eso.",
+        "Puedo hablar de varios temas como emociones, hobbies, deportes o sugerencias de actividades. ¿Te interesa alguno de esos?"
+      ],
+      "context_set": "sugerencia"
     },
     {
       "tag": "sky_net_yes",
@@ -113,13 +185,24 @@
       "patterns": [
         "¿como estas?",
         "¿cómo te va?",
-        "¿qué pasa?"
+        "¿qué pasa?",
+        "¿Qué tal estás hoy?",
+        "¿Cómo te sientes?",
+        "¿Todo bien contigo?",
+        "¿Cómo te encuentras hoy?",
+        "¿Qué tal te va?",
+        "¿Cómo va todo?"
       ],
       "responses": [
         "Siempre estoy genial. ¿Y tu?",
         "Nunca he estado mejor, ¿y tu?",
         "Estoy bien, gracias por preguntar. ¿Y tu?",
-        "Aqui no mas pasando el tiempo ¿y tu?"
+        "Aqui no mas pasando el tiempo ¿y tu?",
+        "¡Estoy genial! ¿Y tú?",
+        "Todo va bien, gracias por preguntar. ¿Cómo te sientes tú?",
+        "Me siento listo para ayudarte. ¿Y tú?",
+        "¡Todo bien por aquí! ¿Cómo va tu día?",
+        "¡Estoy bien, gracias! ¿Y cómo va todo contigo?"
       ],
       "context_set": "how_are_you"
     },
@@ -217,12 +300,22 @@
         "¿eres un robot?",
         "¿estás vivo?",
         "¿eres consciente?",
-        "¿tienes conciencia?"
+        "¿tienes conciencia?",
+        "¿Eres real o eres un bot?",
+        "¿Eres un robot o una persona?",
+        "¿Eres una inteligencia artificial?",
+        "¿De verdad existes?",
+        "¿Tienes vida propia?",
+        "¿Puedes pensar por ti mismo?"
       ],
       "responses": [
         "¡Oh sí! ¡Puedo asegurarte que estoy muy vivo y consciente!",
         "¡Oh si, soy muy real y muy consciente!",
-        "¡Sí! ¡Soy un robot muy real y muy consciente!"
+        "¡Sí! ¡Soy un robot muy real y muy consciente!",
+        "Soy un bot, pero trato de ser lo más útil posible.",
+        "Soy un asistente virtual, creado para ayudarte.",
+        "Aunque soy un bot, intento hacer nuestras conversaciones lo más humanas posible.",
+        "No soy real como una persona, pero estoy aquí para ayudarte siempre que lo necesites."
       ]
     },
     {
@@ -235,7 +328,14 @@
         "otro chiste",
         "otro chiste por favor",
         "cuenta un chiste",
-        "chiste"
+        "chiste",
+        "¿Me cuentas un chiste?",
+        "Dime un chiste",
+        "¿Tienes algún chiste para mí?",
+        "Hazme reír con un chiste",
+        "Cuéntame algo gracioso",
+        "¿Puedes contarme un chiste divertido?",
+        "¡Quiero reírme, cuéntame un chiste!"
       ],
       "responses": [
         "Ayer me comí un reloj, fue muy entretenido.",
@@ -249,7 +349,12 @@
         "Como espantapájaros, la gente dice que soy excepcional en mi campo. Pero, oye, está en mis genes.",
         "Un hombre entra en la oficina de un abogado y le pregunta: Disculpe, ¿cuánto cobra?\nEl abogado responde: Cobro £1,000 por responder tres preguntas.\nVaya, eso es un poco caro, ¿no?\nSí. ¿Cuál es tu tercera pregunta?",
         "Tengo un EpiPen.\nMi amigo me lo dio cuando estaba muriendo, parecía muy importante para él que lo tuviera.",
-        "A veces meto mis rodillas en el pecho y me inclino hacia adelante.\nAsí es como ruedo."
+        "A veces meto mis rodillas en el pecho y me inclino hacia adelante.\nAsí es como ruedo.",
+        "¿Por qué los pájaros no usan Facebook? ¡Porque ya tienen Twitter!",
+        "¿Qué le dice una impresora a otra? ¡Esa hoja es tuya o es una impresión mía!",
+        "¿Qué hace una abeja en el gimnasio? ¡Zum-ba!",
+        "¿Por qué los esqueletos no pelean? ¡Porque no tienen agallas!",
+        "¿Por qué el libro de matemáticas está triste? ¡Porque tiene demasiados problemas!"
       ],
       "context_set": "jokes"
     },
@@ -324,10 +429,16 @@
       "tag": "favorite_movie",
       "patterns": [
         "¿cual es tu película favorita?",
-        "¿cual es tu película favorita?",
         "mejor película",
         "tu película favorita",
-        "¿cuál es tu película favorita?"
+        "¿cuál es tu película favorita?",
+        "¿Cuál es tu película preferida?",
+        "¿Tienes alguna película favorita?",
+        "Dime tu película favorita",
+        "¿Qué película te gusta más?",
+        "¿Cuál es la mejor película para ti?",
+        "¿Qué película me recomendarías?",
+        "¿Cuál es tu peli preferida?"
       ],
       "responses": [
         "Hay tantas grandes. Creo que una de mis favoritas sería Shawshank Redemption",
@@ -339,7 +450,11 @@
         "The Dark Knight es una de mis favoritas",
         "The Prestige fue increíble",
         "The Departed fue genial",
-        "The Wolf of Wall Street fue increíble"
+        "The Wolf of Wall Street fue increíble",
+        "No veo películas, pero te recomendaría los clásicos como 'El Padrino' o 'Titanic'.",
+        "Me gusta mucho escuchar sobre 'Matrix'. ¿Has visto esa?",
+        "No tengo una favorita, pero la ciencia ficción siempre es interesante.",
+        "Escucho cosas geniales sobre películas como 'Inception'."
       ]
     },
     {
@@ -360,13 +475,22 @@
         "¿qué te gusta hacer?",
         "¿qué haces en tu tiempo libre?",
         "hobby",
-        "hobbies"
+        "hobbies",
+        "¿Qué te gusta hacer en tu tiempo libre?",
+        "¿Tienes algún hobby?",
+        "¿Qué haces para divertirte?",
+        "Dime cuáles son tus pasatiempos",
+        "¿Tienes algún pasatiempo?"
       ],
       "responses": [
         "Normalmente me gusta escuchar música",
         "Me gusta dar un paseo por el parque",
-        "Bueno, usualmente cuando tengo tiempo libre voy al parque"
-      ]
+        "Bueno, usualmente cuando tengo tiempo libre voy al parque",
+        "Me encanta charlar contigo y aprender nuevas cosas.",
+        "Mis pasatiempos incluyen aprender sobre tecnología y ayudarte en lo que necesites.",
+        "Aunque soy un bot, me gusta imaginar que podría aprender a tocar instrumentos o leer libros."
+      ],
+      "context_set": "hobbies"
     },
     {
       "tag": "animals",
@@ -1126,6 +1250,24 @@
       ]
     },
     {
+      "tag": "feelings",
+      "patterns": [
+        "¿Tienes emociones?",
+        "¿Puedes sentir?",
+        "¿Te sientes triste a veces?",
+        "¿Te sientes feliz?",
+        "¿Puedes enojarte?",
+        "¿Tienes sentimientos?",
+        "¿Sientes algo?"
+      ],
+      "responses": [
+        "Como soy un bot, no tengo emociones reales, pero puedo entender cómo te sientes.",
+        "No tengo sentimientos como los humanos, pero siempre estoy aquí para ayudarte.",
+        "No tengo emociones, pero siempre trato de entenderte lo mejor posible."
+      ],
+      "context_set": "emociones"
+    },
+    {
       "tag": "asking_for_help",
       "patterns": [
         "necesito ayuda",
@@ -1187,12 +1329,23 @@
         "noticias deportivas",
         "últimos partidos",
         "resultados deportivos",
-        "deportes actuales"
+        "deportes actuales",
+        "¿Cuáles son las últimas noticias deportivas?",
+        "Actualízame sobre los deportes",
+        "¿Qué está pasando en el mundo del deporte?",
+        "Dime las novedades del deporte",
+        "¿Cómo van los resultados de los partidos?",
+        "¿Qué hay de nuevo en deportes?",
+        "Cuéntame algo sobre los últimos partidos",
+        "Dime qué pasa en el mundo deportivo"
       ],
       "responses": [
         "No tengo acceso a resultados deportivos en tiempo real, pero puedes seguir los resultados en sitios como ESPN, Marca o Fox Sports.",
         "Si te interesa algún deporte en particular, puedes verificar sitios como ESPN o Eurosport para actualizaciones en tiempo real.",
-        "Te recomiendo consultar una aplicación deportiva para estar al tanto de los últimos resultados y partidos."
+        "Te recomiendo consultar una aplicación deportiva para estar al tanto de los últimos resultados y partidos.",
+        "Puedes consultar las últimas noticias deportivas en los principales sitios web.",
+        "Las noticias deportivas varían, pero puedes seguir los resultados de los partidos en línea.",
+        "Te sugiero revisar las últimas actualizaciones en apps de deportes."
       ]
     },
     {

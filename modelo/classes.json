@@ -4,6 +4,7 @@
     "edades",
     "agradecimiento",
     "nombre",
+    "sugerencia",
     "sky_net_yes",
     "sky_net_no",
     "how_are_you",
@@ -73,6 +74,7 @@
     "need_encouragement",
     "feeling_anxious",
     "feeling_happy",
+    "feelings",
     "asking_for_help",
     "support",
     "positive_thoughts",
@@ -213,5 +215,7 @@
     "ragging",
     "hod",
     "transport",
-    "metro"
+    "metro",
+    "gratitude",
+    "suggestions"
 ]
