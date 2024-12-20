@@ -1,4 +1,4 @@
-let model, words, classes, intents;
+let model, words, classes, intents, contractions;
 
 async function loadResources() {
     model = await tf.loadLayersModel('./modelo/model_js/model.json');
@@ -10,14 +10,23 @@ async function loadResources() {
 
     const intentsResponse = await fetch('./modelo/intents_combinate.json');
     intents = await intentsResponse.json();
+
+    const contractionsResponse = await fetch('./modelo/constractions.json');
+    contractions = await contractionsResponse.json();
 }
 
 function quitarTildes(texto) {
     return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
+function expandirContracciones(texto) {
+    return texto.replace(/\b(?:[a-z]+'[a-z]+)\b/gi, match => contractions[match.toLowerCase()] || match);
+}
+
 function bagOfWords(sentence) {
-    const sentenceWords = quitarTildes(sentence).toLowerCase().split(' ');
+    let texto = quitarTildes(sentence);
+    texto = expandirContracciones(texto);
+    const sentenceWords = texto.toLowerCase().split(' ');
     const bag = new Array(words.length).fill(0);
 
     sentenceWords.forEach(word => {
