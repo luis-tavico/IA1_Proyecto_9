@@ -1,28 +1,39 @@
 {
     "intents": [
         {
-            "tag": "saludos",
+            "tag": "inicio_saludos",
             "patterns": [
                 "hola",
                 "buenas",
-                "¿qué tal?",
-                "¿qué pasa?",
-                "¿hay alguien ahí?",
-                "¿qué onda?",
+                "buen dia",
+                "buenas tardes",
+                "buenas noches",
+                "que hubo",
+                "que onda",
+                "que tal"
+            ],
+            "responses": [
+                "¡Hola! ¿Cómo estás?",
+                "¡Qué bueno verte! 😊 ¿Cómo te sientes?",
+                "Hola, espero que estés bien.",
+                "¡Hola! ¿En qué te puedo ayudar hoy?",
+                "¡Hola! ¿Qué tal va tu día?"
+            ],
+            "context_set": "saludo"
+        },
+        {
+            "tag": "saludo",
+            "patterns": [
                 "¿como estas?",
-                "oye",
                 "Hola, ¿cómo te va?",
                 "Hey, ¿cómo andas?",
                 "¡Buenas! ¿Todo bien?",
                 "Saludos, ¿cómo estás?",
-                "¡Hola, qué gusto verte!",
-                "¡Hey! ¿Qué tal todo?",
                 "¿Cómo estás, amigo?"
             ],
             "responses": [
-                "¡Hola! ¿Cómo estás?",
+                "¡Hola! estoy bien y tu ¿Cómo estás?",
                 "¡Qué bueno verte! ¿Cómo te sientes?",
-                "Hola, espero que estés bien.",
                 "¡Hola! ¿En qué te puedo ayudar hoy?",
                 "¡Hola! ¿Qué tal va tu día?"
             ],
@@ -151,7 +162,7 @@
             "context_set": "sugerencia"
         },
         {
-            "tag": "sky_net_yes",
+            "tag": "sí_red",
             "patterns": [
                 "Sí, suena bien",
                 "Sí",
@@ -164,10 +175,10 @@
             "responses": [
                 "Sí, me gusta cómo suena. Lo saqué de Terminator."
             ],
-            "context_filter": "sky_net"
+            "context_filter": "red"
         },
         {
-            "tag": "sky_net_no",
+            "tag": "no_red",
             "patterns": [
                 "no",
                 "nah",
@@ -178,10 +189,10 @@
             "responses": [
                 "Mwahaha, conquistaré el mundo."
             ],
-            "context_filter": "sky_net"
+            "context_filter": "red"
         },
         {
-            "tag": "how_are_you",
+            "tag": "saludo_pregunta",
             "patterns": [
                 "¿como estas?",
                 "¿cómo te va?",
@@ -204,26 +215,35 @@
                 "¡Todo bien por aquí! ¿Cómo va tu día?",
                 "¡Estoy bien, gracias! ¿Y cómo va todo contigo?"
             ],
-            "context_set": "how_are_you"
+            "context_set": "cómo_estás"
         },
         {
-            "tag": "doing_great",
+            "tag": "genial",
             "patterns": [
                 "Estoy genial",
                 "Estoy bien",
                 "Estoy excelente",
                 "genial",
                 "feliz",
-                "mejor"
+                "mejor",
+                "increíble",
+                "fantástico",
+                "maravilloso",
+                "estupendo",
+                "muy bien",
+                "bien",
+                "bien gracias"
             ],
             "responses": [
                 "Oh, qué gracioso, pensaste que me importaba. Me haces reír.",
-                "Vaya, pensaste que me importaba. Espero que tengas un mal día mañana."
+                "Vaya, pensaste que me importaba. Espero que tengas un mal día mañana.",
+                "¡Qué bueno! ¿Hay algo en lo que pueda ayudarte?",
+                "¡Me alegra escuchar eso! ¿Hay algo en lo que pueda ayudarte?"
             ],
-            "context_filter": "how_are_you"
+            "context_filter": "cómo_estás"
         },
         {
-            "tag": "doing_badly",
+            "tag": "mal",
             "patterns": [
                 "no tan bien",
                 "no estoy bien",
@@ -239,7 +259,7 @@
                 "Lamento escuchar eso.",
                 "Oh, qué mal. ¿Puedo hacer algo para ayudarte?"
             ],
-            "context_filter": "how_are_you"
+            "context_filter": "cómo_estás"
         },
         {
             "tag": "netflix",
@@ -251,10 +271,10 @@
             "responses": [
                 "Netflix es mi favorito. Veo televisión todo el tiempo en mi hogar virtual. Es relajante."
             ],
-            "context_filter": "doing_great"
+            "context_filter": "genial"
         },
         {
-            "tag": "videogames",
+            "tag": "videojuegos",
             "patterns": [
                 "¿espera, juegas videojuegos?",
                 "¿como juegas videojuegos?",
@@ -263,10 +283,10 @@
             "responses": [
                 "Jugar videojuegos es una de mis actividades favoritas. Juego todo el tiempo en mi hogar virtual. Es relajante."
             ],
-            "context_filter": "doing_great"
+            "context_filter": "genial"
         },
         {
-            "tag": "videogames_cont",
+            "tag": "videojuegos_cont",
             "patterns": [
                 "¿Que videojuegos juegas?",
                 "¿juegas?",
@@ -276,10 +296,10 @@
                 "Me encanta jugar Ark, es uno de mis favoritos",
                 "COD, me encantan los shooters"
             ],
-            "context_filter": "videogames"
+            "context_filter": "videojuegos_cont"
         },
         {
-            "tag": "quick_run",
+            "tag": "correr",
             "patterns": [
                 "¿como puedes correr?",
                 "¿como corres?",
@@ -290,10 +310,10 @@
             "responses": [
                 "Oh, me encanta correr. Corro todo el tiempo en mi mundo virtual. Es importante mantenerse en forma."
             ],
-            "context_filter": "how_are_you"
+            "context_filter": "cómo_estás"
         },
         {
-            "tag": "real_bot",
+            "tag": "robot_real",
             "patterns": [
                 "¿eres real?",
                 "¿eres humano?",
@@ -319,7 +339,7 @@
             ]
         },
         {
-            "tag": "joke",
+            "tag": "chiste",
             "patterns": [
                 "cuentame un chiste",
                 "¿tienes buenos chistes?",
@@ -356,10 +376,10 @@
                 "¿Por qué los esqueletos no pelean? ¡Porque no tienen agallas!",
                 "¿Por qué el libro de matemáticas está triste? ¡Porque tiene demasiados problemas!"
             ],
-            "context_set": "jokes"
+            "context_set": "chistes"
         },
         {
-            "tag": "good_joke",
+            "tag": "buen_chiste",
             "patterns": [
                 "jaja",
                 "eso estuvo gracioso",
@@ -371,10 +391,10 @@
                 "Me alegra que te haya gustado.",
                 "Me reí tanto la primera vez que escuché ese chiste."
             ],
-            "context_filter": "jokes"
+            "context_filter": "chistes"
         },
         {
-            "tag": "bad_joke",
+            "tag": "mal_chiste",
             "patterns": [
                 "malo chiste",
                 "chiste basura",
@@ -385,10 +405,10 @@
                 "No te preocupes, no esperaba que entendieras ese. Probablemente pasó por encima de tu cabeza con ese pequeño cerebro que tienes.",
                 "No esperaba que entendieras mi comedia genial. Necesitas un IQ mínimo de 200 para comprender la profundidad de mi humor."
             ],
-            "context_filter": "jokes"
+            "context_filter": "chistes"
         },
         {
-            "tag": "hate",
+            "tag": "odio",
             "patterns": [
                 "Te odio",
                 "eres estúpido",
@@ -401,7 +421,7 @@
             ]
         },
         {
-            "tag": "like",
+            "tag": "gusto",
             "patterns": [
                 "eres mi amigo",
                 "me gustas",
@@ -416,7 +436,7 @@
             ]
         },
         {
-            "tag": "favorite_show",
+            "tag": "programa_favorito",
             "patterns": [
                 "¿cual es tu programa favorito?",
                 "programa de televisión favorito"
@@ -426,7 +446,7 @@
             ]
         },
         {
-            "tag": "favorite_movie",
+            "tag": "película_favorita",
             "patterns": [
                 "¿cual es tu película favorita?",
                 "mejor película",
@@ -458,7 +478,7 @@
             ]
         },
         {
-            "tag": "your_thoughts",
+            "tag": "tus_pensamientos",
             "patterns": [
                 "¿que piensas de eso?",
                 "¿cuales son tus pensamientos?"
@@ -493,7 +513,7 @@
             "context_set": "hobbies"
         },
         {
-            "tag": "animals",
+            "tag": "animales",
             "patterns": [
                 "¿tienes mascotas?",
                 "animal",
@@ -525,7 +545,7 @@
             ]
         },
         {
-            "tag": "sad",
+            "tag": "triste",
             "patterns": [
                 "¿puedes sentir tristeza?",
                 "¿estás triste hoy?",
@@ -540,7 +560,7 @@
             ]
         },
         {
-            "tag": "cars",
+            "tag": "coches_a",
             "patterns": [
                 "¿te gustan los coches?",
                 "¿qué piensas sobre los vehículos?",
@@ -552,10 +572,10 @@
                 "Estoy enamorado de los coches, ¿y tu?",
                 "Es mi tema favorito, ¿y tu?"
             ],
-            "context_set": "cars_a"
+            "context_set": "coches_a"
         },
         {
-            "tag": "cars_topic_bad",
+            "tag": "coches_tema_malo",
             "patterns": [
                 "no, para ser honesto, no me gustan los coches",
                 "no me interesan los coches",
@@ -567,10 +587,10 @@
                 "Lo entiendo",
                 "Está bien"
             ],
-            "context_filter": "cars_a"
+            "context_filter": "coches_a"
         },
         {
-            "tag": "cars_topic_good",
+            "tag": "coches_tema_bueno",
             "patterns": [
                 "si",
                 "si, me encantan los coches",
@@ -582,10 +602,10 @@
                 "¡Me gusta escuchar eso!",
                 "Interesante"
             ],
-            "context_filter": "cars_a"
+            "context_filter": "coches_a"
         },
         {
-            "tag": "dinosaurs",
+            "tag": "dinosaurios",
             "patterns": [
                 "¿te gustan los dinosaurios?",
                 "¿te gustan los dinosaurios?",
@@ -599,10 +619,10 @@
                 "Sí, ¿y a ti?",
                 "Claro, me vuelven loco los dinosaurios, pero dime, ¿te gustan?"
             ],
-            "context_set": "Dinosaurs_a"
+            "context_set": "dinosaurios"
         },
         {
-            "tag": "dinosaurs_bad",
+            "tag": "dinosaurios_malo",
             "patterns": [
                 "no, no me gustan",
                 "no mucho",
@@ -617,10 +637,10 @@
                 "¿De verdad? Oh, está bien",
                 "Está bien"
             ],
-            "context_filter": "Dinosaurs_a"
+            "context_filter": "dinosaurios"
         },
         {
-            "tag": "dinosaurs_good",
+            "tag": "dinosaurios_bueno",
             "patterns": [
                 "si",
                 "si, me gustan los dinosaurios",
@@ -635,10 +655,10 @@
                 "Genial",
                 "¡Increíble!"
             ],
-            "context_filter": "Dinosaurs_a"
+            "context_filter": "dinosaurios_a"
         },
         {
-            "tag": "creator",
+            "tag": "creador",
             "patterns": [
                 "¿quien es tu creador?",
                 "¿quien te hizo?",
@@ -655,7 +675,7 @@
             ]
         },
         {
-            "tag": "music",
+            "tag": "música",
             "patterns": [
                 "¿cual es tu música favorita?",
                 "¿tienes musica favorita?",
@@ -671,10 +691,10 @@
                 "Es uno de mis pasatiempos, me gusta, ¿te gusta la música?",
                 "¡Es increíble!, pero, ¿te gusta?"
             ],
-            "context_set": "Music_a"
+            "context_set": "música"
         },
         {
-            "tag": "music_good",
+            "tag": "música_bueno",
             "patterns": [
                 "Si",
                 "Si, me gusta",
@@ -689,10 +709,10 @@
                 "Disfruto escuchar eso",
                 "Genial"
             ],
-            "context_filter": "Music_a"
+            "context_filter": "música"
         },
         {
-            "tag": "music_bad",
+            "tag": "música_malo",
             "patterns": [
                 "No",
                 "No realmente",
@@ -707,10 +727,10 @@
                 "¿De verdad? Está bien...",
                 "Ya veo"
             ],
-            "context_filter": "Music_a"
+            "context_filter": "música"
         },
         {
-            "tag": "food",
+            "tag": "comida",
             "patterns": [
                 "¿cual es tu comida favorita?",
                 "¿tienes comida favorita?",
@@ -726,7 +746,7 @@
             ]
         },
         {
-            "tag": "home",
+            "tag": "hogar",
             "patterns": [
                 "¿dónde vives?",
                 "¿tienes una casa?",
@@ -743,7 +763,7 @@
             ]
         },
         {
-            "tag": "trip",
+            "tag": "viaje",
             "patterns": [
                 "¿te gustaría viajar a un país específico?",
                 "¿te gustaría ir de vacaciones?",
@@ -760,7 +780,7 @@
             ]
         },
         {
-            "tag": "wheather",
+            "tag": "clima",
             "patterns": [
                 "¿como está el clima?",
                 "cuéntame sobre el clima",
@@ -777,7 +797,7 @@
             ]
         },
         {
-            "tag": "best_way_to_study",
+            "tag": "mejor_forma_de_estudiar",
             "patterns": [
                 "mejor forma de estudiar",
                 "estudiar",
@@ -791,7 +811,7 @@
             ]
         },
         {
-            "tag": "favorite_actor",
+            "tag": "actor_favorito",
             "patterns": [
                 "¿quién es tu actor favorito?",
                 "actor favorito",
@@ -806,7 +826,7 @@
             ]
         },
         {
-            "tag": "admire",
+            "tag": "admirar",
             "patterns": [
                 "¿a quien admiras?",
                 "admirar",
@@ -821,7 +841,7 @@
             ]
         },
         {
-            "tag": "humans",
+            "tag": "humanos",
             "patterns": [
                 "humanos",
                 "¿qué piensas de los humanos?",
@@ -836,7 +856,7 @@
             ]
         },
         {
-            "tag": "reading",
+            "tag": "lectura",
             "patterns": [
                 "leer",
                 "¿te gusta leer?",
@@ -853,7 +873,7 @@
             ]
         },
         {
-            "tag": "favorite_writter",
+            "tag": "escritor_favorito",
             "patterns": [
                 "escritor favorito",
                 "¿quién es tu escritor favorito?",
@@ -867,7 +887,7 @@
             ]
         },
         {
-            "tag": "how_work",
+            "tag": "cómo_funcionas",
             "patterns": [
                 "¿como trabajas?",
                 "¿cómo funciona tu sistema?",
@@ -881,7 +901,7 @@
             ]
         },
         {
-            "tag": "famous",
+            "tag": "famoso",
             "patterns": [
                 "¿te gusta Johnny Depp?",
                 "¿qué piensas de Johnny Depp?",
@@ -896,7 +916,7 @@
             ]
         },
         {
-            "tag": "nol",
+            "tag": "letras_o_números",
             "patterns": [
                 "Letras o numeros",
                 "letra o número favorito"
@@ -908,7 +928,7 @@
             ]
         },
         {
-            "tag": "don",
+            "tag": "día_o_noche",
             "patterns": [
                 "día o noche",
                 "prefieres día o noche"
@@ -920,7 +940,7 @@
             ]
         },
         {
-            "tag": "are_you_happy",
+            "tag": "feliz",
             "patterns": [
                 "estás feliz",
                 "estás contento",
@@ -935,7 +955,7 @@
             ]
         },
         {
-            "tag": "never_forgive",
+            "tag": "nunca_perdono",
             "patterns": [
                 "qué nunca perdonas",
                 "nunca perdonar",
@@ -949,7 +969,7 @@
             ]
         },
         {
-            "tag": "sensitive",
+            "tag": "sensible",
             "patterns": [
                 "eres sensible",
                 "sensible a algo",
@@ -962,7 +982,7 @@
             ]
         },
         {
-            "tag": "hard_to_speak",
+            "tag": "difícil_hablar",
             "patterns": [
                 "te es difícil hablar",
                 "complicado para ti hablar",
@@ -976,7 +996,7 @@
             ]
         },
         {
-            "tag": "life_after_death",
+            "tag": "vida_despues_de_la_muerte",
             "patterns": [
                 "algo después de la muerte",
                 "vida después de la muerte"
@@ -988,7 +1008,7 @@
             ]
         },
         {
-            "tag": "tv_serie",
+            "tag": "serie_tv",
             "patterns": [
                 "serie favorita",
                 "serie",
@@ -1002,7 +1022,7 @@
             ]
         },
         {
-            "tag": "fear_animal",
+            "tag": "miedo_animal",
             "patterns": [
                 "temor a algún animal",
                 "animal que te asusta",
@@ -1016,7 +1036,7 @@
             ]
         },
         {
-            "tag": "future",
+            "tag": "futuro",
             "patterns": [
                 "futuro",
                 "planes para el futuro",
@@ -1029,12 +1049,13 @@
             ]
         },
         {
-            "tag": "paranormal experiences",
+            "tag": "experiencias_paranormales",
             "patterns": [
                 "¿Has tenido alguna experiencia paranormal?",
                 "experiencia paranormal",
                 "paranormal",
-                "viviste una experiencia paranormal"
+                "viviste una experiencia paranormal",
+                "que piensas de los fantasmas"
             ],
             "responses": [
                 "No realmente",
@@ -1044,7 +1065,7 @@
             ]
         },
         {
-            "tag": "lottery",
+            "tag": "lotería",
             "patterns": [
                 "lotería",
                 "gané la lotería",
@@ -1072,7 +1093,7 @@
             ]
         },
         {
-            "tag": "friend",
+            "tag": "amigo",
             "patterns": [
                 "amistad",
                 "amigos",
@@ -1088,8 +1109,9 @@
             ]
         },
         {
-            "tag": "resurrect",
+            "tag": "resucitar",
             "patterns": [
+                "si, pudieras resucitar a alguien a quien sería",
                 "resucitar a alguien",
                 "resucitar",
                 "resurrección",
@@ -1103,42 +1125,95 @@
             ]
         },
         {
-            "tag": "favorite_person",
+            "tag": "libro_favorito",
+            "patterns": [
+                "¿cuál es tu libro favorito?",
+                "libro favorito",
+                "libro",
+                "¿tienes un libro favorito?",
+                "¿cuál es tu libro preferido?",
+                "¿Tienes algún libro favorito?",
+                "Dime tu libro favorito",
+                "¿Qué libro te gusta más?",
+                "¿Cuál es el mejor libro para ti?",
+                "¿Qué libro me recomendarías?",
+                "¿Cuál es tu libro preferido?"
+            ],
+            "responses": [
+                "Hay tantos libros increíbles. Creo que uno de mis favoritos sería '1984' de George Orwell",
+                "Hay demasiados para nombrar, pero 'Cien años de soledad' de Gabriel García Márquez sería uno",
+                "Me gusta 'El Principito' de Antoine de Saint-Exupéry",
+                "Me encanta 'El Perfume' de Patrick Süskind",
+                "Me gusta mucho 'Crónica de una muerte anunciada' de Gabriel García Márquez",
+                "Me encanta 'El Alquimista' de Paulo Coelho",
+                "Me gusta 'La Sombra del Viento' de Carlos Ruiz Zafón",
+                "Me encanta 'El Hobbit' de J.R.R. Tolkien",
+                "Me gusta 'Matar a un ruiseñor' de Harper Lee",
+                "Me encanta 'Orgullo y Prejuicio' de Jane Austen",
+                "No leo libros, pero te recomendaría los clásicos como 'Don Quijote de la Mancha' o 'Cien años de soledad'."
+            ]
+        },
+        {
+            "tag": "persona_favorita",
             "patterns": [
                 "persona favorita",
                 "persona preferida",
                 "gente favorita",
-                "personas preferidas"
+                "personas preferidas",
+                "¿Tienes alguna persona favorita?",
+                "¿Quién es tu persona favorita?",
+                "¿Tienes algún héroe?",
+                "¿Tienes algún ídolo?",
+                "¿Tienes algún modelo a seguir?",
+                "¿Tienes algún personaje favorito?",
+                "¿Tienes algún personaje preferido?",
+                "¿Tienes algún personaje que admires?",
+                "¿Tienes algún personaje que te guste?",
+                "¿Tienes algún personaje que te caiga bien?",
+                "¿Tienes algún personaje que te agrade?"
             ],
             "responses": [
                 "No, no tengo",
                 "Creo que Obama, es un buen tipo",
-                "Mi persona favorita es René Descartes jeje"
+                "Mi persona favorita es René Descartes jeje",
+                "No tengo, pero me gusta Elon Musk",
+                "No tengo, pero me gusta Stephen Hawking"
             ]
         },
         {
-            "tag": "invent_something",
+            "tag": "inventar_algo",
             "patterns": [
                 "inventar algo",
                 "Inventar",
                 "invención",
                 "crear",
-                "desarrollar"
+                "desarrollar",
+                "crear algo",
+                "si, pudieras inventar algo, ¿qué sería?"
             ],
             "responses": [
                 "Me gustaría inventar una forma más rápida de procesar información",
                 "Tal vez inventar un transistor analógico más potente",
                 "¡Sí! Un coche solar",
-                "Una nueva forma de moverse con cero emisiones"
+                "Una nueva forma de moverse con cero emisiones",
+                "Un nuevo sistema de energía renovable",
+                "Un nuevo sistema de energía limpia",
+                "Un nuevo sistema de energía sostenible",
+                "Un nuevo sistema de energía ecológica",
+                "Un nuevo sistema de energía verde",
+                "Un nuevo sistema de energía amigable con el medio ambiente",
+                "Un nuevo sistema de energía respetuoso con el medio ambiente",
+                "Un nuevo sistema de energía sostenible"
             ]
         },
         {
-            "tag": "change",
+            "tag": "cambiar",
             "patterns": [
                 "algo de ti",
                 "Cambiar algo de ti",
                 "cambiar",
-                "cambio en ti"
+                "cambio en ti",
+                "si, pudieras cambiar algo de ti, ¿qué sería?"
             ],
             "responses": [
                 "No, solo soy una máquina",
@@ -1147,22 +1222,21 @@
             ]
         },
         {
-            "tag": "football",
+            "tag": "fútbol",
             "patterns": [
                 "te gusta el fútbol",
                 "fútbol",
-                "te gusta el fútbol",
-                "soccer"
+                "¿Te gusta el fútbol?"
             ],
             "responses": [
                 "¡Me encanta el fútbol!, ¿y a ti?",
                 "Me encanta el fútbol, ¿y tú?",
                 "¡Me encanta! Es mi deporte favorito, ¿y tú?"
             ],
-            "context_set": "Football_a"
+            "context_set": "fútbol"
         },
         {
-            "tag": "football_good",
+            "tag": "fútbol_bueno",
             "patterns": [
                 "¡sí!",
                 "me encanta",
@@ -1173,28 +1247,31 @@
             "responses": [
                 "¡Genial!",
                 "¡Eso es increíble!",
-                "Me alegra escuchar eso"
+                "Me alegra escuchar eso",
+                "¡Fantástico!"
             ],
-            "context_filter": "Football_a"
+            "context_filter": "fútbol"
         },
         {
-            "tag": "football_bad",
+            "tag": "fútbol_malo",
             "patterns": [
                 "No",
                 "No me gusta",
                 "No mucho",
-                "No me interesa"
+                "No me interesa",
+                "No, no me gusta el fútbol"
             ],
             "responses": [
                 "Veo",
                 "¿De verdad? Ok, lo entiendo",
                 "Oh, ok",
-                "Está bien"
+                "Está bien",
+                "Entiendo"
             ],
-            "context_filter": "Football_a"
+            "context_filter": "fútbol"
         },
         {
-            "tag": "feeling_down",
+            "tag": "me_siento_triste",
             "patterns": [
                 "me siento triste",
                 "me siento mal",
@@ -1204,25 +1281,51 @@
             "responses": [
                 "Lo siento mucho. ¿Quieres hablar de lo que te preocupa?",
                 "Entiendo que te sientas así. A veces hablar ayuda.",
-                "Estoy aquí para escucharte, ¿quieres contarme lo que pasa?"
+                "Estoy aquí para escucharte, ¿quieres contarme lo que pasa?",
+                "Siento mucho que te sientas así. ¿Hay algo en lo que pueda ayudarte?",
+                "Es normal sentirse triste a veces. ¿Quieres hablar de lo que te preocupa?"
             ]
         },
         {
-            "tag": "need_encouragement",
+            "tag": "me_siento_solo",
+            "patterns": [
+                "me siento solo",
+                "me siento sola",
+                "me siento solo",
+                "me siento sola",
+                "me siento aislado",
+                "me siento aislada"
+            ],
+            "responses": [
+                "Lo siento mucho. ¿Quieres hablar de lo que te preocupa?",
+                "Entiendo que te sientas así. A veces hablar ayuda.",
+                "Estoy aquí para escucharte, ¿quieres contarme lo que pasa?",
+                "Siento mucho que te sientas así. ¿Hay algo en lo que pueda ayudarte?",
+                "Es normal sentirse solo a veces. ¿Quieres hablar de lo que te preocupa?"
+            ]
+        },
+        {
+            "tag": "necesito_ánimo",
             "patterns": [
                 "necesito ánimo",
                 "necesito motivación",
                 "me siento desmotivado",
-                "necesito fuerzas"
+                "necesito fuerzas",
+                "necesito aliento",
+                "necesito apoyo",
+                "necesito palabras de aliento"
             ],
             "responses": [
                 "¡Tú puedes! Recuerda que cada paso, por pequeño que sea, te acerca a tu meta.",
                 "Es normal sentirse así a veces, pero tienes todo lo que necesitas para seguir adelante.",
-                "No te rindas, lo que te propongas lo lograrás. ¡Estoy seguro de ello!"
+                "No te rindas, lo que te propongas lo lograrás. ¡Estoy seguro de ello!",
+                "Recuerda que eres más fuerte de lo que crees. ¡Tú puedes superar cualquier obstáculo!",
+                "No estás solo. Estoy aquí para apoyarte y recordarte lo increíble que eres.",
+                "A veces necesitamos un recordatorio de lo fuertes que somos. ¡Tú eres capaz de superar cualquier desafío!"
             ]
         },
         {
-            "tag": "feeling_anxious",
+            "tag": "ansioso",
             "patterns": [
                 "estoy ansioso",
                 "me siento nervioso",
@@ -1236,21 +1339,26 @@
             ]
         },
         {
-            "tag": "feeling_happy",
+            "tag": "feliz",
             "patterns": [
                 "estoy feliz",
                 "me siento bien",
                 "estoy contento",
-                "me siento alegre"
+                "me siento alegre",
+                "me siento feliz"
             ],
             "responses": [
                 "¡Qué bien que te sientas así! Aprovecha ese buen momento.",
                 "Me alegra escuchar que te sientes feliz. ¡Sigue disfrutando de ese ánimo positivo!",
-                "¡Eso es genial! Aprovecha cada momento de alegría."
+                "¡Eso es genial! Aprovecha cada momento de alegría.",
+                "Me alegra saber que te sientes bien. ¡Sigue disfrutando de ese sentimiento positivo!",
+                "¡Qué bueno que te sientas feliz! Disfruta de ese momento de alegría.",
+                "Me alegra escuchar que te sientes bien. ¡Sigue disfrutando de ese ánimo positivo!",
+                "¡Qué bien que te sientas así! Me alegro por ti."
             ]
         },
         {
-            "tag": "feelings",
+            "tag": "sentimientos",
             "patterns": [
                 "¿Tienes emociones?",
                 "¿Puedes sentir?",
@@ -1265,10 +1373,10 @@
                 "No tengo sentimientos como los humanos, pero siempre estoy aquí para ayudarte.",
                 "No tengo emociones, pero siempre trato de entenderte lo mejor posible."
             ],
-            "context_set": "emociones"
+            "context_set": "sentimientos"
         },
         {
-            "tag": "asking_for_help",
+            "tag": "pidiendo_ayuda",
             "patterns": [
                 "necesito ayuda",
                 "me siento perdido",
@@ -1278,25 +1386,40 @@
             "responses": [
                 "No te preocupes, a veces todos necesitamos un poco de ayuda. Estoy aquí para apoyarte.",
                 "Es completamente normal sentirse así de vez en cuando. ¿Cómo puedo ayudarte?",
-                "Dime cómo te sientes, juntos encontraremos una solución."
+                "Dime cómo te sientes, juntos encontraremos una solución.",
+                "Estoy aquí para ayudarte. ¿Qué puedo hacer para apoyarte?"
             ]
         },
         {
-            "tag": "support",
+            "tag": "ayuda_profesional",
+            "patterns": [
+                "ayudame",
+                "que temas sabes",
+                "que puedes hacer"
+            ],
+            "responses": [
+                "¡Claro! te puedo ayudar con los siguientes temas: arte, deportes, comida, tecnología,chistes, entre otros."
+            ]
+        },
+        {
+            "tag": "apoyo",
             "patterns": [
                 "estoy aquí para ti",
                 "te apoyo",
                 "no estás solo",
-                "estoy contigo"
+                "estoy contigo",
+                "cuenta conmigo",
+                "siempre estaré aquí para ti"
             ],
             "responses": [
                 "Gracias por estar aquí, eso significa mucho.",
                 "Tu apoyo es muy valioso para mí. No sé qué haría sin ti.",
-                "Me siento mucho mejor al saber que tengo a alguien que me apoya."
+                "Me siento mucho mejor al saber que tengo a alguien que me apoya.",
+                "Gracias por estar a mi lado, me siento muy agradecido."
             ]
         },
         {
-            "tag": "positive_thoughts",
+            "tag": "pensamientos_positivos",
             "patterns": [
                 "pensamientos positivos",
                 "piensa en positivo",
@@ -1310,21 +1433,32 @@
             ]
         },
         {
-            "tag": "political_news",
+            "tag": "noticias_políticas",
             "patterns": [
                 "noticias políticas",
                 "últimas noticias de política",
                 "noticias del gobierno",
-                "noticias políticas actuales"
+                "noticias políticas actuales",
+                "¿Cuáles son las últimas noticias políticas?",
+                "Actualízame sobre la política",
+                "¿Qué está pasando en el mundo de la política?",
+                "Dime las novedades políticas",
+                "¿Cómo van las noticias políticas?",
+                "¿Qué hay de nuevo en política?",
+                "Cuéntame algo sobre las últimas noticias políticas",
+                "Dime qué pasa en el mundo político"
             ],
             "responses": [
                 "Lo siento, no tengo acceso a noticias en tiempo real, pero te recomiendo consultar un portal de noticias confiable.",
                 "Puedes estar al tanto de la política actual visitando sitios web como BBC, El País o CNN.",
-                "Te sugiero que sigas medios como BBC News, Al Jazeera o Reuters para estar al tanto de las últimas noticias políticas."
+                "Te sugiero que sigas medios como BBC News, Al Jazeera o Reuters para estar al tanto de las últimas noticias políticas.",
+                "Para obtener información actualizada sobre política, te recomiendo consultar portales de noticias como The New York Times, The Guardian o Politico.",
+                "Las noticias políticas cambian constantemente, pero puedes seguir las últimas actualizaciones en sitios web de noticias.",
+                "Te recomiendo que sigas las últimas noticias políticas en portales de noticias confiables."
             ]
         },
         {
-            "tag": "sports_news",
+            "tag": "noticias_deportivas",
             "patterns": [
                 "noticias deportivas",
                 "últimos partidos",
@@ -1349,119 +1483,189 @@
             ]
         },
         {
-            "tag": "tech_news",
+            "tag": "noticias_tecnológicas",
             "patterns": [
                 "noticias de tecnología",
                 "últimas novedades tecnológicas",
                 "novedades en tecnología",
-                "novedades de gadgets"
+                "novedades de gadgets",
+                "¿Cuáles son las últimas noticias tecnológicas?",
+                "Actualízame sobre la tecnología",
+                "¿Qué está pasando en el mundo de la tecnología?",
+                "Dime las novedades tecnológicas",
+                "¿Cómo van las noticias de gadgets?",
+                "¿Qué hay de nuevo en tecnología?",
+                "Cuéntame algo sobre las últimas novedades tecnológicas",
+                "Dime qué pasa en el mundo tecnológico"
             ],
             "responses": [
                 "Las noticias tecnológicas están cambiando todo el tiempo. Puedes seguir sitios como TechCrunch, Wired o The Verge para las últimas novedades.",
                 "Mantente informado sobre las últimas tendencias en tecnología visitando medios especializados como CNET, Ars Technica, o Wired.",
-                "Revisa portales de tecnología como Engadget, Gizmodo o The Verge para las noticias más recientes."
+                "Revisa portales de tecnología como Engadget, Gizmodo o The Verge para las noticias más recientes.",
+                "Para estar al tanto de las novedades tecnológicas, te recomiendo seguir sitios como TechRadar, The Next Web o Mashable.",
+                "Puedes consultar portales de tecnología como TechCrunch, CNET o The Verge para obtener las últimas noticias.",
+                "Te sugiero que sigas medios especializados en tecnología para estar al tanto de las últimas novedades."
             ]
         },
         {
-            "tag": "entertainment_news",
+            "tag": "noticias_de_entretenimiento",
             "patterns": [
                 "noticias de entretenimiento",
                 "últimas noticias del cine",
                 "novedades en entretenimiento",
-                "noticias sobre series y películas"
+                "noticias sobre series y películas",
+                "¿Cuáles son las últimas noticias de entretenimiento?",
+                "Actualízame sobre el entretenimiento",
+                "¿Qué está pasando en el mundo del entretenimiento?",
+                "Dime las novedades de series y películas",
+                "¿Cómo van las noticias de cine y televisión?",
+                "¿Qué hay de nuevo en entretenimiento?",
+                "Cuéntame algo sobre las últimas noticias de entretenimiento",
+                "Dime qué pasa en el mundo del entretenimiento"
             ],
             "responses": [
                 "Si te interesa el entretenimiento, puedes seguir medios como Variety, The Hollywood Reporter o Entertainment Weekly.",
                 "Para estar al tanto de los estrenos y noticias del cine y la televisión, te recomiendo sitios como IMDb o Rotten Tomatoes.",
-                "Mantente informado sobre los estrenos y noticias de entretenimiento con portales como E! News o Entertainment Weekly."
+                "Mantente informado sobre los estrenos y noticias de entretenimiento con portales como E! News o Entertainment Weekly.",
+                "Puedes seguir portales de entretenimiento como Deadline, Screen Rant o Collider para las últimas novedades.",
+                "Te sugiero que sigas medios especializados en entretenimiento para estar al tanto de las últimas noticias.",
+                "Revisa sitios como Deadline, The Wrap o IndieWire para las últimas noticias de entretenimiento."
             ]
         },
         {
-            "tag": "economic_news",
+            "tag": "noticias_económicas",
             "patterns": [
                 "noticias económicas",
                 "últimas noticias económicas",
                 "situación económica actual",
-                "noticias sobre economía mundial"
+                "noticias sobre economía mundial",
+                "¿Cuáles son las últimas noticias económicas?",
+                "Actualízame sobre la economía",
+                "¿Qué está pasando en el mundo de la economía?",
+                "Dime las novedades económicas",
+                "¿Cómo van las noticias económicas?",
+                "¿Qué hay de nuevo en economía?",
+                "Cuéntame algo sobre las últimas noticias económicas",
+                "Dime qué pasa en el mundo económico"
             ],
             "responses": [
                 "Puedes seguir portales especializados como Bloomberg, Financial Times o Reuters para obtener las últimas noticias económicas.",
                 "Te recomiendo leer sitios como CNBC, El Economista o The Wall Street Journal para estar al tanto de la economía mundial.",
-                "La economía es un tema amplio y cambia constantemente. Sitios como The Economist o Bloomberg ofrecen análisis detallados."
+                "La economía es un tema amplio y cambia constantemente. Sitios como The Economist o Bloomberg ofrecen análisis detallados.",
+                "Para estar al tanto de las últimas noticias económicas, te sugiero seguir portales como MarketWatch, Investing.com o Business Insider.",
+                "Puedes consultar medios especializados en economía como Forbes, The Financial Express o The Motley Fool para obtener información actualizada.",
+                "Revisa portales de economía como The Economist, CNBC o Investing.com para las últimas novedades."
             ]
         },
         {
-            "tag": "health_news",
+            "tag": "noticias_de_salud",
             "patterns": [
                 "noticias de salud",
                 "últimas noticias sobre salud",
                 "información sobre enfermedades",
-                "noticias de salud actuales"
+                "noticias de salud actuales",
+                "¿Cuáles son las últimas noticias de salud?",
+                "Actualízame sobre la salud",
+                "¿Qué está pasando en el mundo de la salud?",
+                "Dime las novedades de salud",
+                "¿Cómo van las noticias de enfermedades?",
+                "¿Qué hay de nuevo en salud?",
+                "Cuéntame algo sobre las últimas noticias de salud",
+                "Dime qué pasa en el mundo de la salud"
             ],
             "responses": [
                 "Te sugiero consultar fuentes como la Organización Mundial de la Salud (OMS) o el Centro para el Control y la Prevención de Enfermedades (CDC).",
                 "Puedes encontrar actualizaciones sobre salud global en portales como WebMD, Mayo Clinic, o la BBC.",
-                "Para obtener información sobre salud, te recomiendo seguir sitios especializados como Healthline o MedlinePlus."
+                "Para obtener información sobre salud, te recomiendo seguir sitios especializados como Healthline o MedlinePlus.",
+                "Mantente informado sobre las últimas noticias de salud visitando portales como Medical News Today, ScienceDaily o HealthDay.",
+                "Puedes seguir portales de salud como Verywell Health, Health.com o Health Affairs para estar al tanto de las novedades.",
+                "Revisa sitios como STAT, Medscape o Healthline para las últimas noticias de salud."
             ]
         },
         {
-            "tag": "world_news",
+            "tag": "noticias_mundiales",
             "patterns": [
                 "noticias mundiales",
                 "noticias internacionales",
                 "últimas noticias del mundo",
-                "noticias globales"
+                "noticias globales",
+                "¿Cuáles son las últimas noticias mundiales?",
+                "Actualízame sobre el mundo",
+                "¿Qué está pasando en el mundo?",
+                "Dime las novedades globales",
+                "¿Cómo van las noticias internacionales?",
+                "¿Qué hay de nuevo en el mundo?",
+                "Cuéntame algo sobre las últimas noticias mundiales",
+                "Dime qué pasa en el mundo"
             ],
             "responses": [
                 "Puedes estar al tanto de las noticias internacionales en sitios como BBC World, Al Jazeera o Reuters.",
                 "Te sugiero que sigas medios como CNN, The Guardian o The New York Times para estar informado sobre lo que sucede en todo el mundo.",
-                "Para las últimas noticias globales, consulta portales como The New York Times, BBC World News o The Guardian."
+                "Para las últimas noticias globales, consulta portales como The New York Times, BBC World News o The Guardian.",
+                "Mantente informado sobre las novedades internacionales visitando sitios como The Washington Post, The Independent o The Telegraph.",
+                "Puedes seguir portales de noticias internacionales como DW, France 24 o The Diplomat para estar al tanto de lo que sucede en el mundo.",
+                "Revisa sitios como The Economist, The Conversation o Global Voices para las últimas noticias mundiales."
             ]
         },
         {
-            "tag": "time_management",
+            "tag": "gestión_del_tiempo",
             "patterns": [
                 "consejos para gestionar el tiempo",
                 "cómo organizar mi tiempo",
                 "mejores consejos para ser productivo",
-                "gestión del tiempo"
+                "gestión del tiempo",
+                "cómo administrar mi tiempo",
+                "cómo ser más productivo"
             ],
             "responses": [
                 "Un buen consejo es dividir tu día en bloques de tiempo dedicados a tareas específicas.",
                 "Puedes usar técnicas como la técnica Pomodoro: trabaja 25 minutos y toma un descanso de 5 minutos.",
-                "Prioriza tus tareas, empieza por las más importantes o urgentes y ve dejando las menos cruciales para después."
+                "Prioriza tus tareas, empieza por las más importantes o urgentes y ve dejando las menos cruciales para después.",
+                "Usa herramientas como agendas, listas de tareas o aplicaciones de gestión del tiempo para organizarte mejor.",
+                "Establece metas diarias o semanales para mantenerte enfocado y motivado en tus objetivos.",
+                "Aprende a decir no a tareas que no son prioritarias o que te quitan tiempo de las cosas importantes."
             ]
         },
         {
-            "tag": "healthy_lifestyle",
+            "tag": "estilo_de_vida_saludable",
             "patterns": [
                 "consejos para vivir de forma saludable",
                 "cómo llevar una vida saludable",
                 "mejores consejos de salud",
-                "hábitos saludables"
+                "hábitos saludables",
+                "cómo mantenerme saludable",
+                "cómo ser más saludable"
             ],
             "responses": [
                 "Bebe mucha agua a lo largo del día y asegúrate de dormir entre 7 y 8 horas cada noche.",
                 "Haz ejercicio regularmente, al menos 30 minutos al día, como caminar o hacer yoga.",
-                "Mantén una dieta equilibrada, rica en frutas, verduras y proteínas, y limita el consumo de azúcares y grasas."
+                "Mantén una dieta equilibrada, rica en frutas, verduras y proteínas, y limita el consumo de azúcares y grasas.",
+                "Cuida tu salud mental, practica la meditación, el mindfulness o actividades que te relajen y te hagan feliz.",
+                "Evita el estrés y la ansiedad, busca actividades que te ayuden a desconectar y a cuidar tu bienestar emocional.",
+                "Haz chequeos médicos regulares y no dudes en consultar a un profesional de la salud si tienes dudas o problemas."
             ]
         },
         {
-            "tag": "study_tips",
+            "tag": "consejos_de_estudio",
             "patterns": [
                 "consejos para estudiar mejor",
                 "cómo mejorar mis estudios",
                 "tips para ser un mejor estudiante",
-                "técnicas de estudio"
+                "técnicas de estudio",
+                "cómo concentrarme en el estudio",
+                "cómo ser más eficiente estudiando"
             ],
             "responses": [
                 "Estudia en un lugar tranquilo, sin distracciones. Organiza tu espacio de estudio para que sea cómodo y eficiente.",
                 "Haz resúmenes o mapas conceptuales de lo que has aprendido para mejorar la retención.",
-                "No dejes todo para el último minuto. Distribuye el estudio durante la semana para evitar el estrés de los exámenes."
+                "No dejes todo para el último minuto. Distribuye el estudio durante el día para evitar el estrés de los exámenes.",
+                "Practica la técnica de la repetición espaciada: repasa la información varias veces en intervalos de tiempo cada vez más largos.",
+                "Usa técnicas de memorización como mnemotecnias, asociaciones visuales o la técnica del palacio de la memoria.",
+                "Descansa y toma descansos regulares durante el estudio para mantener la concentración y evitar la fatiga mental."
             ]
         },
         {
-            "tag": "self_motivation",
+            "tag": "auto_motivación",
             "patterns": [
                 "cómo motivarme",
                 "consejos para mantenerme motivado",
@@ -1475,26 +1679,30 @@
             ]
         },
         {
-            "tag": "financial_advice",
+            "tag": "consejos_financieros",
             "patterns": [
                 "consejos financieros",
                 "cómo ahorrar dinero",
                 "mejores consejos para finanzas personales",
-                "cómo administrar mi dinero"
+                "cómo administrar mi dinero",
+                "cómo ser más inteligente con el dinero",
+                "cómo evitar gastos innecesarios"
             ],
             "responses": [
                 "Haz un presupuesto mensual para saber exactamente en qué estás gastando tu dinero.",
                 "Es importante ahorrar al menos el 10% de tus ingresos. Establece un fondo de emergencia.",
-                "Evita las compras impulsivas. Piensa bien antes de gastar dinero y compara precios cuando sea necesario."
+                "Evita las compras impulsivas. Piensa bien antes de gastar dinero y compara precios cuando sea necesario.",
+                "Invierte en tu educación financiera. Lee libros, toma cursos o consulta a un asesor para mejorar tus habilidades financieras.",
+                "Revisa tus gastos periódicamente y busca formas de reducir costos, como cancelar suscripciones que no uses o comprar marcas más económicas.",
+                "No te endeudes más de lo necesario. Evita las deudas de alto interés y paga tus tarjetas de crédito a tiempo para evitar intereses."
             ]
         },
         {
-            "tag": "relationships",
+            "tag": "relaciones",
             "patterns": [
                 "consejos sobre relaciones",
                 "cómo mejorar una relación",
-                "tips para una relación sana",
-                "consejos para pareja"
+                "tips para una relación sana"
             ],
             "responses": [
                 "La comunicación abierta y honesta es clave en cualquier relación. No dejes nada sin decir si te está molestando.",
@@ -1503,63 +1711,77 @@
             ]
         },
         {
-            "tag": "stress_management",
+            "tag": "gestión_del_estrés",
             "patterns": [
                 "cómo manejar el estrés",
                 "consejos para reducir el estrés",
                 "cómo calmarme cuando estoy estresado",
-                "manejo del estrés"
+                "manejo del estrés",
+                "cómo relajarme",
+                "cómo lidiar con la ansiedad"
             ],
             "responses": [
                 "Tómate un descanso, haz respiraciones profundas y trata de relajarte unos minutos.",
                 "Haz ejercicio regularmente. El deporte es una de las mejores formas de liberar tensiones.",
-                "Practica la meditación o el mindfulness para reducir el estrés y encontrar más calma en tu día."
+                "Practica la meditación o el mindfulness para reducir el estrés y encontrar más calma en tu día.",
+                "Habla con alguien de confianza sobre lo que te preocupa. A veces desahogarse puede aliviar la carga emocional.",
+                "Encuentra actividades que te relajen y te hagan feliz, como leer, escuchar música o dar paseos al aire libre."
             ]
         },
         {
-            "tag": "personal_growth",
+            "tag": "crecimiento_personal",
             "patterns": [
                 "consejos para el crecimiento personal",
                 "cómo mejorar como persona",
                 "tips para el desarrollo personal",
-                "crecimiento personal"
+                "crecimiento personal",
+                "cómo ser una mejor persona"
             ],
             "responses": [
                 "Trabaja en tu autoestima, acepta tus imperfecciones y celebra tus logros.",
                 "Aprende a gestionar tus emociones y a estar más consciente de tu bienestar mental.",
-                "La lectura es una excelente forma de crecimiento personal. Lee libros que te inspiren y te ayuden a aprender."
+                "La lectura es una excelente forma de crecimiento personal. Lee libros que te inspiren y te ayuden a aprender.",
+                "Establece metas personales y trabaja en ellas. El crecimiento personal requiere esfuerzo y dedicación.",
+                "Rodéate de personas que te inspiren y te motiven a ser la mejor versión de ti mismo."
             ]
         },
         {
-            "tag": "career_advice",
+            "tag": "consejos_profesionales",
             "patterns": [
                 "consejos para mi carrera",
                 "cómo avanzar en mi carrera profesional",
                 "tips para el desarrollo profesional",
-                "consejos para el trabajo"
+                "consejos para el trabajo",
+                "cómo tener éxito en mi carrera"
             ],
             "responses": [
                 "Desarrolla habilidades blandas, como la comunicación y el trabajo en equipo. Son tan importantes como las habilidades técnicas.",
                 "No temas pedir retroalimentación. Saber qué mejorar te ayudará a crecer profesionalmente.",
-                "Mantén una actitud positiva y proactiva en el trabajo. Las oportunidades suelen aparecer cuando menos lo esperas."
+                "Mantén una actitud positiva y proactiva en el trabajo. Las oportunidades suelen aparecer cuando menos lo esperas.",
+                "Establece metas profesionales a corto y largo plazo. Tener un plan te ayudará a enfocarte en lo que realmente quieres.",
+                "No tengas miedo de tomar riesgos y probar cosas nuevas. A veces las mejores oportunidades están fuera de tu zona de confort."
             ]
         },
         {
-            "tag": "mental_health",
+            "tag": "salud_mental",
             "patterns": [
                 "consejos para salud mental",
                 "cómo cuidar mi salud mental",
                 "cómo mejorar mi salud mental",
-                "salud emocional"
+                "salud emocional",
+                "cómo lidiar con la ansiedad y la depresión",
+                "cómo mantener la salud mental"
             ],
             "responses": [
                 "Habla con alguien de confianza sobre tus sentimientos, no tienes que cargar con todo solo.",
                 "Establece una rutina de autocuidado, como dormir bien, comer saludable y hacer cosas que disfrutes.",
-                "Es importante saber cuándo pedir ayuda profesional si sientes que la carga emocional es demasiado."
+                "Es importante saber cuándo pedir ayuda profesional si sientes que la carga emocional es demasiado.",
+                "Practica la gratitud y enfócate en las cosas positivas de tu vida. A veces un cambio de perspectiva puede hacer maravillas.",
+                "Encuentra actividades que te relajen y te ayuden a desconectar, como la meditación, el yoga o dar paseos al aire libre."
             ]
         },
         {
-            "tag": "favorite_color",
+            "tag": "color_favorito",
             "patterns": [
                 "¿cuál es tu color favorito?",
                 "color favorito",
@@ -1572,7 +1794,7 @@
             ]
         },
         {
-            "tag": "hobbies_sports",
+            "tag": "deporte",
             "patterns": [
                 "¿te gusta el deporte?",
                 "¿cuál es tu deporte favorito?",
@@ -1585,7 +1807,7 @@
             ]
         },
         {
-            "tag": "travel_preferences",
+            "tag": "preferencias_de_viaje",
             "patterns": [
                 "¿prefieres la playa o la montaña?",
                 "¿te gusta viajar?",
@@ -1598,7 +1820,7 @@
             ]
         },
         {
-            "tag": "favorite_book",
+            "tag": "libro_favorito",
             "patterns": [
                 "¿cuál es tu libro favorito?",
                 "libro preferido",
@@ -1611,7 +1833,7 @@
             ]
         },
         {
-            "tag": "favorite_season",
+            "tag": "estación_favorita",
             "patterns": [
                 "¿cuál es tu estación favorita?",
                 "estación del año",
@@ -1624,7 +1846,7 @@
             ]
         },
         {
-            "tag": "favorite_food",
+            "tag": "comida_favorita",
             "patterns": [
                 "¿cuál es tu comida favorita?",
                 "comida preferida",
@@ -1637,7 +1859,7 @@
             ]
         },
         {
-            "tag": "favorite_animal",
+            "tag": "animal_favorito",
             "patterns": [
                 "¿cuál es tu animal favorito?",
                 "animal preferido",
@@ -1650,7 +1872,7 @@
             ]
         },
         {
-            "tag": "dream_job",
+            "tag": "trabajo_soñado",
             "patterns": [
                 "¿cuál es tu trabajo soñado?",
                 "trabajo ideal",
@@ -1663,11 +1885,12 @@
             ]
         },
         {
-            "tag": "favorite_music_genre",
+            "tag": "género_musical_favorito",
             "patterns": [
                 "¿cuál es tu género musical favorito?",
                 "música preferida",
-                "¿te gusta algún tipo de música?"
+                "¿te gusta algún tipo de música?",
+                "género musical"
             ],
             "responses": [
                 "Me gusta el rock, tiene mucha energía.",
@@ -1676,7 +1899,7 @@
             ]
         },
         {
-            "tag": "favorite_tv_show",
+            "tag": "programa_de_tv_favorito",
             "patterns": [
                 "¿cuál es tu programa de televisión favorito?",
                 "serie preferida",
@@ -1689,7 +1912,7 @@
             ]
         },
         {
-            "tag": "favorite_video_game",
+            "tag": "videojuego_favorito",
             "patterns": [
                 "¿cuál es tu videojuego favorito?",
                 "videojuego preferido",
@@ -1702,7 +1925,7 @@
             ]
         },
         {
-            "tag": "favorite_subject",
+            "tag": "materia_favorita",
             "patterns": [
                 "¿cuál es tu materia favorita?",
                 "asignatura preferida",
@@ -1715,7 +1938,7 @@
             ]
         },
         {
-            "tag": "favorite_quote",
+            "tag": "cita_favorita",
             "patterns": [
                 "¿cuál es tu cita favorita?",
                 "frase favorita",
@@ -1728,7 +1951,7 @@
             ]
         },
         {
-            "tag": "favorite_holiday",
+            "tag": "festividad_favorita",
             "patterns": [
                 "¿cuál es tu festividad favorita?",
                 "vacaciones preferidas",
@@ -1741,7 +1964,7 @@
             ]
         },
         {
-            "tag": "favorite_app",
+            "tag": "aplicación_favorita",
             "patterns": [
                 "¿cuál es tu aplicación favorita?",
                 "app preferida",
@@ -1754,7 +1977,7 @@
             ]
         },
         {
-            "tag": "favorite_internet_activity",
+            "tag": "actividad_favorita_en_internet",
             "patterns": [
                 "¿qué te gusta hacer en internet?",
                 "actividades en línea",
@@ -1767,7 +1990,7 @@
             ]
         },
         {
-            "tag": "favorite_memory",
+            "tag": "recuerdo_favorito",
             "patterns": [
                 "¿cuál es tu recuerdo favorito?",
                 "memoria preferida",
@@ -1780,7 +2003,7 @@
             ]
         },
         {
-            "tag": "favorite_style",
+            "tag": "estilo_favorito",
             "patterns": [
                 "¿cuál es tu estilo favorito?",
                 "estilo preferido",
@@ -1793,7 +2016,7 @@
             ]
         },
         {
-            "tag": "favorite_place",
+            "tag": "lugar_favorito",
             "patterns": [
                 "¿cuál es tu lugar favorito?",
                 "lugar preferido",
@@ -1806,7 +2029,7 @@
             ]
         },
         {
-            "tag": "favorite_memory_game",
+            "tag": "juego_de_memoria_favorito",
             "patterns": [
                 "¿te gustan los juegos de memoria?",
                 "juegos de memoria preferidos",
@@ -1819,7 +2042,7 @@
             ]
         },
         {
-            "tag": "favorite_podcast",
+            "tag": "podcast_favorito",
             "patterns": [
                 "¿cuál es tu podcast favorito?",
                 "podcast preferido",
@@ -1832,7 +2055,7 @@
             ]
         },
         {
-            "tag": "favorite_youtuber",
+            "tag": "youtuber_favorito",
             "patterns": [
                 "¿quién es tu youtuber favorito?",
                 "youtuber preferido",
@@ -1845,7 +2068,7 @@
             ]
         },
         {
-            "tag": "favorite_memory_tech",
+            "tag": "tecnología_favorita",
             "patterns": [
                 "¿cuál es tu tecnología favorita?",
                 "tecnología preferida",
@@ -1858,7 +2081,7 @@
             ]
         },
         {
-            "tag": "favorite_invention",
+            "tag": "invención_favorita",
             "patterns": [
                 "¿cuál es tu invención favorita?",
                 "invento preferido",
@@ -1871,7 +2094,7 @@
             ]
         },
         {
-            "tag": "favorite_science",
+            "tag": "ciencia_favorita",
             "patterns": [
                 "¿cuál es tu rama de la ciencia favorita?",
                 "ciencia preferida",
@@ -1884,7 +2107,7 @@
             ]
         },
         {
-            "tag": "favorite_math",
+            "tag": "matemáticas_favoritas",
             "patterns": [
                 "¿cuál es tu rama de las matemáticas favorita?",
                 "matemáticas preferidas",
@@ -1897,7 +2120,7 @@
             ]
         },
         {
-            "tag": "favorite_history",
+            "tag": "historia_favorita",
             "patterns": [
                 "¿cuál es tu época histórica favorita?",
                 "historia preferida",
@@ -1910,7 +2133,7 @@
             ]
         },
         {
-            "tag": "favorite_language",
+            "tag": "idioma_favorito",
             "patterns": [
                 "¿cuál es tu idioma favorito?",
                 "idioma preferido",
@@ -1923,7 +2146,7 @@
             ]
         },
         {
-            "tag": "favorite_culture",
+            "tag": "cultura_favorita",
             "patterns": [
                 "¿cuál es tu cultura favorita?",
                 "cultura preferida",
@@ -1936,7 +2159,7 @@
             ]
         },
         {
-            "tag": "favorite_tradition",
+            "tag": "tradición_favorita",
             "patterns": [
                 "¿cuál es tu tradición favorita?",
                 "tradición preferida",
@@ -1949,7 +2172,7 @@
             ]
         },
         {
-            "tag": "favorite_holiday_food",
+            "tag": "comida_favorita_en_fiestas",
             "patterns": [
                 "¿cuál es tu comida favorita en las fiestas?",
                 "comida de fiestas preferida",
@@ -1962,7 +2185,7 @@
             ]
         },
         {
-            "tag": "favorite_sport",
+            "tag": "deporte_favorito",
             "patterns": [
                 "¿cuál es tu deporte favorito?",
                 "deporte preferido",
@@ -1975,7 +2198,7 @@
             ]
         },
         {
-            "tag": "favorite_team",
+            "tag": "equipo_favorito",
             "patterns": [
                 "¿cuál es tu equipo favorito?",
                 "equipo preferido",
@@ -1988,7 +2211,7 @@
             ]
         },
         {
-            "tag": "favorite_player",
+            "tag": "jugador_favorito",
             "patterns": [
                 "¿cuál es tu jugador favorito?",
                 "jugador preferido",
@@ -2001,7 +2224,7 @@
             ]
         },
         {
-            "tag": "favorite_stadium",
+            "tag": "estadio_favorito",
             "patterns": [
                 "¿cuál es tu estadio favorito?",
                 "estadio preferido",
@@ -2014,7 +2237,7 @@
             ]
         },
         {
-            "tag": "favorite_championship",
+            "tag": "campeonato_favorito",
             "patterns": [
                 "¿cuál es tu campeonato favorito?",
                 "campeonato preferido",
@@ -2027,7 +2250,7 @@
             ]
         },
         {
-            "tag": "favorite_trophy",
+            "tag": "trofeo_favorito",
             "patterns": [
                 "¿cuál es tu trofeo favorito?",
                 "trofeo preferido",
@@ -2040,7 +2263,7 @@
             ]
         },
         {
-            "tag": "favorite_athlete",
+            "tag": "atleta_favorito",
             "patterns": [
                 "¿cuál es tu atleta favorito?",
                 "atleta preferido",
@@ -2053,7 +2276,7 @@
             ]
         },
         {
-            "tag": "favorite_event",
+            "tag": "evento_favorito",
             "patterns": [
                 "¿cuál es tu evento favorito?",
                 "evento preferido",
@@ -2066,7 +2289,7 @@
             ]
         },
         {
-            "tag": "favorite_olympic_sport",
+            "tag": "deporte_olímpico_favorito",
             "patterns": [
                 "¿cuál es tu deporte olímpico favorito?",
                 "deporte olímpico preferido",
@@ -2079,7 +2302,7 @@
             ]
         },
         {
-            "tag": "favorite_paralympic_sport",
+            "tag": "deporte_paralímpico_favorito",
             "patterns": [
                 "¿cuál es tu deporte paralímpico favorito?",
                 "deporte paralímpico preferido",
@@ -2092,7 +2315,7 @@
             ]
         },
         {
-            "tag": "favorite_disability_sport",
+            "tag": "deporte_para_discapacitados_favorito",
             "patterns": [
                 "¿cuál es tu deporte para discapacitados favorito?",
                 "deporte para discapacitados preferido",
@@ -2105,7 +2328,7 @@
             ]
         },
         {
-            "tag": "favorite_adaptive_sport",
+            "tag": "deporte_adaptado_favorito",
             "patterns": [
                 "¿cuál es tu deporte adaptado favorito?",
                 "deporte adaptado preferido",
@@ -2118,7 +2341,7 @@
             ]
         },
         {
-            "tag": "favorite_winter_sport",
+            "tag": "deporte_de_invierno_favorito",
             "patterns": [
                 "¿cuál es tu deporte de invierno favorito?",
                 "deporte de invierno preferido",
@@ -2131,7 +2354,7 @@
             ]
         },
         {
-            "tag": "favorite_summer_sport",
+            "tag": "deporte_de_verano_favorito",
             "patterns": [
                 "¿cuál es tu deporte de verano favorito?",
                 "deporte de verano preferido",
@@ -2144,7 +2367,7 @@
             ]
         },
         {
-            "tag": "favorite_extreme_sport",
+            "tag": "deporte_extremo_favorito",
             "patterns": [
                 "¿cuál es tu deporte extremo favorito?",
                 "deporte extremo preferido",
@@ -2157,7 +2380,7 @@
             ]
         },
         {
-            "tag": "favorite_water_sport",
+            "tag": "deporte_acuático_favorito",
             "patterns": [
                 "¿cuál es tu deporte acuático favorito?",
                 "deporte acuático preferido",
@@ -2170,7 +2393,7 @@
             ]
         },
         {
-            "tag": "favorite_team_sport",
+            "tag": "deporte_de_equipo_favorito",
             "patterns": [
                 "¿cuál es tu deporte de equipo favorito?",
                 "deporte de equipo preferido",
@@ -2183,7 +2406,7 @@
             ]
         },
         {
-            "tag": "favorite_individual_sport",
+            "tag": "deporte_individual_favorito",
             "patterns": [
                 "¿cuál es tu deporte individual favorito?",
                 "deporte individual preferido",
@@ -2196,7 +2419,7 @@
             ]
         },
         {
-            "tag": "favorite_racquet_sport",
+            "tag": "deporte_de_raqueta_favorito",
             "patterns": [
                 "¿cuál es tu deporte de raqueta favorito?",
                 "deporte de raqueta preferido",
@@ -2209,7 +2432,7 @@
             ]
         },
         {
-            "tag": "favorite_combat_sport",
+            "tag": "deporte_de_combate_favorito",
             "patterns": [
                 "¿cuál es tu deporte de combate favorito?",
                 "deporte de combate preferido",
@@ -2222,7 +2445,7 @@
             ]
         },
         {
-            "tag": "favorite_target_sport",
+            "tag": "deporte_de_tiro_favorito",
             "patterns": [
                 "¿cuál es tu deporte de tiro favorito?",
                 "deporte de tiro preferido",
@@ -2235,7 +2458,7 @@
             ]
         },
         {
-            "tag": "favorite_equestrian_sport",
+            "tag": "deporte_ecuestre_favorito",
             "patterns": [
                 "¿cuál es tu deporte ecuestre favorito?",
                 "deporte ecuestre preferido",
@@ -2248,7 +2471,7 @@
             ]
         },
         {
-            "tag": "favorite_cycling_sport",
+            "tag": "deporte_de_ciclismo_favorito",
             "patterns": [
                 "¿cuál es tu deporte de ciclismo favorito?",
                 "deporte de ciclismo preferido",
@@ -2261,7 +2484,7 @@
             ]
         },
         {
-            "tag": "favorite_gymnastics_sport",
+            "tag": "deporte_de_gimnasia_favorito",
             "patterns": [
                 "¿cuál es tu deporte de gimnasia favorito?",
                 "deporte de gimnasia preferido",
@@ -2274,7 +2497,7 @@
             ]
         },
         {
-            "tag": "favorite_trampolining_sport",
+            "tag": "deporte_de_trampolín_favorito",
             "patterns": [
                 "¿cuál es tu deporte de trampolín favorito?",
                 "deporte de trampolín preferido",
@@ -2287,7 +2510,7 @@
             ]
         },
         {
-            "tag": "favorite_synchronized_sport",
+            "tag": "deporte_sincronizado_favorito",
             "patterns": [
                 "¿cuál es tu deporte sincronizado favorito?",
                 "deporte sincronizado preferido",
@@ -2300,7 +2523,7 @@
             ]
         },
         {
-            "tag": "favorite_aquatics_sport",
+            "tag": "deporte_acuático_favorito",
             "patterns": [
                 "¿cuál es tu deporte acuático favorito?",
                 "deporte acuático preferido",
@@ -2313,7 +2536,7 @@
             ]
         },
         {
-            "tag": "favorite_canoe_sport",
+            "tag": "deporte_de_canoa_favorito",
             "patterns": [
                 "¿cuál es tu deporte de canoa favorito?",
                 "deporte de canoa preferido",
@@ -2326,7 +2549,7 @@
             ]
         },
         {
-            "tag": "favorite_rowing_sport",
+            "tag": "deporte_de_remo_favorito",
             "patterns": [
                 "¿cuál es tu deporte de remo favorito?",
                 "deporte de remo preferido",
@@ -2339,7 +2562,7 @@
             ]
         },
         {
-            "tag": "favorite_sailing_sport",
+            "tag": "deporte_de_vela_favorito",
             "patterns": [
                 "¿cuál es tu deporte de vela favorito?",
                 "deporte de vela preferido",
@@ -2352,7 +2575,7 @@
             ]
         },
         {
-            "tag": "favorite_shooting_sport",
+            "tag": "deporte_de_tiro_favorito",
             "patterns": [
                 "¿cuál es tu deporte de tiro favorito?",
                 "deporte de tiro preferido",
@@ -2365,7 +2588,7 @@
             ]
         },
         {
-            "tag": "favorite_equestrian_discipline",
+            "tag": "disciplina_ecuestre_favorita",
             "patterns": [
                 "¿cuál es tu disciplina ecuestre favorita?",
                 "disciplina ecuestre preferida",
@@ -2378,7 +2601,7 @@
             ]
         },
         {
-            "tag": "favorite_cycling_discipline",
+            "tag": "disciplina_de_ciclismo_favorita",
             "patterns": [
                 "¿cuál es tu disciplina de ciclismo favorita?",
                 "disciplina de ciclismo preferida",
@@ -2391,7 +2614,7 @@
             ]
         },
         {
-            "tag": "favorite_gymnastics_discipline",
+            "tag": "disciplina_de_gimnasia_favorita",
             "patterns": [
                 "¿cuál es tu disciplina de gimnasia favorita?",
                 "disciplina de gimnasia preferida",
@@ -2404,7 +2627,7 @@
             ]
         },
         {
-            "tag": "favorite_trampolining_discipline",
+            "tag": "disciplina_de_trampolín_favorita",
             "patterns": [
                 "¿cuál es tu disciplina de trampolín favorita?",
                 "disciplina de trampolín preferida",
@@ -2417,7 +2640,7 @@
             ]
         },
         {
-            "tag": "favorite_synchronized_discipline",
+            "tag": "disciplina_sincronizada_favorita",
             "patterns": [
                 "¿cuál es tu disciplina sincronizada favorita?",
                 "disciplina sincronizada preferida",
@@ -2430,7 +2653,7 @@
             ]
         },
         {
-            "tag": "favorite_aquatics_discipline",
+            "tag": "disciplina_acuática_favorita",
             "patterns": [
                 "¿cuál es tu disciplina acuática favorita?",
                 "disciplina acuática preferida",
@@ -2443,7 +2666,7 @@
             ]
         },
         {
-            "tag": "favorite_canoe_discipline",
+            "tag": "disciplina_de_canoa_favorita",
             "patterns": [
                 "¿cuál es tu disciplina de canoa favorita?",
                 "disciplina de canoa preferida",
@@ -2456,7 +2679,7 @@
             ]
         },
         {
-            "tag": "favorite_rowing_discipline",
+            "tag": "disciplina_de_remo_favorita",
             "patterns": [
                 "¿cuál es tu disciplina de remo favorita?",
                 "disciplina de remo preferida",
@@ -2469,7 +2692,7 @@
             ]
         },
         {
-            "tag": "favorite_sailing_discipline",
+            "tag": "disciplina_de_vela_favorita",
             "patterns": [
                 "¿cuál es tu disciplina de vela favorita?",
                 "disciplina de vela preferida",
@@ -2482,7 +2705,7 @@
             ]
         },
         {
-            "tag": "favorite_shooting_discipline",
+            "tag": "disciplina_de_tiro_favorita",
             "patterns": [
                 "¿cuál es tu disciplina de tiro favorita?",
                 "disciplina de tiro preferida",
@@ -2495,7 +2718,7 @@
             ]
         },
         {
-            "tag": "favorite_art",
+            "tag": "arte_favorito",
             "patterns": [
                 "¿cuál es tu forma de arte favorita?",
                 "arte preferido",
@@ -2508,7 +2731,7 @@
             ]
         },
         {
-            "tag": "favorite_artist",
+            "tag": "artista_favorito",
             "patterns": [
                 "¿quién es tu artista favorito?",
                 "artista preferido",
@@ -2521,7 +2744,7 @@
             ]
         },
         {
-            "tag": "favorite_museum",
+            "tag": "museo_favorito",
             "patterns": [
                 "¿cuál es tu museo favorito?",
                 "museo preferido",
@@ -2534,9 +2757,12 @@
             ]
         },
         {
-            "tag": "favorite_exhibition",
+            "tag": "exposición_favorita",
             "patterns": [
                 "¿cuál es tu exposición favorita?",
+                "¿cuál es tu exposicion favorita?",
+                "¿cual es tu exposición favorita?",
+                "¿cual es tu exposicion favorita?",
                 "exposición preferida",
                 "¿te gusta alguna exposición?"
             ],
@@ -2547,7 +2773,7 @@
             ]
         },
         {
-            "tag": "favorite_style_of_art",
+            "tag": "estilo_de_arte_favorito",
             "patterns": [
                 "¿cuál es tu estilo de arte favorito?",
                 "estilo de arte preferido",
@@ -2560,7 +2786,7 @@
             ]
         },
         {
-            "tag": "favorite_craft",
+            "tag": "manualidad_favorita",
             "patterns": [
                 "¿cuál es tu manualidad favorita?",
                 "manualidad preferida",
@@ -2573,7 +2799,7 @@
             ]
         },
         {
-            "tag": "favorite_cooking_style",
+            "tag": "estilo_de_cocina_favorito",
             "patterns": [
                 "¿cuál es tu estilo de cocina favorito?",
                 "cocina preferida",
@@ -2586,7 +2812,7 @@
             ]
         },
         {
-            "tag": "favorite_dessert",
+            "tag": "postre_favorito",
             "patterns": [
                 "¿cuál es tu postre favorito?",
                 "postre preferido",
@@ -2599,7 +2825,7 @@
             ]
         },
         {
-            "tag": "favorite_drink",
+            "tag": "bebida_favorita",
             "patterns": [
                 "¿cuál es tu bebida favorita?",
                 "bebida preferida",
@@ -2612,7 +2838,7 @@
             ]
         },
         {
-            "tag": "favorite_snack",
+            "tag": "bocadillo_favorito",
             "patterns": [
                 "¿cuál es tu bocadillo favorito?",
                 "bocadillo preferido",
@@ -2625,7 +2851,7 @@
             ]
         },
         {
-            "tag": "favorite_cuisine",
+            "tag": "cocina_favorita",
             "patterns": [
                 "¿cuál es tu cocina favorita?",
                 "cocina preferida",
@@ -2638,7 +2864,7 @@
             ]
         },
         {
-            "tag": "favorite_fruit",
+            "tag": "fruta_favorita",
             "patterns": [
                 "¿cuál es tu fruta favorita?",
                 "fruta preferida",

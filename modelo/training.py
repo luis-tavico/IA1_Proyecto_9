@@ -1,14 +1,13 @@
 import random
 import json
 import pickle
-import keras_tuner
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer #Para pasar las palabras a su forma raíz
-from keras.callbacks import EarlyStopping
+from keras.callbacks import EarlyStopping, ReduceLROnPlateau
 #Para crear la red neuronal
 from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
+from keras.layers import Dense, Activation, Dropout, BatchNormalization
 from keras.optimizers import schedules,SGD
 import tensorflowjs as tfjs
 import re, os
@@ -91,30 +90,35 @@ train_y = np.array(train_y)
 
 #Creamos la red neuronal
 model = Sequential()
-model.add(Dense(128, input_shape=(len(train_x[0]),), name="inp_layer", activation='relu'))
-model.add(Dropout(0.5, name="hidden_layer1"))
-model.add(Dense(64, name="hidden_layer2", activation='relu'))
-model.add(Dropout(0.5, name="hidden_layer3"))
+model.add(Dense(128, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
+model.add(BatchNormalization())
+model.add(Dropout(0.5, name="input_layer1"))
+model.add(Dense(64, name="input_layer2", activation='relu'))
+model.add(BatchNormalization())
+model.add(Dropout(0.5, name="input_layer3"))
 model.add(Dense(len(train_y[0]), name="output_layer", activation='softmax'))
 
 #Creamos el programa de aprendizaje
 lr_schedule = schedules.ExponentialDecay(
     initial_learning_rate=0.001,
-    decay_steps=30000,
+    decay_steps=10000,
     decay_rate=0.96,
     staircase=True,
 )
-
+#
 #Creamos el optimizador y lo compilamos
 sgd = SGD(learning_rate=lr_schedule , momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['acc'])
 
-# Definimos el callback de early stopping
-early_stopping = EarlyStopping(monitor='val_loss', patience=20, restore_best_weights=True)
+# Definimos el callback de early stopping para evitar el sobreajuste
+early_stopping = EarlyStopping(monitor='val_loss', patience=150, restore_best_weights=True,min_delta=0.001,verbose=1)
+
+#reduce lr on plateau
+reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=50, min_lr=0.0001)
 
 
 #Entrenamos el modelo y lo guardamos
-model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=8, verbose=1,validation_split=0.2, callbacks=[early_stopping])
+model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=8,validation_split=0.2, callbacks=[early_stopping,reduce_lr])
 model.save("chatbot_model.h5")
 model.summary()
 
