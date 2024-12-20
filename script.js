@@ -12,8 +12,12 @@ async function loadResources() {
     intents = await intentsResponse.json();
 }
 
+function quitarTildes(texto) {
+    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function bagOfWords(sentence) {
-    const sentenceWords = sentence.toLowerCase().split(' ');
+    const sentenceWords = quitarTildes(sentence).toLowerCase().split(' ');
     const bag = new Array(words.length).fill(0);
 
     sentenceWords.forEach(word => {
