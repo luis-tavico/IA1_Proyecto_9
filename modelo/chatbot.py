@@ -1,17 +1,21 @@
 import random
 import json
 import pickle
+import os
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
+from pathlib import Path
 lemmatizer = WordNetLemmatizer()
 
+dir = Path(__file__).parent
+
 #Importamos los archivos generados en el código anterior
-intents = json.loads(open('intents_combinate.json').read())
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+intents = json.loads(open(dir/'intents_combinate.json').read())
+words = pickle.load(open(dir/'words.pkl', 'rb'))
+classes = pickle.load(open(dir/'classes.pkl', 'rb'))
+model = load_model(dir/'chatbot_model.h5')
 model.summary()
 #Pasamos las palabras de oración a su forma raíz
 def clean_up_sentence(sentence):
@@ -56,6 +60,9 @@ print("Bot is running")
 print("******************************")
 print("*        chat bot running    *")
 print("******************************")
-while True:
-    message = input("You: ")
-    print('bot dice: ',respuesta(message.lower()))
+#while True:
+#    message = input("You: ")
+#    print('bot dice: ',respuesta(message.lower()))
+
+def consulta(message):
+    return respuesta(message.lower())

@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import Text, messagebox,Label,Frame,Button,Entry,Scrollbar
-
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from modelo.chatbot import consulta
 class ChatbotAPP:
     def __init__(self, root):
         self.root=root
@@ -11,7 +14,7 @@ class ChatbotAPP:
         self.create_header()
         self.create_message_area()
         self.create_input_area()
-        self.load_messages()
+        #self.load_messages()
         
     def create_header(self):
         header=Frame(self.root,bg="#007bff",height=False)
@@ -46,7 +49,7 @@ class ChatbotAPP:
         input_frame.pack(fill=tk.X,pady=5)
         
         self.entry=Entry(input_frame,font=("Arial",12))
-        #self.entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
+        self.entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
         self.entry.focus()
         self.entry.bind("<Return>",self.send_message)
         self.entry.pack(side=tk.LEFT,padx=10,pady=5,fill=tk.X,expand=True)
@@ -56,24 +59,10 @@ class ChatbotAPP:
         self.send_button=Button(input_frame,text="Enviar",bg="#007bff",fg="white",font=("Arial",12),command=lambda:self.send_message(None) or self.send_message(None)) 
         self.send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
         self.send_button.pack(padx=10,pady=10,side=tk.RIGHT)
+    
+    def load_messages(self,message):
+        self.add_message(consulta(message),"Bot")
         
-
-    
-    def load_messages(self):
-        messages = [
-            ("Bot", "welcome, anything else i can assist you with?"),
-            ("You", "do you speak spanish?"),
-            ("Bot", "Yes, I enjoy talking"),
-            ("You", "que bueno"),
-            ("Bot", "¡Qué bueno verte! 😊 ¿Cómo te sientes?"),
-            ("You", "bien y tu"),
-            ("Bot", "Oh, qué gracioso, pensaste que me importaba. Me haces reír."),
-        ]
-
-        for sender, message in messages:
-            self.add_message(message, sender)
-    
-    
     def add_message(self,message,sender):
         self.text_widget.config(state=tk.NORMAL)
         if sender=="Bot":
@@ -82,6 +71,8 @@ class ChatbotAPP:
         else:
             self.text_widget.insert(tk.END,f"{sender}: ","you")
             self.text_widget.insert(tk.END,f"{message}\n\n","you_msg")
+            self.load_messages(message)
+            
         self.text_widget.see(tk.END)
         self.text_widget.config(state=tk.DISABLED)
         
