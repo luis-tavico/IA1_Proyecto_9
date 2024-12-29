@@ -1,0 +1,1014 @@
+{
+    "intents": [
+        {
+            "tag": "python_condicionales",
+            "patterns": [
+                "condicionales en python",
+                "como usar condicionales en python",
+                "estructura condicional en python",
+                "ejemplo de condicional en python"
+            ],
+            "responses": [
+                "if condicion:\n    # Codigo si la condicion es verdadera",
+                "if condicion:\n    # Codigo si la condicion es verdadera\nelse:\n    # Codigo si la condicion es falsa",
+                "if condicion1:\n    # Codigo si condicion1 es verdadera\nelif condicion2:\n    # Codigo si condicion2 es verdadera\nelse:\n    # Codigo si ninguna condicion es verdadera"
+            ]
+        },
+        {
+            "tag": "python_if",
+            "patterns": [
+                "if en python",
+                "como usar if en python",
+                "ejemplo de if en python",
+                "estructura if python"
+            ],
+            "responses": [
+                "if x > 5:\n    print(\"x es mayor que 5\")",
+                "if temperatura < 20:\n    print(\"Hace frio\")"
+            ]
+        },
+        {
+            "tag": "python_if_else",
+            "patterns": [
+                "if else en python",
+                "como usar if else en python",
+                "ejemplo de if else en python",
+                "estructura if else python"
+            ],
+            "responses": [
+                "if edad >= 18:\n    print(\"Eres mayor de edad\")\nelse:\n    print(\"Eres menor de edad\")",
+                "if numero % 2 == 0:\n    print(\"El numero es par\")\nelse:\n    print(\"El numero es impar\")"
+            ]
+        },
+        {
+            "tag": "python_if_elif_else",
+            "patterns": [
+                "if elif else en python",
+                "como usar if elif else en python",
+                "ejemplo de if elif else en python",
+                "estructura if elif else python"
+            ],
+            "responses": [
+                "if x > 0:\n    print(\"Numero positivo\")\nelif x < 0:\n    print(\"Numero negativo\")\nelse:\n    print(\"Es cero\")",
+                "if calificacion >= 90:\n    print(\"Aprobaste con excelencia\")\nelif calificacion >= 60:\n    print(\"Aprobaste\")\nelse:\n    print(\"Reprobaste\")"
+            ]
+        },
+        {
+            "tag": "python_operadores_comparacion",
+            "patterns": [
+                "operadores de comparacion en python",
+                "comparacion python",
+                "operadores logicos python",
+                "ejemplos de operadores de comparacion en python"
+            ],
+            "responses": [
+                "x == y  # Igualdad",
+                "x != y  # Diferencia",
+                "x > y   # Mayor que",
+                "x < y   # Menor que",
+                "x >= y  # Mayor o igual que",
+                "x <= y  # Menor o igual que"
+            ]
+        },
+        {
+            "tag": "python_operadores_logicos",
+            "patterns": [
+                "operadores logicos en python",
+                "uso de and or not en python",
+                "ejemplo operadores logicos python",
+                "como usar operadores logicos python"
+            ],
+            "responses": [
+                "if x > 0 and y > 0:\n    print(\"Ambos numeros son positivos\")",
+                "if x > 0 or y > 0:\n    print(\"Al menos uno de los numeros es positivo\")",
+                "if not x:\n    print(\"x es falso o igual a 0\")"
+            ]
+        },
+        {
+            "tag": "python_bucles",
+            "patterns": [
+                "bucles en python",
+                "ciclos en python",
+                "Como hacer bucles en python",
+                "como hacer un bucle en python"
+            ],
+            "responses": [
+                "Bucle for:\nfor i in range(10):\n    print(i)",
+                "Bucle While:\nwhile condicion:\n    # codigo\n    i += 1"
+            ]
+        },
+        {
+            "tag": "python_while",
+            "patterns": [
+                "while en python",
+                "como hacer bucle while python",
+                "ejemplo while python",
+                "bucle while python",
+                "crear while python"
+            ],
+            "responses": [
+                "contador = 0\nwhile contador < 5:\n    print(contador)\n    contador += 1",
+                "while condicion:\n    # Codigo a ejecutar mientras la condicion sea verdadera"
+            ]
+        },
+        {
+            "tag": "python_for",
+            "patterns": [
+                "for en python",
+                "como hacer bucle for python",
+                "ejemplo for python",
+                "bucle for python",
+                "crear for python"
+            ],
+            "responses": [
+                "for i in range(5):\n    print(i)",
+                "for item in iterable:\n    # Code to be executed for each item",
+                "fruits = [\"apple\", \"banana\", \"cherry\"]\nfor fruit in fruits:\n    print(fruit)"
+            ]
+        },
+        {
+            "tag": "python_funciones",
+            "patterns": [
+                "crear funcion en python",
+                "como hacer una funcion en python",
+                "ejemplo de funcion en python",
+                "estructura de funcion en python"
+            ],
+            "responses": [
+                "def nombre_funcion():\n    # Codigo de la funcion\n    print(\"Hola, esta es una funcion\")\nnombre_funcion()",
+                "def sumar(a, b):\n    return a + b\nresultado = sumar(3, 5)\nprint(resultado)"
+            ]
+        },
+        {
+            "tag": "python_funciones_parametros",
+            "patterns": [
+                "funciones con parametros en python",
+                "como usar parametros en python",
+                "funciones con argumentos python",
+                "ejemplo de funcion con parametros python"
+            ],
+            "responses": [
+                "def saludar(nombre):\n    print(f\"Hola, {nombre}!\")\nsaludar(\"Luis\")",
+                "def multiplicar(a, b):\n    return a * b\nresultado = multiplicar(4, 5)\nprint(resultado)"
+            ]
+        },
+        {
+            "tag": "python_funciones_valor_retorno",
+            "patterns": [
+                "retorno de valor en python",
+                "funcion con return python",
+                "como retornar un valor en python",
+                "ejemplo de funcion con return python"
+            ],
+            "responses": [
+                "def cuadrado(numero):\n    return numero ** 2\nresultado = cuadrado(4)\nprint(resultado)",
+                "def dividir(a, b):\n    if b != 0:\n        return a / b\n    else:\n        return \"Error: Division por cero\"\nresultado = dividir(10, 2)\nprint(resultado)"
+            ]
+        },
+        {
+            "tag": "python_funciones_lambda",
+            "patterns": [
+                "funcion lambda python",
+                "crear funcion lambda python",
+                "ejemplo de funcion lambda python",
+                "como usar lambda en python"
+            ],
+            "responses": [
+                "doble = lambda x: x * 2\nprint(doble(5))",
+                "suma = lambda a, b: a + b\nprint(suma(3, 7))"
+            ]
+        },
+        {
+            "tag": "python_funciones_anidadas",
+            "patterns": [
+                "funciones anidadas en python",
+                "crear funcion dentro de otra funcion python",
+                "ejemplo de funciones anidadas python",
+                "uso de funciones anidadas python"
+            ],
+            "responses": [
+                "def externa():\n    print(\"Esta es la funcion externa\")\n    def interna():\n        print(\"Esta es la funcion interna\")\n    interna()\nexterna()",
+                "def operacion(a, b):\n    def sumar():\n        return a + b\n    def restar():\n        return a - b\n    return sumar(), restar()\nresultado_suma, resultado_resta = operacion(5, 3)\nprint(resultado_suma, resultado_resta)"
+            ]
+        },
+        {
+            "tag": "python_funciones_recursivas",
+            "patterns": [
+                "funciones recursivas python",
+                "como usar recursividad en python",
+                "ejemplo de funcion recursiva python",
+                "crear funcion recursiva python"
+            ],
+            "responses": [
+                "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\nprint(factorial(5))",
+                "def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\nprint(fibonacci(6))"
+            ]
+        },
+        {
+            "tag": "python_listas",
+            "patterns": [
+                "lista python",
+                "ejemplo lista python",
+                "como hacer lista python",
+                "creacion de lista python"
+            ],
+            "responses": [
+                "Las listas en Python son colecciones ordenadas y modificables de elementos. Puedes crear una lista asi:\nmi_lista = [1, 2, 3, 'hola', True]\nTambien puedes usar la funcion `list()`:\notra_lista = list((4, 5, 6))",
+                "Ejemplo de listas:\nfrutas = ['manzana', 'banana', 'pera']\nnumeros = [10, 20, 30, 40]\nmixta = [1, 'dos', True, [4, 5]]\nlista_vacia = []"
+            ]
+        },
+        {
+            "tag": "python_listas_crear",
+            "patterns": [
+                "crear lista python",
+                "crear nueva lista python",
+                "hacer lista python",
+                "nuevo lista python"
+            ],
+            "responses": [
+                "Para crear una lista en Python, puedes usar corchetes `[]`:\nmi_lista = [1, 2, 3, 'hola']\nO usar la funcion `list()`:\notra_lista = list([4, 5, 6])",
+                "Ejemplo de lista vacia:\nlista_vacia = []\nEjemplo usando `list()`:\nmi_lista = list([1, 2, 3, 4])"
+            ]
+        },
+        {
+            "tag": "python_listas_agregar",
+            "patterns": [
+                "agregar elemento lista python",
+                "insertar elemento lista python",
+                "añadir elemento lista python",
+                "integrar elemento lista python"
+            ],
+            "responses": [
+                "Puedes agregar un elemento al final de la lista con `append()`:\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)  # Salida: [1, 2, 3, 4]",
+                "Si quieres insertar un elemento en una posicion especifica, usa `insert()`:\nmi_lista = [1, 3, 4]\nmi_lista.insert(1, 2)\nprint(mi_lista)  # Salida: [1, 2, 3, 4]",
+                "Para agregar varios elementos a una lista, puedes usar `extend()`:\nmi_lista = [1, 2, 3]\nmi_lista.extend([4, 5])\nprint(mi_lista)  # Salida: [1, 2, 3, 4, 5]"
+            ]
+        },
+        {
+            "tag": "python_listas_acceder",
+            "patterns": [
+                "acceder elemento lista python",
+                "obtener valor lista python",
+                "como acceder a una lista python",
+                "acceder a lista python"
+            ],
+            "responses": [
+                "Puedes acceder a los elementos de una lista usando indices:\nmi_lista = [1, 2, 3, 'hola']\nprint(mi_lista[0])  # Salida: 1",
+                "Los indices negativos permiten acceder a los elementos desde el final de la lista:\nprint(mi_lista[-1])  # Salida: 'hola'",
+                "Para acceder a un rango de elementos, puedes usar un 'slice' (rebanado):\nprint(mi_lista[1:3])  # Salida: [2, 3]"
+            ]
+        },
+        {
+            "tag": "python_listas_modificar",
+            "patterns": [
+                "modificar lista python",
+                "cambiar valor lista python",
+                "editar lista python",
+                "como modificar una lista python"
+            ],
+            "responses": [
+                "Puedes modificar un valor en una lista asignando un nuevo valor al indice correspondiente:\nmi_lista = [1, 2, 3]\nmi_lista[1] = 5\nprint(mi_lista)  # Salida: [1, 5, 3]",
+                "Si intentas acceder a un indice que no existe, Python lanzara un `IndexError`."
+            ]
+        },
+        {
+            "tag": "python_listas_eliminar",
+            "patterns": [
+                "eliminar elemento lista python",
+                "borrar elemento lista python",
+                "eliminar valor lista python"
+            ],
+            "responses": [
+                "Para eliminar un elemento de la lista por su valor, usa `remove()`:\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)  # Salida: [1, 2, 4]",
+                "Si deseas eliminar un elemento por su indice, puedes usar `pop()`:\nmi_lista = [1, 2, 3]\nmi_lista.pop(1)\nprint(mi_lista)  # Salida: [1, 3]",
+                "Para eliminar un elemento al final de la lista sin especificar el indice, usa `pop()` sin argumentos:\nmi_lista = [1, 2, 3]\nmi_lista.pop()\nprint(mi_lista)  # Salida: [1, 2]",
+                "Si quieres eliminar todos los elementos, puedes usar `clear()`:\nmi_lista = [1, 2, 3]\nmi_lista.clear()\nprint(mi_lista)  # Salida: []"
+            ]
+        },
+        {
+            "tag": "python_listas_iterar",
+            "patterns": [
+                "iterar sobre lista python",
+                "recorrer lista python",
+                "como iterar una lista",
+                "recorrer los elementos de una lista python"
+            ],
+            "responses": [
+                "Puedes iterar sobre los elementos de una lista usando un bucle `for`:\nmi_lista = [1, 2, 3]\nfor elemento in mi_lista:\n    print(elemento)\n# Salida: 1, 2, 3",
+                "Si necesitas tanto el indice como el valor, puedes usar `enumerate()`:\nmi_lista = ['a', 'b', 'c']\nfor indice, valor in enumerate(mi_lista):\n    print(indice, valor)\n# Salida: 0 a, 1 b, 2 c"
+            ]
+        },
+        {
+            "tag": "python_listas_comparacion",
+            "patterns": [
+                "comparar listas python",
+                "como comparar listas python",
+                "comparacion entre listas python"
+            ],
+            "responses": [
+                "Puedes comparar dos listas utilizando el operador `==`. Dos listas son iguales si contienen los mismos elementos en el mismo orden:\nlista1 = [1, 2, 3]\nlista2 = [1, 2, 3]\nprint(lista1 == lista2)  # Salida: True",
+                "Si las listas tienen diferente longitud o contenido, se consideran diferentes:\nlista1 = [1, 2, 3]\nlista2 = [1, 2, 4]\nprint(lista1 == lista2)  # Salida: False"
+            ]
+        },
+        {
+            "tag": "python_listas_ordenar",
+            "patterns": [
+                "ordenar lista python",
+                "como ordenar lista python",
+                "ordenar elementos lista python"
+            ],
+            "responses": [
+                "Puedes ordenar una lista utilizando el metodo `sort()`:\nmi_lista = [3, 1, 2]\nmi_lista.sort()\nprint(mi_lista)  # Salida: [1, 2, 3]",
+                "Si no deseas modificar la lista original, puedes usar `sorted()` para obtener una lista ordenada sin alterar la original:\nmi_lista = [3, 1, 2]\nordenada = sorted(mi_lista)\nprint(ordenada)  # Salida: [1, 2, 3]",
+                "Puedes ordenar una lista de forma descendente pasando el parametro `reverse=True`:\nmi_lista = [3, 1, 2]\nmi_lista.sort(reverse=True)\nprint(mi_lista)  # Salida: [3, 2, 1]"
+            ]
+        },
+        {
+            "tag": "python_tuplas",
+            "patterns": [
+                "tupla python",
+                "ejemplo tupla python",
+                "como hacer tupla python",
+                "creacion de tupla python"
+            ],
+            "responses": [
+                "Una tupla en Python es similar a una lista, pero inmutable. Puedes crear una tupla de dos formas:\nmi_tupla = (1, 2, 3, 'hola', True)\nUsando la funcion tuple():\notra_tupla = tuple([4, 5, 6])",
+                "Ejemplo de tupla:\nnumeros = (10, 20, 30, 40)\nfrutas = ('manzana', 'banana', 'pera')\nmixta = (1, 'dos', True, (4, 5))\ntupla_vacia = ()"
+            ]
+        },
+        {
+            "tag": "python_tuplas_crear",
+            "patterns": [
+                "crear tupla python",
+                "crear nueva tupla python",
+                "hacer tupla python",
+                "nueva tupla python"
+            ],
+            "responses": [
+                "Para crear una tupla en Python, puedes usar parentesis:\nmi_tupla = (1, 2, 3, 'hola')\nSi solo tienes un solo valor, debes usar una coma al final:\nuna_tupla = (5,)",
+                "Tambien puedes crear una tupla a partir de una lista utilizando la funcion tuple():\nmi_lista = [1, 2, 3]\nmi_tupla = tuple(mi_lista)\nprint(mi_tupla)  # Salida: (1, 2, 3)"
+            ]
+        },
+        {
+            "tag": "python_tuplas_acceder",
+            "patterns": [
+                "acceder elementos tupla python",
+                "obtener valor tupla python",
+                "como acceder a un elemento de una tupla",
+                "acceder a tupla python"
+            ],
+            "responses": [
+                "Puedes acceder a los elementos de una tupla utilizando indices, comenzando desde 0:\nmi_tupla = (1, 2, 3)\nprint(mi_tupla[0])  # Salida: 1\nPara acceder a los elementos desde el final, usa indices negativos:\nprint(mi_tupla[-1])  # Salida: 3",
+                "Si tienes una tupla anidada, puedes acceder a los elementos internos:\nmi_tupla = (1, (2, 3), 4)\nprint(mi_tupla[1][0])  # Salida: 2"
+            ]
+        },
+        {
+            "tag": "python_tuplas_modificar",
+            "patterns": [
+                "modificar tupla python",
+                "cambiar valor tupla python",
+                "editar tupla python",
+                "como modificar una tupla python"
+            ],
+            "responses": [
+                "Las tuplas son inmutables, por lo que no puedes modificar sus elementos despues de la creacion. Sin embargo, puedes convertir una tupla en una lista, modificarla y luego convertirla de nuevo a tupla:\nmi_tupla = (1, 2, 3)\nmi_lista = list(mi_tupla)\nmi_lista[0] = 10\nmi_tupla = tuple(mi_lista)\nprint(mi_tupla)  # Salida: (10, 2, 3)",
+                "Otra forma de 'modificar' una tupla es concatenar nuevas tuplas:\nmi_tupla = (1, 2, 3)\nmi_tupla = mi_tupla + (4, 5)\nprint(mi_tupla)  # Salida: (1, 2, 3, 4, 5)"
+            ]
+        },
+        {
+            "tag": "python_tuplas_eliminar",
+            "patterns": [
+                "eliminar elemento tupla python",
+                "borrar tupla python",
+                "eliminar valores tupla python"
+            ],
+            "responses": [
+                "Las tuplas no permiten la eliminacion directa de elementos. Para 'eliminar' un elemento, puedes convertir la tupla en lista, eliminar el valor y luego convertirla nuevamente en tupla:\nmi_tupla = (1, 2, 3)\nmi_lista = list(mi_tupla)\nmi_lista.remove(2)\nmi_tupla = tuple(mi_lista)\nprint(mi_tupla)  # Salida: (1, 3)",
+                "Para eliminar toda la tupla, puedes usar la palabra clave `del`:\ndel mi_tupla\nprint(mi_tupla)  # Error: mi_tupla no esta definida"
+            ]
+        },
+        {
+            "tag": "python_tuplas_iterar",
+            "patterns": [
+                "iterar sobre tupla python",
+                "recorrer tupla python",
+                "como iterar una tupla",
+                "recorrer los elementos de una tupla python"
+            ],
+            "responses": [
+                "Puedes usar un bucle `for` para iterar sobre los elementos de una tupla:\nmi_tupla = (1, 2, 3, 4)\nfor valor in mi_tupla:\n    print(valor)\n# Salida: 1 2 3 4",
+                "Tambien puedes usar comprension de listas para crear nuevas listas a partir de una tupla:\nmi_tupla = (1, 2, 3, 4)\ncuadrados = [x**2 for x in mi_tupla]\nprint(cuadrados)  # Salida: [1, 4, 9, 16]"
+            ]
+        },
+        {
+            "tag": "python_tuplas_comparacion",
+            "patterns": [
+                "comparar tuplas python",
+                "como comparar tuplas python",
+                "comparacion entre tuplas python"
+            ],
+            "responses": [
+                "Puedes comparar tuplas en Python de manera directa usando los operadores de comparacion:\ntupla1 = (1, 2, 3)\ntupla2 = (1, 2, 3)\nprint(tupla1 == tupla2)  # Salida: True",
+                "Si las tuplas son de diferentes longitudes o tienen elementos diferentes, seran consideradas diferentes:\ntupla1 = (1, 2, 3)\ntupla2 = (1, 2, 4)\nprint(tupla1 == tupla2)  # Salida: False"
+            ]
+        },
+        {
+            "tag": "python_tuplas_incluir",
+            "patterns": [
+                "incluir elementos en tupla python",
+                "añadir elementos tupla python"
+            ],
+            "responses": [
+                "Las tuplas son inmutables, por lo que no puedes añadir elementos directamente. Pero puedes concatenar tuplas:\nmi_tupla = (1, 2, 3)\nmi_tupla = mi_tupla + (4, 5)\nprint(mi_tupla)  # Salida: (1, 2, 3, 4, 5)",
+                "Tambien puedes crear una nueva tupla con elementos adicionales:\nmi_tupla = (1, 2)\nnueva_tupla = mi_tupla + (3,)\nprint(nueva_tupla)  # Salida: (1, 2, 3)"
+            ]
+        },
+        {
+            "tag": "python_diccionarios",
+            "patterns": [
+                "diccionario python",
+                "ejemplo diccionario python",
+                "como hacer diccionario python",
+                "creacion de diccionario python"
+            ],
+            "responses": [
+                "Un diccionario en Python es una estructura de datos que almacena pares clave-valor. Puedes crear un diccionario de esta forma:\nmi_diccionario = {'clave1': 'valor1', 'clave2': 'valor2'}\nUsando la funcion dict():\notro_diccionario = dict(clave1='valor1', clave2='valor2')",
+                "Ejemplo de diccionario:\ndatos = {'nombre': 'Juan', 'edad': 25, 'ciudad': 'Guatemala'}\notros_datos = {'empresa': 'ABC', 'cargo': 'Desarrollador'}"
+            ]
+        },
+        {
+            "tag": "python_diccionarios_crear",
+            "patterns": [
+                "crear diccionario python",
+                "crear nuevo diccionario python",
+                "hacer diccionario python",
+                "nuevo diccionario python"
+            ],
+            "responses": [
+                "Para crear un diccionario en Python, puedes usar llaves `{}`:\nmi_diccionario = {'clave1': 'valor1', 'clave2': 'valor2'}\nTambien puedes usar la funcion `dict()`:\nmi_diccionario = dict(clave1='valor1', clave2='valor2')",
+                "Ejemplo de diccionario vacio:\ndiccionario_vacio = {}\nOtro ejemplo usando `dict()`:\nmi_diccionario = dict(a=1, b=2, c=3)"
+            ]
+        },
+        {
+            "tag": "python_diccionarios_acceder",
+            "patterns": [
+                "acceder elementos diccionario python",
+                "obtener valor diccionario python",
+                "como acceder a un diccionario python",
+                "acceder a diccionario python"
+            ],
+            "responses": [
+                "Puedes acceder a los valores de un diccionario utilizando las claves:\nmi_diccionario = {'nombre': 'Juan', 'edad': 25}\nprint(mi_diccionario['nombre'])  # Salida: Juan",
+                "Si no estas seguro si la clave existe, puedes usar el metodo `get()` que devuelve `None` si no existe:\nprint(mi_diccionario.get('direccion'))  # Salida: None",
+                "Si deseas un valor predeterminado en caso de que no exista la clave, puedes pasar un segundo argumento a `get()`:\nprint(mi_diccionario.get('direccion', 'Desconocida'))  # Salida: Desconocida"
+            ]
+        },
+        {
+            "tag": "python_diccionarios_modificar",
+            "patterns": [
+                "modificar diccionario python",
+                "cambiar valor diccionario python",
+                "editar diccionario python",
+                "como modificar un diccionario python"
+            ],
+            "responses": [
+                "Puedes modificar un valor en un diccionario asignando un nuevo valor a la clave:\nmi_diccionario = {'nombre': 'Juan', 'edad': 25}\nmi_diccionario['edad'] = 26\nprint(mi_diccionario)  # Salida: {'nombre': 'Juan', 'edad': 26}",
+                "Si la clave no existe, Python la añadira automaticamente al diccionario:\nmi_diccionario['ciudad'] = 'Guatemala'\nprint(mi_diccionario)  # Salida: {'nombre': 'Juan', 'edad': 26, 'ciudad': 'Guatemala'}"
+            ]
+        },
+        {
+            "tag": "python_diccionarios_eliminar",
+            "patterns": [
+                "eliminar elemento diccionario python",
+                "borrar diccionario python",
+                "eliminar valor diccionario python"
+            ],
+            "responses": [
+                "Puedes eliminar una clave y su valor usando el `del`:\nmi_diccionario = {'nombre': 'Juan', 'edad': 25}\ndel mi_diccionario['edad']\nprint(mi_diccionario)  # Salida: {'nombre': 'Juan'}",
+                "Tambien puedes usar el metodo `pop()` para eliminar una clave y obtener su valor:\nvalor = mi_diccionario.pop('nombre')\nprint(valor)  # Salida: Juan\nprint(mi_diccionario)  # Salida: {}",
+                "Si intentas eliminar una clave que no existe, se lanzara una excepcion KeyError. Para evitarlo, usa `pop()` con un valor predeterminado:\nmi_diccionario.pop('direccion', 'No disponible')"
+            ]
+        },
+        {
+            "tag": "python_diccionarios_iterar",
+            "patterns": [
+                "iterar sobre diccionario python",
+                "recorrer diccionario python",
+                "como iterar un diccionario",
+                "recorrer los elementos de un diccionario python"
+            ],
+            "responses": [
+                "Puedes iterar sobre las claves de un diccionario usando un bucle `for`:\nmi_diccionario = {'nombre': 'Juan', 'edad': 25}\nfor clave in mi_diccionario:\n    print(clave)\n# Salida: nombre, edad",
+                "Para iterar sobre las claves y los valores, usa el metodo `items()`:\nfor clave, valor in mi_diccionario.items():\n    print(clave, valor)\n# Salida: nombre Juan, edad 25",
+                "Si solo necesitas los valores, puedes usar el metodo `values()`:\nfor valor in mi_diccionario.values():\n    print(valor)\n# Salida: Juan, 25"
+            ]
+        },
+        {
+            "tag": "python_diccionarios_comparacion",
+            "patterns": [
+                "comparar diccionarios python",
+                "como comparar diccionarios python",
+                "comparacion entre diccionarios python"
+            ],
+            "responses": [
+                "Puedes comparar diccionarios utilizando los operadores de comparacion. Dos diccionarios son iguales si tienen las mismas claves y los mismos valores:\ndiccionario1 = {'a': 1, 'b': 2}\ndiccionario2 = {'a': 1, 'b': 2}\nprint(diccionario1 == diccionario2)  # Salida: True",
+                "Si las claves o los valores son diferentes, los diccionarios no son iguales:\ndiccionario1 = {'a': 1, 'b': 2}\ndiccionario2 = {'a': 1, 'b': 3}\nprint(diccionario1 == diccionario2)  # Salida: False"
+            ]
+        },
+        {
+            "tag": "python_diccionarios_unir",
+            "patterns": [
+                "unir diccionarios python",
+                "fusionar diccionarios python",
+                "combinar diccionarios python"
+            ],
+            "responses": [
+                "Puedes unir dos diccionarios utilizando el operador `|` en Python 3.9 o superior:\ndiccionario1 = {'a': 1, 'b': 2}\ndiccionario2 = {'c': 3, 'd': 4}\nunido = diccionario1 | diccionario2\nprint(unido)  # Salida: {'a': 1, 'b': 2, 'c': 3, 'd': 4}",
+                "Otra forma de fusionar diccionarios en versiones anteriores es usando el metodo `update()`:\ndiccionario1 = {'a': 1, 'b': 2}\ndiccionario2 = {'c': 3, 'd': 4}\ndiccionario1.update(diccionario2)\nprint(diccionario1)  # Salida: {'a': 1, 'b': 2, 'c': 3, 'd': 4}"
+            ]
+        },
+        {
+            "tag": "python_archivos_abrir",
+            "patterns": [
+                "como abrir archivos en python",
+                "abrir archivo python",
+                "ejemplo abrir archivo python",
+                "leer archivo python"
+            ],
+            "responses": [
+                "with open(\"archivo.txt\", \"r\") as archivo:\n    contenido = archivo.read()\n    print(contenido)",
+                "archivo = open(\"archivo.txt\", \"r\")\nprint(archivo.read())\narchivo.close()"
+            ]
+        },
+        {
+            "tag": "python_archivos_escribir",
+            "patterns": [
+                "escribir en archivo python",
+                "como escribir archivo python",
+                "ejemplo escribir archivo python",
+                "crear y escribir archivo python"
+            ],
+            "responses": [
+                "with open(\"archivo.txt\", \"w\") as archivo:\n    archivo.write(\"Hola, este es un archivo de prueba.\")",
+                "archivo = open(\"archivo.txt\", \"w\")\narchivo.write(\"Primera linea de texto.\\n\")\narchivo.write(\"Segunda linea de texto.\")\narchivo.close()"
+            ]
+        },
+        {
+            "tag": "python_archivos_agregar",
+            "patterns": [
+                "agregar contenido archivo python",
+                "como añadir contenido archivo python",
+                "append archivo python",
+                "ejemplo agregar texto archivo python"
+            ],
+            "responses": [
+                "with open(\"archivo.txt\", \"a\") as archivo:\n    archivo.write(\"\\nNueva linea añadida.\")",
+                "archivo = open(\"archivo.txt\", \"a\")\narchivo.write(\"Texto adicional.\")\narchivo.close()"
+            ]
+        },
+        {
+            "tag": "python_archivos_leer_lineas",
+            "patterns": [
+                "leer lineas archivo python",
+                "como leer lineas archivo python",
+                "ejemplo leer lineas archivo python",
+                "leer archivo linea por linea python"
+            ],
+            "responses": [
+                "with open(\"archivo.txt\", \"r\") as archivo:\n    for linea in archivo:\n        print(linea.strip())",
+                "archivo = open(\"archivo.txt\", \"r\")\nlineas = archivo.readlines()\nprint(lineas)\narchivo.close()"
+            ]
+        },
+        {
+            "tag": "python_archivos_cerrar",
+            "patterns": [
+                "cerrar archivo python",
+                "como cerrar archivo python",
+                "ejemplo cerrar archivo python",
+                "por que cerrar archivo python"
+            ],
+            "responses": [
+                "archivo = open(\"archivo.txt\", \"r\")\nprint(archivo.read())\narchivo.close()",
+                "Siempre cierra un archivo despues de usarlo para liberar recursos del sistema:\narchivo.close()"
+            ]
+        },
+        {
+            "tag": "python_archivos_eliminar",
+            "patterns": [
+                "eliminar archivo python",
+                "como eliminar archivo python",
+                "borrar archivo python",
+                "ejemplo eliminar archivo python"
+            ],
+            "responses": [
+                "import os\nif os.path.exists(\"archivo.txt\"):\n    os.remove(\"archivo.txt\")\nelse:\n    print(\"El archivo no existe\")",
+                "import os\nos.remove(\"archivo_a_eliminar.txt\")"
+            ]
+        },
+        {
+            "tag": "python_archivos_modos",
+            "patterns": [
+                "modos de archivo python",
+                "abrir archivo modos python",
+                "diferentes modos archivo python",
+                "modos abrir archivo python"
+            ],
+            "responses": [
+                "\"r\" - Solo lectura\n\"w\" - Escritura (sobrescribe si existe)\n\"a\" - Agregar contenido al final\n\"b\" - Modo binario\n\"x\" - Crear archivo (error si existe)",
+                "Ejemplo combinando modos:\nwith open(\"archivo.txt\", \"rb\") as archivo:\n    contenido = archivo.read()\n    print(contenido)"
+            ]
+        },
+        {
+            "tag": "python_errores_try_except",
+            "patterns": [
+                "manejo de errores python",
+                "como usar try except en python",
+                "ejemplo try except python",
+                "controlar errores python"
+            ],
+            "responses": [
+                "try:\n    resultado = 10 / 0\nexcept ZeroDivisionError:\n    print(\"No se puede dividir entre cero.\")",
+                "try:\n    archivo = open(\"archivo.txt\", \"r\")\nexcept FileNotFoundError:\n    print(\"El archivo no existe.\")"
+            ]
+        },
+        {
+            "tag": "python_errores_finally",
+            "patterns": [
+                "como usar finally python",
+                "try except finally python",
+                "ejemplo finally python",
+                "finalmente python"
+            ],
+            "responses": [
+                "try:\n    archivo = open(\"archivo.txt\", \"r\")\nexcept FileNotFoundError:\n    print(\"Archivo no encontrado.\")\nfinally:\n    print(\"Ejecucion terminada, con o sin errores.\")",
+                "try:\n    resultado = int(\"texto\")\nexcept ValueError:\n    print(\"No se puede convertir texto a entero.\")\nfinally:\n    print(\"Bloque finally ejecutado.\")"
+            ]
+        },
+        {
+            "tag": "python_errores_raise",
+            "patterns": [
+                "como usar raise python",
+                "lanzar errores python",
+                "crear excepciones python",
+                "ejemplo raise python"
+            ],
+            "responses": [
+                "def dividir(a, b):\n    if b == 0:\n        raise ValueError(\"El divisor no puede ser cero.\")\n    return a / b\n\ntry:\n    dividir(10, 0)\nexcept ValueError as e:\n    print(e)",
+                "try:\n    raise Exception(\"Error personalizado.\")\nexcept Exception as e:\n    print(f\"Se capturo el error: {e}\")"
+            ]
+        },
+        {
+            "tag": "python_errores_varios",
+            "patterns": [
+                "tipos de errores python",
+                "ejemplos de errores python",
+                "errores comunes python",
+                "que errores maneja python"
+            ],
+            "responses": [
+                "Algunos errores comunes en Python:\n- ZeroDivisionError: Division entre cero.\n- FileNotFoundError: Archivo no encontrado.\n- ValueError: Valor invalido.\n- KeyError: Clave no encontrada en un diccionario.",
+                "try:\n    diccionario = {\"a\": 1}\n    print(diccionario[\"b\"])\nexcept KeyError:\n    print(\"La clave no existe en el diccionario.\")"
+            ]
+        },
+        {
+            "tag": "python_errores_personalizados",
+            "patterns": [
+                "crear errores personalizados python",
+                "excepciones personalizadas python",
+                "definir errores python",
+                "ejemplo error personalizado python"
+            ],
+            "responses": [
+                "class MiError(Exception):\n    pass\n\ntry:\n    raise MiError(\"Este es un error personalizado.\")\nexcept MiError as e:\n    print(e)",
+                "class ErrorDivisionCero(Exception):\n    def __init__(self, mensaje):\n        super().__init__(mensaje)\n\ntry:\n    raise ErrorDivisionCero(\"No puedes dividir entre cero.\")\nexcept ErrorDivisionCero as e:\n    print(f\"Error: {e}\")"
+            ]
+        },
+        {
+            "tag": "python_variables",
+            "patterns": [
+                "que son las variables en python",
+                "como declarar variables en python",
+                "ejemplo de variables python",
+                "usar variables python"
+            ],
+            "responses": [
+                "En Python, las variables se crean asignando un valor:\nmi_variable = 10\nnombre = \"Juan\"\npi = 3.1416",
+                "Python no requiere declarar el tipo de variable:\nx = 5  # Entero\ny = \"Hola\"  # Cadena\nz = True  # Booleano"
+            ]
+        },
+        {
+            "tag": "python_tipos_datos",
+            "patterns": [
+                "tipos de datos python",
+                "que tipos de datos tiene python",
+                "ejemplos tipos de datos python",
+                "cuales son los tipos de datos python"
+            ],
+            "responses": [
+                "Principales tipos de datos en Python:\n- int: Numeros enteros (ej: 10)\n- float: Numeros decimales (ej: 3.14)\n- str: Cadenas de texto (ej: \"Hola\")\n- bool: Valores booleanos (True/False)",
+                "Otros tipos de datos:\n- list: Listas (ej: [1, 2, 3])\n- tuple: Tuplas (ej: (1, 2, 3))\n- dict: Diccionarios (ej: {\"clave\": \"valor\"})\n- set: Conjuntos (ej: {1, 2, 3})"
+            ]
+        },
+        {
+            "tag": "python_asignacion_multiple",
+            "patterns": [
+                "asignacion multiple python",
+                "asignar varias variables python",
+                "ejemplo asignacion multiple python",
+                "usar asignacion multiple python"
+            ],
+            "responses": [
+                "Puedes asignar varios valores en una sola linea:\nx, y, z = 1, 2, 3\nprint(x, y, z)  # Salida: 1 2 3",
+                "Puedes asignar el mismo valor a varias variables:\na = b = c = 5\nprint(a, b, c)  # Salida: 5 5 5"
+            ]
+        },
+        {
+            "tag": "python_tipos_datos_conversion",
+            "patterns": [
+                "convertir tipos de datos python",
+                "cambiar tipo de dato python",
+                "ejemplo conversion tipos de datos python",
+                "usar conversion tipos python"
+            ],
+            "responses": [
+                "Usa funciones de conversion:\nx = 10\nstr_x = str(x)  # Convierte a cadena\nfloat_x = float(x)  # Convierte a decimal\nprint(str_x, float_x)",
+                "Ejemplo:\ntexto = \"123\"\nnumero = int(texto)  # Convierte cadena a entero\nprint(numero + 1)  # Salida: 124"
+            ]
+        },
+        {
+            "tag": "python_constantes",
+            "patterns": [
+                "como definir constantes python",
+                "usar constantes python",
+                "constantes en python",
+                "ejemplo constantes python"
+            ],
+            "responses": [
+                "Python no tiene constantes nativas, pero por convencion usamos mayusculas:\nPI = 3.1416\nNOMBRE = \"Juan\"",
+                "Para usar constantes puedes instalar el modulo `const`:\nfrom const import CONST\nCONST.PI = 3.1416\nprint(CONST.PI)"
+            ]
+        },
+        {
+            "tag": "python_tipos_datos_dinamicos",
+            "patterns": [
+                "tipos de datos dinamicos python",
+                "como son las variables en python",
+                "ejemplo variables dinamicas python",
+                "uso de variables dinamicas python"
+            ],
+            "responses": [
+                "Python utiliza tipado dinamico:\nx = 10  # Entero\nx = \"Hola\"  # Ahora es cadena\nx = 3.14  # Ahora es flotante",
+                "No necesitas declarar el tipo de variable:\nx = True\ny = [1, 2, 3]\nz = {\"clave\": \"valor\"}\nprint(type(x), type(y), type(z))"
+            ]
+        },
+        {
+            "tag": "python_variables_globales",
+            "patterns": [
+                "variables globales python",
+                "como usar variables globales python",
+                "ejemplo variable global python",
+                "usar global python"
+            ],
+            "responses": [
+                "Para usar una variable global dentro de una funcion:\nmi_variable = 10\n\ndef mi_funcion():\n    global mi_variable\n    mi_variable += 5\n\nmi_funcion()\nprint(mi_variable)  # Salida: 15",
+                "Ejemplo con global:\ncontador = 0\n\ndef incrementar():\n    global contador\n    contador += 1\n\nincrementar()\nincrementar()\nprint(contador)  # Salida: 2"
+            ]
+        },
+        {
+            "tag": "python_variables_locales",
+            "patterns": [
+                "variables locales python",
+                "como usar variables locales python",
+                "ejemplo variable local python",
+                "usar local python"
+            ],
+            "responses": [
+                "Las variables locales solo existen dentro de su funcion:\ndef mi_funcion():\n    x = 10\n    print(x)\n\nmi_funcion()  # Salida: 10\nprint(x)  # Error: x no esta definido",
+                "Ejemplo:\ndef suma():\n    resultado = 5 + 3\n    print(resultado)\nsuma()  # Salida: 8\nprint(resultado)  # Error: resultado no esta definido fuera de la funcion"
+            ]
+        },
+        {
+            "tag": "python_clases",
+            "patterns": [
+                "clase python",
+                "ejemplo clase python",
+                "como crear clase python",
+                "definir clase python"
+            ],
+            "responses": [
+                "En Python, una clase es una plantilla para crear objetos. Puedes definir una clase de la siguiente forma:\nclass Persona:\n    def __init__(self, nombre, edad):\n        self.nombre = nombre\n        self.edad = edad\n    def saludar(self):\n        print(f'Hola, soy {self.nombre} y tengo {self.edad} años.')",
+                "Ejemplo de clase simple:\nclass Animal:\n    def __init__(self, nombre):\n        self.nombre = nombre\n    def hablar(self):\n        print(f'{self.nombre} hace un sonido.')"
+            ]
+        },
+        {
+            "tag": "python_objetos",
+            "patterns": [
+                "crear objeto python",
+                "instanciar clase python",
+                "objeto en python",
+                "como crear un objeto de una clase"
+            ],
+            "responses": [
+                "Para crear un objeto a partir de una clase, debes instanciar la clase. Ejemplo:\npersona1 = Persona('Juan', 25)\npersona1.saludar()  # Salida: 'Hola, soy Juan y tengo 25 años.'",
+                "Ejemplo de creacion de un objeto:\nanimal1 = Animal('Perro')\nanimal1.hablar()  # Salida: 'Perro hace un sonido.'"
+            ]
+        },
+        {
+            "tag": "python_metodos",
+            "patterns": [
+                "metodo python",
+                "crear metodo en clase python",
+                "funcion en clase python"
+            ],
+            "responses": [
+                "Un metodo es una funcion que pertenece a una clase. Puedes definir un metodo de la siguiente forma:\nclass Coche:\n    def __init__(self, marca, modelo):\n        self.marca = marca\n        self.modelo = modelo\n    def conducir(self):\n        print(f'El coche {self.marca} {self.modelo} esta conduciendo.')",
+                "Ejemplo de uso de un metodo:\\ncoche1 = Coche('Toyota', 'Corolla')\ncoche1.conducir()  # Salida: 'El coche Toyota Corolla esta conduciendo.'"
+            ]
+        },
+        {
+            "tag": "python_constructores",
+            "patterns": [
+                "constructor python",
+                "metodo init python",
+                "como usar constructor python"
+            ],
+            "responses": [
+                "El constructor `__init__` es un metodo especial que se ejecuta cuando se crea un objeto de una clase. Ejemplo:\nclass Estudiante:\n    def __init__(self, nombre, curso):\n        self.nombre = nombre\n        self.curso = curso\nestudiante1 = Estudiante('Ana', 'Matematicas')\nprint(estudiante1.nombre)  # Salida: 'Ana'",
+                "El metodo `__init__` permite inicializar los atributos del objeto cuando se crea:\nclass Libro:\n    def __init__(self, titulo, autor):\n        self.titulo = titulo\n        self.autor = autor\nlibro1 = Libro('1984', 'George Orwell')"
+            ]
+        },
+        {
+            "tag": "python_herencia",
+            "patterns": [
+                "herencia python",
+                "clase hija python",
+                "heredar clase python"
+            ],
+            "responses": [
+                "La herencia permite que una clase herede atributos y metodos de otra. Ejemplo:\nclass Animal:\n    def __init__(self, nombre):\n        self.nombre = nombre\n    def hablar(self):\n        print(f'{self.nombre} hace un sonido.')\nclass Perro(Animal):\n    def hablar(self):\n        print(f'{self.nombre} ladra.')",
+                "Ejemplo de herencia:\nperro1 = Perro('Rex')\nperro1.hablar()  # Salida: 'Rex ladra.'",
+                "La clase `Perro` hereda el metodo `hablar` de la clase `Animal`, pero lo sobrescribe con un comportamiento especifico."
+            ]
+        },
+        {
+            "tag": "python_polimorfismo",
+            "patterns": [
+                "polimorfismo python",
+                "polimorfismo en clases python",
+                "ejemplo polimorfismo python"
+            ],
+            "responses": [
+                "El polimorfismo permite que un metodo se comporte de manera diferente en clases diferentes. Ejemplo:\nclass Animal:\n    def hablar(self):\n        pass\nclass Perro(Animal):\n    def hablar(self):\n        print('El perro ladra.')\nclass Gato(Animal):\n    def hablar(self):\n        print('El gato maulla.')",
+                "Ejemplo de polimorfismo:\nperro = Perro()\ngato = Gato()\nperro.hablar()  # Salida: 'El perro ladra.'\ngato.hablar()  # Salida: 'El gato maulla.'"
+            ]
+        },
+        {
+            "tag": "python_encapsulamiento",
+            "patterns": [
+                "encapsulamiento python",
+                "ocultar atributos python",
+                "como usar encapsulamiento en python"
+            ],
+            "responses": [
+                "El encapsulamiento permite ocultar los detalles internos de una clase. En Python, los atributos privados se indican con dos guiones bajos. Ejemplo:\nclass Persona:\n    def __init__(self, nombre, edad):\n        self.__nombre = nombre  # Atributo privado\n        self.__edad = edad  # Atributo privado\n    def get_nombre(self):\n        return self.__nombre",
+                "Para acceder a atributos privados, puedes definir metodos publicos como getters y setters:\npersona = Persona('Juan', 25)\nprint(persona.get_nombre())  # Salida: 'Juan'"
+            ]
+        },
+        {
+            "tag": "python_abstraccion",
+            "patterns": [
+                "abstraccion python",
+                "clase abstracta python",
+                "como usar abstraccion en python"
+            ],
+            "responses": [
+                "La abstraccion permite definir una clase base con metodos abstractos que deben ser implementados por las clases hijas. Ejemplo usando `abc` (Abstract Base Class):\nfrom abc import ABC, abstractmethod\nclass Animal(ABC):\n    @abstractmethod\n    def hablar(self):\n        pass\nclass Perro(Animal):\n    def hablar(self):\n        print('El perro ladra.')",
+                "Ejemplo de clase abstracta:\nperro = Perro()\nperro.hablar()  # Salida: 'El perro ladra.'",
+                "Usar la clase `ABC` y el decorador `@abstractmethod` obliga a las clases hijas a definir el metodo `hablar`."
+            ]
+        },
+        {
+            "tag": "python_metodos_estaticos",
+            "patterns": [
+                "metodo estatico python",
+                "funcion estatica clase python",
+                "como crear un metodo estatico python"
+            ],
+            "responses": [
+                "Un metodo estatico en Python no necesita acceder a los atributos de la clase ni a los de los objetos. Se define con el decorador `@staticmethod`:\nclass MiClase:\n    @staticmethod\n    def saludar():\n        print('¡Hola desde el metodo estatico!')",
+                "Ejemplo de metodo estatico:\nMiClase.saludar()  # Salida: '¡Hola desde el metodo estatico!'"
+            ]
+        },
+        {
+            "tag": "python_modulos",
+            "patterns": [
+                "modulo python",
+                "ejemplo modulo python",
+                "como crear modulo python",
+                "que es un modulo en python"
+            ],
+            "responses": [
+                "Un modulo en Python es un archivo que contiene definiciones y sentencias en Python. Para usar un modulo, puedes importarlo con `import`:\nimport math\nprint(math.sqrt(16))  # Salida: 4.0",
+                "Ejemplo de uso de un modulo:\nimport random\nprint(random.randint(1, 10))  # Imprime un numero aleatorio entre 1 y 10."
+            ]
+        },
+        {
+            "tag": "python_importar_modulo",
+            "patterns": [
+                "importar modulo python",
+                "como importar un modulo python",
+                "usar modulo en python",
+                "como importar un archivo python"
+            ],
+            "responses": [
+                "Puedes importar un modulo de las siguientes formas:\nimport math\nfrom math import sqrt\nfrom math import *",
+                "Ejemplo:\nimport datetime\nprint(datetime.datetime.now())  # Imprime la fecha y hora actuales."
+            ]
+        },
+        {
+            "tag": "python_modulo_personalizado",
+            "patterns": [
+                "crear modulo personalizado python",
+                "modulo python personalizado",
+                "como hacer un modulo python"
+            ],
+            "responses": [
+                "Para crear un modulo personalizado, solo debes crear un archivo `.py` con funciones o clases que desees reutilizar. Por ejemplo, crea un archivo `mi_modulo.py` con una funcion:\n# mi_modulo.py\n\ndef saludo():\n    print('¡Hola desde el modulo!')\n\nLuego, en otro archivo puedes importarlo y usarlo:\nimport mi_modulo\nmi_modulo.saludo()",
+                "Ejemplo de un modulo personalizado:\n# archivo `calculadora.py`\ndef suma(a, b):\n    return a + b\n# luego en otro archivo\nimport calculadora\nprint(calculadora.suma(5, 3))  # Salida: 8"
+            ]
+        },
+        {
+            "tag": "python_paquetes",
+            "patterns": [
+                "paquete python",
+                "ejemplo paquete python",
+                "como crear un paquete python",
+                "que es un paquete en python"
+            ],
+            "responses": [
+                "Un paquete es un conjunto de modulos en un directorio. Para crear un paquete, solo debes crear un directorio y agregar un archivo `__init__.py`. Por ejemplo:\nmi_paquete/\n    __init__.py\n    modulo1.py\n    modulo2.py\nY luego puedes importar los modulos de este paquete:\nfrom mi_paquete import modulo1\nmodulo1.funcion()",
+                "Ejemplo de uso de un paquete:\n# Estructura de directorios:\nmi_paquete/\n    __init__.py\n    modulo1.py\n    modulo2.py\n\n# Importar el paquete y usar un modulo:\nfrom mi_paquete import modulo1\nmodulo1.funcion()"
+            ]
+        },
+        {
+            "tag": "python_importar_paquete",
+            "patterns": [
+                "importar paquete python",
+                "como importar paquete python",
+                "usar paquete en python"
+            ],
+            "responses": [
+                "Para importar un paquete en Python, usa la sintaxis `import` o `from ... import ...`:\nimport mi_paquete\nfrom mi_paquete import modulo1\nfrom mi_paquete.modulo1 import funcion",
+                "Ejemplo de importacion de paquete:\nfrom paquete_matematicas import operaciones\nprint(operaciones.suma(3, 4))  # Salida: 7"
+            ]
+        },
+        {
+            "tag": "python_instalar_paquete",
+            "patterns": [
+                "instalar paquete python",
+                "como instalar un paquete en python",
+                "instalar libreria python"
+            ],
+            "responses": [
+                "Para instalar paquetes en Python, puedes usar `pip` desde la linea de comandos. Ejemplo:\npip install numpy\npip install requests",
+                "Ejemplo de instalacion de un paquete:\npip install flask\npip install pandas"
+            ]
+        },
+        {
+            "tag": "python_estructura_paquete",
+            "patterns": [
+                "estructura de paquete python",
+                "como organizar paquetes en python",
+                "organizar paquetes python"
+            ],
+            "responses": [
+                "La estructura de un paquete en Python debe incluir un archivo `__init__.py`, que puede estar vacio o inicializar el paquete. Ejemplo de estructura:\nmi_paquete/\n    __init__.py\n    modulo1.py\n    modulo2.py\n    subpaquete/\n        __init__.py\n        modulo3.py",
+                "Una buena estructura para un paquete grande podria ser:\nmi_paquete/\n    __init__.py\n    modulo1.py\n    modulo2.py\n    subpaquete/\n        __init__.py\n        modulo3.py"
+            ]
+        },
+        {
+            "tag": "python_uso_modulo_externo",
+            "patterns": [
+                "usar modulo externo python",
+                "como usar libreria externa python",
+                "usar librerias de terceros python"
+            ],
+            "responses": [
+                "Puedes usar modulos externos en Python despues de instalarlos con `pip`. Por ejemplo, para usar `requests`:\nimport requests\nrespuesta = requests.get('https://api.example.com')\nprint(respuesta.json())",
+                "Ejemplo con `numpy`:\nimport numpy as np\narr = np.array([1, 2, 3])\nprint(arr + 2)  # Salida: [3, 4, 5]"
+            ]
+        },
+        {
+            "tag": "python_modulo_os",
+            "patterns": [
+                "modulo os python",
+                "como usar modulo os python",
+                "funciones modulo os python"
+            ],
+            "responses": [
+                "El modulo `os` proporciona funciones para interactuar con el sistema operativo. Ejemplo:\nimport os\nprint(os.getcwd())  # Muestra el directorio de trabajo actual\nos.mkdir('mi_directorio')  # Crea un directorio",
+                "El modulo `os` tambien permite trabajar con rutas, archivos y directorios:\nos.remove('archivo.txt')  # Elimina un archivo"
+            ]
+        }
+    ]
+}
