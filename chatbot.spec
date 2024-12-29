@@ -1,18 +1,18 @@
 # -*- mode: python ; coding: utf-8 -*-
-import sys
-sys.path.append('/usr/lib/python3.8/site-packages')  # Ajusta según tu sistema
+#import sys
+#sys.path.append('/usr/lib/python3.8/site-packages')  # Ajusta según tu sistema
 
 block_cipher = None
 
 a = Analysis(
-    ['app/app.py'],
+    ['app.py'],
     pathex=[],
     binaries=[],
     datas=[
         ('modelo/intents_combinate.json', 'modelo'),
         ('modelo/chatbot_model.h5', 'modelo'),
-        ('modelo/classes.pkl',modelo),
-        ('modelo/words.pkl',modelo)
+        ('modelo/classes.pkl','modelo'),
+        ('modelo/words.pkl','modelo')
     ],
     hiddenimports=['tensorflow'],
     hookspath=[],

@@ -1,14 +1,14 @@
 import tkinter as tk
 from tkinter import Text, messagebox,Label,Frame,Button,Entry,Scrollbar
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent))
+#import sys
+#from pathlib import Path
+#sys.path.append(str(Path(__file__).parent.parent))
 from modelo.chatbot import consulta
 class ChatbotAPP:
     def __init__(self, root):
         self.root=root
         self.root.title("Chatbot")
-        self.root.geometry("400x600")
+        self.root.geometry("500x600")
         self.root.resizable(width=False, height=False)
         
         self.create_header()
