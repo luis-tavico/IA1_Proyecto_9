@@ -179,6 +179,9 @@
     "bocadillo_favorito",
     "cocina_favorita",
     "fruta_favorita",
+    "python_bucles",
+    "python_funciones",
+    "python_listas",
     "greeting",
     "goodbye",
     "creator",
@@ -384,5 +387,8 @@
     "favorite_drink",
     "favorite_snack",
     "favorite_cuisine",
-    "favorite_fruit"
+    "favorite_fruit",
+    "js_loops",
+    "js_functions",
+    "js_arrays"
 ]

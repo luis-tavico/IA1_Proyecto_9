@@ -54,15 +54,14 @@ def get_response(tag, intents_json):
 
 def respuesta(message):
     ints = predict_class(message)
+    print(ints)
     res = get_response(ints, intents)
     return res
 print("Bot is running")
-print("******************************")
-print("*        chat bot running    *")
-print("******************************")
+
 #while True:
-#    message = input("You: ")
-#    print('bot dice: ',respuesta(message.lower()))
+#   message = input("You: ")
+#   print('bot dice: ',respuesta(message.lower()))
 
 def consulta(message):
     return respuesta(message.lower())

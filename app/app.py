@@ -53,10 +53,8 @@ class ChatbotAPP:
         self.entry.focus()
         self.entry.bind("<Return>",self.send_message)
         self.entry.pack(side=tk.LEFT,padx=10,pady=5,fill=tk.X,expand=True)
-
-        
-        
-        self.send_button=Button(input_frame,text="Enviar",bg="#007bff",fg="white",font=("Arial",12),command=lambda:self.send_message(None) or self.send_message(None)) 
+                
+        self.send_button=Button(input_frame,text="Enviar",bg="#007bff",fg="white",font=("Arial",12),command=lambda:self.send_message(None)) 
         self.send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
         self.send_button.pack(padx=10,pady=10,side=tk.RIGHT)
     
@@ -78,9 +76,15 @@ class ChatbotAPP:
         
     def send_message(self,event):
         user_mensaje=self.entry.get()
-        if user_mensaje.strip():
+        
+        if not user_mensaje.strip():
+            messagebox.showerror("Error","Por favor ingrese un mensaje")
+            return
+        
+        if user_mensaje.strip() :
             self.add_message(user_mensaje,"you")
             self.entry.delete(0,tk.END)
+        
             
 if __name__ == "__main__":
     root = tk.Tk()

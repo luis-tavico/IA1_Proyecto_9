@@ -90,17 +90,17 @@ train_y = np.array(train_y)
 
 #Creamos la red neuronal
 model = Sequential()
-model.add(Dense(128, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
+model.add(Dense(256, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
 model.add(BatchNormalization())
 model.add(Dropout(0.5, name="input_layer1"))
-model.add(Dense(64, name="input_layer2", activation='relu'))
+model.add(Dense(128, name="input_layer2", activation='relu'))
 model.add(BatchNormalization())
 model.add(Dropout(0.5, name="input_layer3"))
 model.add(Dense(len(train_y[0]), name="output_layer", activation='softmax'))
 
 #Creamos el programa de aprendizaje
 lr_schedule = schedules.ExponentialDecay(
-    initial_learning_rate=0.001,
+    initial_learning_rate=0.0001,
     decay_steps=10000,
     decay_rate=0.96,
     staircase=True,

@@ -2877,6 +2877,47 @@
             ]
         },
         {
+            "tag": "python_bucles",
+            "patterns": [
+                "como hacer un for en python",
+                "while python ejemplo",
+                "bucle for python",
+                "iterar lista python",
+                "recorrer array python"
+            ],
+            "responses": [
+                "Bucle for:\nfor i in range(10):\n    print(i)",
+                "While:\nwhile condicion:\n    # código\n    i += 1",
+                "For con lista:\nfor elemento in lista:\n    print(elemento)"
+            ]
+        },
+        {
+            "tag": "python_funciones",
+            "patterns": [
+                "definir función python",
+                "función con argumentos",
+                "retornar valor python",
+                "función lambda python"
+            ],
+            "responses": [
+                "Definir función:\ndef nombre_funcion(parametro):\n    return parametro",
+                "Función lambda:\nlambda x: x * 2"
+            ]
+        },
+        {
+            "tag": "python_listas",
+            "patterns": [
+                "crear lista python",
+                "agregar elemento lista",
+                "eliminar de lista",
+                "ordenar lista python"
+            ],
+            "responses": [
+                "lista = [1, 2, 3]\nlista.append(4)\nlista.remove(1)",
+                "lista.sort()\nlista.reverse()"
+            ]
+        },
+        {
             "tag": "greeting",
             "patterns": [
                 "hello",
@@ -6059,6 +6100,47 @@
                 "I love strawberries, they are sweet and juicy.",
                 "Apples are very refreshing.",
                 "I do not have a favorite fruit, but I enjoy many."
+            ]
+        },
+        {
+            "tag": "js_loops",
+            "patterns": [
+                "bucle for javascript",
+                "while en js",
+                "forEach javascript",
+                "iterar array js",
+                "loop javascript"
+            ],
+            "responses": [
+                "For loop:\nfor(let i = 0; i < 10; i++) {\n    console.log(i);\n}",
+                "ForEach:\narray.forEach(item => console.log(item));",
+                "While:\nwhile(condition) {\n    // código\n}"
+            ]
+        },
+        {
+            "tag": "js_functions",
+            "patterns": [
+                "crear función js",
+                "función flecha javascript",
+                "async function js",
+                "callback javascript"
+            ],
+            "responses": [
+                "Función:\nfunction nombre(param) {\n    return param;\n}",
+                "Arrow function:\nconst func = (param) => param;"
+            ]
+        },
+        {
+            "tag": "js_arrays",
+            "patterns": [
+                "crear array javascript",
+                "push array js",
+                "filter javascript",
+                "map array js"
+            ],
+            "responses": [
+                "let arr = [1, 2, 3];\narr.push(4);",
+                "arr.filter(x => x > 2);\narr.map(x => x * 2);"
             ]
         }
     ]

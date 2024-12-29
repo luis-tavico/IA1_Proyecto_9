@@ -1,0 +1,45 @@
+{
+    "intents": [
+        {
+            "tag": "python_bucles",
+            "patterns": [
+                "como hacer un for en python",
+                "while python ejemplo",
+                "bucle for python",
+                "iterar lista python",
+                "recorrer array python"
+            ],
+            "responses": [
+                "Bucle for:\nfor i in range(10):\n    print(i)",
+                "While:\nwhile condicion:\n    # código\n    i += 1",
+                "For con lista:\nfor elemento in lista:\n    print(elemento)"
+            ]
+        },
+        {
+            "tag": "python_funciones",
+            "patterns": [
+                "definir función python",
+                "función con argumentos",
+                "retornar valor python",
+                "función lambda python"
+            ],
+            "responses": [
+                "Definir función:\ndef nombre_funcion(parametro):\n    return parametro",
+                "Función lambda:\nlambda x: x * 2"
+            ]
+        },
+        {
+            "tag": "python_listas",
+            "patterns": [
+                "crear lista python",
+                "agregar elemento lista",
+                "eliminar de lista",
+                "ordenar lista python"
+            ],
+            "responses": [
+                "lista = [1, 2, 3]\nlista.append(4)\nlista.remove(1)",
+                "lista.sort()\nlista.reverse()"
+            ]
+        }
+    ]
+}
