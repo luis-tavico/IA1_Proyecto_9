@@ -1,26 +1,11 @@
 {
     "intents": [
         {
-            "tag": "saludo",
-            "patterns": [
-                "hola",
-                "que tal",
-                "buenos dias",
-                "hola chatbot",
-                "buenas tardes"
-            ],
-            "responses": [
-                "¡Hola! ¿Cómo te puedo ayudar con JavaScript o Python hoy?",
-                "¡Hola! Estoy aquí para resolver tus dudas sobre JavaScript o Python",
-                "¡Bienvenido! Pregunta lo que quieras saber sobre JavaScript o Python"
-            ]
-        },
-        {
             "tag": "javascript_informacion",
             "patterns": [
-                "¿Qué temas puedes tratar?",
-                "¿Qué cosas puedo preguntar?",
-                "¿Sobre qué temas puedes hablar?",
+                "¿Qué temas puedes tratar en JavaScript?",
+                "¿Qué cosas puedo preguntar sobre JavaScript?",
+                "¿Sobre qué temas puedes hablar en JavaScript?",
                 "¿Qué me puedes enseñar de JavaScript?"
             ],
             "responses": [
