@@ -1,0 +1,878 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hello",
+                "how are you",
+                "good morning",
+                "hello chatbot",
+                "good afternoon"
+            ],
+            "responses": [
+                "Hello! How can I help you with JavaScript or Python today?",
+                "Hello! I'm here to help you with any questions about JavaScript or Python.",
+                "Welcome! Feel free to ask anything about JavaScript or Python."
+            ]
+        },
+        {
+            "tag": "javascript_information",
+            "patterns": [
+                "What topics can you cover?",
+                "What can I ask?",
+                "What topics can you talk about?",
+                "What can you teach me about JavaScript?"
+            ],
+            "responses": [
+                "I can help you with various JavaScript topics, such as conditionals, operators, loops, functions, lists, objects, error handling, and more.",
+                "I can explain how functions work in JavaScript, how to create loops, manage lists, work with objects, and much more.",
+                "Some topics I can cover include: conditionals (if, else), comparison operators, loops (for, while), file handling, and errors in JavaScript.",
+                "Also I can help you with structure data some: bubble sort, merge sort, quick sort, selection sort, heap sort, and much more."
+            ]
+        },
+        {
+            "tag": "javascript_conditionals",
+            "patterns": [
+                "conditionals in javascript",
+                "how to use conditionals in javascript",
+                "conditional structure in javascript",
+                "example of conditional in javascript"
+            ],
+            "responses": [
+                "if (condition) {\n    // Code if the condition is true\n}",
+                "if (condition) {\n    // Code if the condition is true\n} else {\n    // Code if the condition is false\n}",
+                "if (condition1) {\n    // Code if the first condition is true\n} else if (condition2) {\n    // Code if the second condition is true\n} else {\n    // Code if none of the conditions are true\n}"
+            ]
+        },
+        {
+            "tag": "javascript_if_english",
+            "patterns": [
+                "if in javascript",
+                "how to use if in javascript",
+                "example of if in javascript",
+                "if structure javascript"
+            ],
+            "responses": [
+                "if (x > 5) {\n    console.log('x is greater than 5');\n}",
+                "if (temperature < 20) {\n    console.log('It is cold');\n}"
+            ]
+        },
+        {
+            "tag": "javascript_if_else_english",
+            "patterns": [
+                "if else in javascript",
+                "how to use if else in javascript",
+                "example of if else in javascript",
+                "if else structure javascript"
+            ],
+            "responses": [
+                "if (age >= 18) {\n    console.log('You are an adult');\n} else {\n    console.log('You are underage');\n}",
+                "if (number % 2 === 0) {\n    console.log('The number is even');\n} else {\n    console.log('The number is odd');\n}"
+            ]
+        },
+        {
+            "tag": "javascript_comparison_operators",
+            "patterns": [
+                "comparison operators in javascript",
+                "comparison javascript",
+                "logical operators javascript",
+                "examples of comparison operators in javascript"
+            ],
+            "responses": [
+                "x === y  // Strict equality",
+                "x !== y  // Strict inequality",
+                "x > y   // Greater than",
+                "x < y   // Less than",
+                "x >= y  // Greater than or equal to",
+                "x <= y  // Less than or equal to"
+            ]
+        },
+        {
+            "tag": "javascript_logical_operators",
+            "patterns": [
+                "logical operators in javascript",
+                "how to use and or not in javascript",
+                "example of logical operators javascript",
+                "how to use logical operators in javascript"
+            ],
+            "responses": [
+                "if (x > 0 && y > 0) {\n    console.log('Both numbers are positive');\n}",
+                "if (x > 0 || y > 0) {\n    console.log('At least one of the numbers is positive');\n}",
+                "if (!x) {\n    console.log('x is false or equal to 0');\n}"
+            ]
+        },
+        {
+            "tag": "javascript_loops",
+            "patterns": [
+                "loops in javascript",
+                "cycles in javascript",
+                "how to create loops in javascript",
+                "create loop in javascript"
+            ],
+            "responses": [
+                "For loop:\nfor (let i = 0; i < 10; i++) {\n    console.log(i);\n}",
+                "While loop:\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}"
+            ]
+        },
+        {
+            "tag": "javascript_loops_for",
+            "patterns": [
+                "for in javascript",
+                "how to create for loop in javascript",
+                "example for javascript",
+                "for loop javascript"
+            ],
+            "responses": [
+                "for (let i = 0; i < 5; i++) {\n    console.log(i);\n}",
+                "const fruits = ['apple', 'banana', 'cherry'];\nfor (let fruit of fruits) {\n    console.log(fruit);\n}"
+            ]
+        },
+        {
+            "tag": "javascript_loops_while",
+            "patterns": [
+                "while in javascript",
+                "how to create while loop in javascript",
+                "example while javascript",
+                "while loop javascript"
+            ],
+            "responses": [
+                "let counter = 0;\nwhile (counter < 5) {\n    console.log(counter);\n    counter++;\n}",
+                "while (condition) {\n    // Code to execute while the condition is true\n}"
+            ]
+        },
+        {
+            "tag": "javascript_functions",
+            "patterns": [
+                "create function in javascript",
+                "how to make a function in javascript",
+                "example of function in javascript",
+                "function structure in javascript"
+            ],
+            "responses": [
+                "function greet() {\n    console.log('Hello, this is a function');\n}\ngreet();",
+                "function add(a, b) {\n    return a + b;\n}\nlet result = add(3, 5);\nconsole.log(result);"
+            ]
+        },
+        {
+            "tag": "javascript_functions_parameters",
+            "patterns": [
+                "functions with parameters in javascript",
+                "how to use parameters in javascript",
+                "functions with arguments javascript",
+                "example of function with parameters javascript"
+            ],
+            "responses": [
+                "function greet(name) {\n    console.log(`Hello, ${name}!`);\n}\ngreet('Luis');",
+                "function multiply(a, b) {\n    return a * b;\n}\nlet result = multiply(4, 5);\nconsole.log(result);"
+            ]
+        },
+        {
+            "tag": "javascript_functions_return_value",
+            "patterns": [
+                "return value in javascript",
+                "function with return javascript",
+                "how to return a value in javascript",
+                "example of function with return javascript"
+            ],
+            "responses": [
+                "function square(number) {\n    return number * number;\n}\nlet result = square(4);\nconsole.log(result);",
+                "function divide(a, b) {\n    if (b !== 0) {\n        return a / b;\n    } else {\n        return 'Error: Division by zero';\n    }\n}\nlet result = divide(10, 2);\nconsole.log(result);"
+            ]
+        },
+        {
+            "tag": "javascript_lambda_functions",
+            "patterns": [
+                "arrow function javascript",
+                "create arrow function javascript",
+                "example of arrow function javascript",
+                "how to use arrow function in javascript"
+            ],
+            "responses": [
+                "const double = x => x * 2;\nconsole.log(double(5));",
+                "const sum = (a, b) => a + b;\nconsole.log(sum(3, 7));"
+            ]
+        },
+        {
+            "tag": "javascript_nested_functions",
+            "patterns": [
+                "nested functions in javascript",
+                "create function inside another function javascript",
+                "example of nested functions javascript",
+                "how to use nested functions javascript"
+            ],
+            "responses": [
+                "function outer() {\n    console.log('This is the outer function');\n    function inner() {\n        console.log('This is the inner function');\n    }\n    inner();\n}\nouter();",
+                "function operation(a, b) {\n    function add() {\n        return a + b;\n    }\n    function subtract() {\n        return a - b;\n    }\n    return [add(), subtract()];\n}\nconst [sum_result, subtract_result] = operation(5, 3);\nconsole.log(sum_result, subtract_result);"
+            ]
+        },
+        {
+            "tag": "javascript_recursive_functions",
+            "patterns": [
+                "recursive functions javascript",
+                "how to use recursion in javascript",
+                "example of recursive function javascript",
+                "create recursive function javascript"
+            ],
+            "responses": [
+                "function factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5));",
+                "function fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\nconsole.log(fibonacci(6));"
+            ]
+        },
+        {
+            "tag": "javascript_lists",
+            "patterns": [
+                "list javascript",
+                "example list javascript",
+                "how to make a list javascript",
+                "create list javascript"
+            ],
+            "responses": [
+                "Lists in JavaScript are ordered, mutable arrays of elements. You can create an array like this:\nlet myList = [1, 2, 3, 'hello', true];",
+                "Example of lists:\nlet fruits = ['apple', 'banana', 'pear'];\nlet numbers = [10, 20, 30, 40];\nlet mixed = [1, 'two', true, [4, 5]];\nlet emptyList = [];"
+            ]
+        },
+        {
+            "tag": "javascript_lists_create",
+            "patterns": [
+                "create list javascript",
+                "create new list javascript",
+                "make a list javascript",
+                "new list javascript"
+            ],
+            "responses": [
+                "To create an array in JavaScript, you can use square brackets `[]`:\nlet myList = [1, 2, 3, 'hello'];",
+                "Example of an empty list:\nlet emptyList = [];"
+            ]
+        },
+        {
+            "tag": "javascript_lists_add",
+            "patterns": [
+                "add element to list javascript",
+                "insert element into list javascript",
+                "append element to list javascript",
+                "add item to list javascript"
+            ],
+            "responses": [
+                "You can add an element to the end of the list with `push()`:\nlet myList = [1, 2, 3];\nmyList.push(4);\nconsole.log(myList);  // Output: [1, 2, 3, 4]",
+                "If you want to insert an element at a specific position, use `splice()`:\nlet myList = [1, 3, 4];\nmyList.splice(1, 0, 2);\nconsole.log(myList);  // Output: [1, 2, 3, 4]",
+                "To add multiple elements to a list, you can use `concat()`:\nlet myList = [1, 2, 3];\nmyList = myList.concat([4, 5]);\nconsole.log(myList);  // Output: [1, 2, 3, 4, 5]"
+            ]
+        },
+        {
+            "tag": "javascript_lists_access",
+            "patterns": [
+                "access element in list javascript",
+                "get value from list javascript",
+                "how to access a list in javascript",
+                "access list javascript"
+            ],
+            "responses": [
+                "You can access elements of an array using indices:\nlet myList = [1, 2, 3, 'hello'];\nconsole.log(myList[0]);  // Output: 1",
+                "Negative indices allow you to access elements from the end of the list:\nconsole.log(myList[myList.length - 1]);  // Output: 'hello'",
+                "To access a range of elements, you can use the `slice()` method:\nconsole.log(myList.slice(1, 3));  // Output: [2, 3]"
+            ]
+        },
+        {
+            "tag": "javascript_lists_modify",
+            "patterns": [
+                "modify list javascript",
+                "change value in list javascript",
+                "edit list javascript",
+                "how to modify a list javascript"
+            ],
+            "responses": [
+                "You can modify a value in an array by assigning a new value to the corresponding index:\nlet myList = [1, 2, 3];\nmyList[1] = 5;\nconsole.log(myList);  // Output: [1, 5, 3]",
+                "If you try to access an index that does not exist, JavaScript will return `undefined`."
+            ]
+        },
+        {
+            "tag": "javascript_lists_delete",
+            "patterns": [
+                "delete element from list javascript",
+                "remove element from list javascript",
+                "delete value from list javascript"
+            ],
+            "responses": [
+                "To remove an element from the array by its value, use `splice()`:\nlet myList = [1, 2, 3, 4];\nmyList.splice(myList.indexOf(3), 1);\nconsole.log(myList);  // Output: [1, 2, 4]",
+                "If you want to remove an element by its index, you can also use `splice()`:\nlet myList = [1, 2, 3];\nmyList.splice(1, 1);\nconsole.log(myList);  // Output: [1, 3]",
+                "To remove the last element from an array, use `pop()`:\nlet myList = [1, 2, 3];\nmyList.pop();\nconsole.log(myList);  // Output: [1, 2]",
+                "If you want to remove all elements, you can set the `length` to 0:\nlet myList = [1, 2, 3];\nmyList.length = 0;\nconsole.log(myList);  // Output: []"
+            ]
+        },
+        {
+            "tag": "javascript_lists_iterate",
+            "patterns": [
+                "iterate over list javascript",
+                "loop through list javascript",
+                "how to iterate a list",
+                "loop through elements of a list javascript"
+            ],
+            "responses": [
+                "You can iterate over the elements of an array using a `for` loop:\nlet myList = [1, 2, 3];\nfor (let element of myList) {\n    console.log(element);\n}\n// Output: 1, 2, 3",
+                "If you need both the index and the value, you can use `forEach()`:\nlet myList = ['a', 'b', 'c'];\nmyList.forEach((value, index) => {\n    console.log(index, value);\n});\n// Output: 0 a, 1 b, 2 c"
+            ]
+        },
+        {
+            "tag": "javascript_lists_comparison",
+            "patterns": [
+                "compare lists javascript",
+                "how to compare lists javascript",
+                "comparison between lists javascript"
+            ],
+            "responses": [
+                "In JavaScript, lists (arrays) cannot be compared directly with `==` or `===`, as it compares object references. To compare two arrays, you need to iterate through them and compare their elements:\nlet list1 = [1, 2, 3];\nlet list2 = [1, 2, 3];\nlet areEqual = list1.length === list2.length && list1.every((val, index) => val === list2[index]);\nconsole.log(areEqual);  // Output: true"
+            ]
+        },
+        {
+            "tag": "javascript_lists_sort",
+            "patterns": [
+                "sort list javascript",
+                "how to sort list javascript",
+                "sort elements of a list javascript"
+            ],
+            "responses": [
+                "You can sort an array using the `sort()` method:\nlet myList = [3, 1, 2];\nmyList.sort();\nconsole.log(myList);  // Output: [1, 2, 3]",
+                "If you don't want to modify the original list, you can use `slice()` before `sort()` to create a copy:\nlet myList = [3, 1, 2];\nlet sortedList = myList.slice().sort();\nconsole.log(sortedList);  // Output: [1, 2, 3]",
+                "You can sort an array in descending order by passing a comparison function to `sort()`:\nlet myList = [3, 1, 2];\nmyList.sort((a, b) => b - a);\nconsole.log(myList);  // Output: [3, 2, 1]"
+            ]
+        },
+        {
+            "tag": "javascript_objects",
+            "patterns": [
+                "dictionary javascript",
+                "example object javascript",
+                "how to create object javascript",
+                "object creation javascript"
+            ],
+            "responses": [
+                "An object in JavaScript is a data structure that stores key-value pairs. You can create an object like this:\nlet myObject = { key1: 'value1', key2: 'value2' };",
+                "Example of an object:\nlet data = { name: 'John', age: 25, city: 'Guatemala' };\nlet otherData = { company: 'ABC', position: 'Developer' };"
+            ]
+        },
+        {
+            "tag": "javascript_objects_create",
+            "patterns": [
+                "create object javascript",
+                "create new object javascript",
+                "make object javascript",
+                "new object javascript"
+            ],
+            "responses": [
+                "To create an object in JavaScript, you can use curly braces `{}`:\nlet myObject = { key1: 'value1', key2: 'value2' };",
+                "Example of an empty object:\nlet emptyObject = {};"
+            ]
+        },
+        {
+            "tag": "javascript_objects_access",
+            "patterns": [
+                "access object properties javascript",
+                "get value from object javascript",
+                "how to access an object javascript",
+                "access object javascript"
+            ],
+            "responses": [
+                "You can access the values of an object using keys:\nlet myObject = { name: 'John', age: 25 };\nconsole.log(myObject['name']);  // Output: John",
+                "If you're not sure if a key exists, you can use the `in` operator:\nconsole.log('address' in myObject);  // Output: false"
+            ]
+        },
+        {
+            "tag": "javascript_objects_modify",
+            "patterns": [
+                "modify object javascript",
+                "change object value javascript",
+                "edit object javascript",
+                "how to modify an object javascript"
+            ],
+            "responses": [
+                "You can modify a value in an object by assigning a new value to the key:\nlet myObject = { name: 'John', age: 25 };\nmyObject.age = 26;\nconsole.log(myObject);  // Output: { name: 'John', age: 26 }",
+                "If the key doesn't exist, JavaScript will automatically add it to the object:\nmyObject.city = 'Guatemala';\nconsole.log(myObject);  // Output: { name: 'John', age: 26, city: 'Guatemala' }"
+            ]
+        },
+        {
+            "tag": "javascript_objects_delete",
+            "patterns": [
+                "delete object property javascript",
+                "remove object javascript",
+                "delete object value javascript"
+            ],
+            "responses": [
+                "You can delete a key and its value using `delete`:\nlet myObject = { name: 'John', age: 25 };\ndelete myObject.age;\nconsole.log(myObject);  // Output: { name: 'John' }"
+            ]
+        },
+        {
+            "tag": "javascript_objects_iterate",
+            "patterns": [
+                "iterate over object javascript",
+                "loop through object javascript",
+                "how to iterate an object javascript",
+                "loop through object properties javascript"
+            ],
+            "responses": [
+                "You can iterate over the keys of an object using a `for...in` loop:\nlet myObject = { name: 'John', age: 25 };\nfor (let key in myObject) {\n    console.log(key, myObject[key]);\n}\n// Output: name John, age 25",
+                "To iterate over both keys and values, you can also use `Object.entries()`:\nObject.entries(myObject).forEach(([key, value]) => console.log(key, value));"
+            ]
+        },
+        {
+            "tag": "javascript_objects_comparison",
+            "patterns": [
+                "compare objects javascript",
+                "how to compare objects javascript",
+                "comparison between objects javascript"
+            ],
+            "responses": [
+                "In JavaScript, objects cannot be compared directly with `==` or `===`, as it compares references. To compare two objects, you can iterate through their keys and values:\nlet object1 = { a: 1, b: 2 };\nlet object2 = { a: 1, b: 2 };\nlet areEqual = JSON.stringify(object1) === JSON.stringify(object2);\nconsole.log(areEqual);  // Output: true"
+            ]
+        },
+        {
+            "tag": "javascript_objects_merge",
+            "patterns": [
+                "merge objects javascript",
+                "combine objects javascript",
+                "join objects javascript"
+            ],
+            "responses": [
+                "You can merge two objects using `Object.assign()`:\nlet object1 = { a: 1, b: 2 };\nlet object2 = { c: 3, d: 4 };\nlet merged = Object.assign({}, object1, object2);\nconsole.log(merged);  // Output: { a: 1, b: 2, c: 3, d: 4 }",
+                "Another way is by using the spread operator `...`:\nlet merged = { ...object1, ...object2 };\nconsole.log(merged);  // Output: { a: 1, b: 2, c: 3, d: 4 }"
+            ]
+        },
+        {
+            "tag": "javascript_files_open",
+            "patterns": [
+                "how to open files in javascript",
+                "open file javascript",
+                "example of opening file javascript",
+                "read file javascript"
+            ],
+            "responses": [
+                "const fs = require('fs');\nfs.readFile('file.txt', 'utf8', (err, data) => {\n    if (err) throw err;\n    console.log(data);\n});",
+                "const fs = require('fs');\nlet data = fs.readFileSync('file.txt', 'utf8');\nconsole.log(data);"
+            ]
+        },
+        {
+            "tag": "javascript_files_write",
+            "patterns": [
+                "write to file javascript",
+                "how to write to file javascript",
+                "example of writing file javascript",
+                "create and write file javascript"
+            ],
+            "responses": [
+                "const fs = require('fs');\nfs.writeFile('file.txt', 'Hello, this is a test file.', (err) => {\n    if (err) throw err;\n    console.log('File saved.');\n});",
+                "const fs = require('fs');\nfs.writeFileSync('file.txt', 'First line of text.\\nSecond line of text.');\nconsole.log('File written.');"
+            ]
+        },
+        {
+            "tag": "javascript_files_append",
+            "patterns": [
+                "append content to file javascript",
+                "how to add content to file javascript",
+                "append file javascript",
+                "example of appending text to file javascript"
+            ],
+            "responses": [
+                "const fs = require('fs');\nfs.appendFile('file.txt', '\\nNew line added.', (err) => {\n    if (err) throw err;\n    console.log('Content added.');\n});",
+                "const fs = require('fs');\nfs.appendFileSync('file.txt', 'Additional text.');\nconsole.log('Text added.');"
+            ]
+        },
+        {
+            "tag": "javascript_files_read_lines",
+            "patterns": [
+                "read lines from file javascript",
+                "how to read lines from file javascript",
+                "example of reading lines from file javascript",
+                "read file line by line javascript"
+            ],
+            "responses": [
+                "const fs = require('fs');\nconst readline = require('readline');\nconst rl = readline.createInterface({\n    input: fs.createReadStream('file.txt'),\n    crlfDelay: Infinity\n});\nrl.on('line', (line) => {\n    console.log(line);\n});"
+            ]
+        },
+        {
+            "tag": "javascript_files_delete",
+            "patterns": [
+                "delete file javascript",
+                "how to delete file javascript",
+                "remove file javascript",
+                "example of deleting file javascript"
+            ],
+            "responses": [
+                "const fs = require('fs');\nfs.unlink('file.txt', (err) => {\n    if (err) throw err;\n    console.log('File deleted.');\n});",
+                "const fs = require('fs');\nfs.unlinkSync('file_to_delete.txt');\nconsole.log('File deleted.');"
+            ]
+        },
+        {
+            "tag": "javascript_errors_try_catch_english",
+            "patterns": [
+                "error handling javascript",
+                "how to use try catch in javascript",
+                "example of try catch javascript",
+                "handle errors javascript"
+            ],
+            "responses": [
+                "try {\n    let result = 10 / 0;\n} catch (error) {\n    console.log('Cannot divide by zero.');\n}",
+                "try {\n    const fs = require('fs');\n    let data = fs.readFileSync('file.txt', 'utf8');\n} catch (error) {\n    console.log('File does not exist.');\n}"
+            ]
+        },
+        {
+            "tag": "javascript_errors_finally_english",
+            "patterns": [
+                "how to use finally in javascript",
+                "try catch finally javascript",
+                "example of finally javascript",
+                "finally javascript"
+            ],
+            "responses": [
+                "try {\n    let result = 10 / 0;\n} catch (error) {\n    console.log('Cannot divide by zero.');\n} finally {\n    console.log('Execution completed, with or without errors.');\n}"
+            ]
+        },
+        {
+            "tag": "javascript_errors_throw_english",
+            "patterns": [
+                "how to use throw in javascript",
+                "throw errors javascript",
+                "create exceptions javascript",
+                "example of throw javascript"
+            ],
+            "responses": [
+                "function divide(a, b) {\n    if (b === 0) {\n        throw new Error('The divisor cannot be zero.');\n    }\n    return a / b;\n}\ntry {\n    divide(10, 0);\n} catch (error) {\n    console.log(error.message);\n}"
+            ]
+        },
+        {
+            "tag": "javascript_variables_english",
+            "patterns": [
+                "what are variables in javascript",
+                "how to declare variables in javascript",
+                "example of variables javascript",
+                "use variables javascript"
+            ],
+            "responses": [
+                "In JavaScript, you can declare variables using `var`, `let`, or `const`:\nlet myVariable = 10;\nconst name = \"John\";\nlet pi = 3.1416;",
+                "JavaScript is a dynamically typed language, so you don't need to declare the variable type:\nlet x = 5;  // Number\nlet y = \"Hello\";  // String\nlet z = true;  // Boolean"
+            ]
+        },
+        {
+            "tag": "javascript_data_types",
+            "patterns": [
+                "data types in javascript",
+                "what data types does javascript have",
+                "examples of data types in javascript",
+                "what are the data types in javascript"
+            ],
+            "responses": [
+                "Main data types in JavaScript:\n- Number: Integer and decimal numbers (e.g., 10, 3.14)\n- String: Text strings (e.g., \"Hello\")\n- Boolean: Boolean values (true/false)\n- Object: Objects and arrays",
+                "Other data types:\n- Array: Arrays (e.g., [1, 2, 3])\n- Undefined: Unassigned variable\n- Null: Null or empty value"
+            ]
+        },
+        {
+            "tag": "javascript_multiple_assignment",
+            "patterns": [
+                "multiple assignment javascript",
+                "assign multiple variables javascript",
+                "example of multiple assignment javascript",
+                "use multiple assignment javascript"
+            ],
+            "responses": [
+                "You can assign multiple values in a single line:\nlet [x, y, z] = [1, 2, 3];\nconsole.log(x, y, z);  // Output: 1 2 3",
+                "You can also assign the same value to multiple variables:\nlet a = b = c = 5;\nconsole.log(a, b, c);  // Output: 5 5 5"
+            ]
+        },
+        {
+            "tag": "javascript_data_types_conversion",
+            "patterns": [
+                "convert data types javascript",
+                "change data type javascript",
+                "example of data type conversion javascript",
+                "use data conversion javascript"
+            ],
+            "responses": [
+                "Use conversion functions in JavaScript:\nlet x = 10;\nlet strX = String(x);  // Convert to string\nlet floatX = parseFloat(x);  // Convert to decimal\nconsole.log(strX, floatX);",
+                "Example:\nlet text = \"123\";\nlet number = Number(text);  // Convert string to number\nconsole.log(number + 1);  // Output: 124"
+            ]
+        },
+        {
+            "tag": "javascript_constants",
+            "patterns": [
+                "how to define constants javascript",
+                "use constants javascript",
+                "constants in javascript",
+                "example of constants javascript"
+            ],
+            "responses": [
+                "In JavaScript, you can define constants using `const`:\nconst PI = 3.1416;\nconst NAME = \"John\";",
+                "Constants in JavaScript cannot change their value once assigned:\nconst MAX_VALUE = 100;\n// MAX_VALUE = 50;  // This will throw an error"
+            ]
+        },
+        {
+            "tag": "javascript_classes_english",
+            "patterns": [
+                "class javascript",
+                "example class javascript",
+                "how to create class javascript",
+                "define class javascript"
+            ],
+            "responses": [
+                "In JavaScript, you can create classes using the `class` keyword. Example:\nclass Person {\n    constructor(name, age) {\n        this.name = name;\n        this.age = age;\n    }\n    greet() {\n        console.log(`Hello, I am ${this.name} and I am ${this.age} years old.`);\n    }\n}",
+                "Example of a simple class:\nclass Animal {\n    constructor(name) {\n        this.name = name;\n    }\n    speak() {\n        console.log(`${this.name} makes a sound.`);\n    }\n}"
+            ]
+        },
+        {
+            "tag": "javascript_objects_english",
+            "patterns": [
+                "create object javascript",
+                "instantiate class javascript",
+                "object in javascript",
+                "how to create an object from a class"
+            ],
+            "responses": [
+                "To create an object from a class, you instantiate the class. Example:\nlet person1 = new Person('John', 25);\nperson1.greet();  // Output: 'Hello, I am John and I am 25 years old.'",
+                "Example of creating an object:\nlet animal1 = new Animal('Dog');\nanimal1.speak();  // Output: 'Dog makes a sound.'"
+            ]
+        },
+        {
+            "tag": "javascript_methods",
+            "patterns": [
+                "method javascript",
+                "create method in class javascript",
+                "function in class javascript"
+            ],
+            "responses": [
+                "A method is a function that belongs to a class. Example:\nclass Car {\n    constructor(brand, model) {\n        this.brand = brand;\n        this.model = model;\n    }\n    drive() {\n        console.log(`The car ${this.brand} ${this.model} is driving.`);\n    }\n}",
+                "Example of using a method:\nlet car1 = new Car('Toyota', 'Corolla');\ncar1.drive();  // Output: 'The car Toyota Corolla is driving.'"
+            ]
+        },
+        {
+            "tag": "javascript_constructors",
+            "patterns": [
+                "constructor javascript",
+                "constructor method javascript",
+                "how to use constructor javascript"
+            ],
+            "responses": [
+                "The `constructor()` is a special method that is executed when an object is created from a class. Example:\nclass Student {\n    constructor(name, course) {\n        this.name = name;\n        this.course = course;\n    }\n}\nlet student1 = new Student('Ana', 'Mathematics');\nconsole.log(student1.name);  // Output: 'Ana'",
+                "The constructor allows initializing the object's attributes when it is created:\nclass Book {\n    constructor(title, author) {\n        this.title = title;\n        this.author = author;\n    }\n}\nlet book1 = new Book('1984', 'George Orwell');"
+            ]
+        },
+        {
+            "tag": "javascript_inheritance",
+            "patterns": [
+                "inheritance javascript",
+                "child class javascript",
+                "inherit class javascript"
+            ],
+            "responses": [
+                "Inheritance in JavaScript allows a class to inherit properties and methods from another class. Example:\nclass Animal {\n    constructor(name) {\n        this.name = name;\n    }\n    speak() {\n        console.log(`${this.name} makes a sound.`);\n    }\n}\nclass Dog extends Animal {\n    speak() {\n        console.log(`${this.name} barks.`);\n    }\n}",
+                "Example of inheritance:\nlet dog1 = new Dog('Rex');\ndog1.speak();  // Output: 'Rex barks.'"
+            ]
+        },
+        {
+            "tag": "javascript_polymorphism",
+            "patterns": [
+                "polymorphism javascript",
+                "polymorphism in classes javascript",
+                "example polymorphism javascript"
+            ],
+            "responses": [
+                "Polymorphism allows a method to behave differently in child classes. Example:\nclass Animal {\n    speak() {\n        console.log('The animal makes a sound.');\n    }\n}\nclass Dog extends Animal {\n    speak() {\n        console.log('The dog barks.');\n    }\n}\nclass Cat extends Animal {\n    speak() {\n        console.log('The cat meows.');\n    }\n}",
+                "Example of polymorphism:\nlet dog = new Dog();\nlet cat = new Cat();\ndog.speak();  // Output: 'The dog barks.'\ncat.speak();  // Output: 'The cat meows.'"
+            ]
+        },
+        {
+            "tag": "javascript_encapsulation",
+            "patterns": [
+                "encapsulation javascript",
+                "hide attributes javascript",
+                "how to use encapsulation in javascript"
+            ],
+            "responses": [
+                "In JavaScript, you can use `#` to define private properties. Example:\nclass Person {\n    #name;\n    constructor(name, age) {\n        this.#name = name;  // Private attribute\n        this.age = age;\n    }\n    getName() {\n        return this.#name;\n    }\n}",
+                "To access private properties, you need to use public methods like getters:\nlet person = new Person('John', 25);\nconsole.log(person.getName());  // Output: 'John'"
+            ]
+        },
+        {
+            "tag": "javascript_static_methods",
+            "patterns": [
+                "static method javascript",
+                "static function class javascript",
+                "how to create a static method javascript"
+            ],
+            "responses": [
+                "A static method in JavaScript is defined using the `static` keyword. It doesn't need to access the class or object's attributes:\nclass MyClass {\n    static greet() {\n        console.log('Hello from the static method!');\n    }\n}",
+                "Example of a static method:\nMyClass.greet();  // Output: 'Hello from the static method!'"
+            ]
+        },
+        {
+            "tag": "javascript_modules",
+            "patterns": [
+                "module javascript",
+                "example module javascript",
+                "how to create module javascript",
+                "what is a module in javascript"
+            ],
+            "responses": [
+                "A module in JavaScript is a file that contains exportable code. To use a module, export the functions or classes with `export` and then import them with `import`:\n// math.js file\nexport function sum(a, b) {\n    return a + b;\n}\n\n// another file\nimport { sum } from './math.js';\nconsole.log(sum(2, 3));  // Output: 5"
+            ]
+        },
+        {
+            "tag": "javascript_import_module",
+            "patterns": [
+                "import module javascript",
+                "how to import a module javascript",
+                "use module in javascript",
+                "how to import a file javascript"
+            ],
+            "responses": [
+                "You can import a module in JavaScript with `import`:\nimport { sum } from './math.js';\nconsole.log(sum(4, 5));  // Output: 9",
+                "Another option is to import all the contents of the module:\nimport * as operations from './math.js';\nconsole.log(operations.sum(2, 3));  // Output: 5"
+            ]
+        },
+        {
+            "tag": "javascript_custom_module",
+            "patterns": [
+                "create custom module javascript",
+                "custom module javascript",
+                "how to make a module javascript"
+            ],
+            "responses": [
+                "To create a custom module in JavaScript, define your functions in a `.js` file and use `export` to make them available. Example:\n// my_module.js\nexport function greet() {\n    console.log('Hello from the module!');\n}\n\n// another file\nimport { greet } from './my_module.js';\ngreet();  // Output: 'Hello from the module!'"
+            ]
+        },
+        {
+            "tag": "javascript_packages",
+            "patterns": [
+                "package javascript",
+                "example package javascript",
+                "how to create a package javascript",
+                "what is a package in javascript"
+            ],
+            "responses": [
+                "In JavaScript, packages are created and distributed using `npm` (Node Package Manager). To create a package, use `npm init` to initialize the project and then use `export` and `import` to share the modules.\nExample:\n$ npm init\n$ npm install --save package-name",
+                "Example of using a package from `npm`:\n$ npm install lodash\nimport _ from 'lodash';\nconsole.log(_.join(['Hello', 'world'], ' '));  // Output: 'Hello world'"
+            ]
+        },
+        {
+            "tag": "javascript_import_package",
+            "patterns": [
+                "import package javascript",
+                "how to import package javascript",
+                "use package in javascript"
+            ],
+            "responses": [
+                "To import a package in JavaScript, first install it with `npm install package-name`. Then, import it in your file:\nimport _ from 'lodash';\nconsole.log(_.join(['Hello', 'world'], ' '));  // Output: 'Hello world'",
+                "Example of package import:\nimport express from 'express';\nconst app = express();\napp.listen(3000, () => console.log('Server running on port 3000'));"
+            ]
+        },
+        {
+            "tag": "javascript_install_package",
+            "patterns": [
+                "install package javascript",
+                "how to install a package in javascript",
+                "install library javascript"
+            ],
+            "responses": [
+                "To install packages in JavaScript, use `npm` from the command line. Example:\nnpm install lodash\nnpm install express",
+                "Example of installing a package:\nnpm install axios\nnpm install react"
+            ]
+        },
+        {
+            "tag": "javascript_use_external_module",
+            "patterns": [
+                "use external module javascript",
+                "how to use external library javascript",
+                "use third-party libraries javascript"
+            ],
+            "responses": [
+                "You can use external modules in JavaScript after installing them with `npm`. For example, to use `axios`:\nimport axios from 'axios';\naxios.get('https://api.example.com')\n  .then(response => console.log(response.data));",
+                "Example with `lodash`:\nimport _ from 'lodash';\nconst array = [1, 2, 3];\nconsole.log(_.reverse(array));  // Output: [3, 2, 1]"
+            ]
+        },
+        {
+            "tag": "javascript_fs_module",
+            "patterns": [
+                "fs module javascript",
+                "how to use fs module javascript",
+                "fs module functions javascript"
+            ],
+            "responses": [
+                "The `fs` (file system) module in JavaScript allows working with the file system. Example:\nconst fs = require('fs');\nconsole.log(fs.readdirSync('.'));  // Displays the content of the current directory\nfs.mkdirSync('my_directory');  // Creates a directory",
+                "The `fs` module also allows working with files and paths:\nfs.unlinkSync('file.txt');  // Deletes a file"
+            ]
+        },
+        {
+            "tag": "javascript_bubble_sort",
+            "patterns": [
+                "bubble sort in javascript",
+                "how to do bubble sort in javascript",
+                "example of bubble sort javascript",
+                "sort with bubble sort javascript"
+            ],
+            "responses": [
+                "Here is an example of Bubble Sort in JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2]));\n```",
+                "The Bubble Sort algorithm compares pairs of elements and swaps them if they are in the wrong order, repeating this process until the array is sorted."
+            ]
+        },
+        {
+            "tag": "javascript_merge_sort",
+            "patterns": [
+                "merge sort in javascript",
+                "how to do merge sort in javascript",
+                "example of merge sort javascript",
+                "sort with merge sort javascript"
+            ],
+            "responses": [
+                "Here is an example of Merge Sort in JavaScript:\n```javascript\nfunction merge(left, right) {\n    let sortedArr = [];\n    while (left.length && right.length) {\n        if (left[0] < right[0]) {\n            sortedArr.push(left.shift());\n        } else {\n            sortedArr.push(right.shift());\n        }\n    }\n    return [...sortedArr, ...left, ...right];\n}\n\nfunction mergeSort(arr) {\n    if (arr.length <= 1) return arr;\n    let mid = Math.floor(arr.length / 2);\n    let left = mergeSort(arr.slice(0, mid));\n    let right = mergeSort(arr.slice(mid));\n    return merge(left, right);\n}\nconsole.log(mergeSort([5, 3, 8, 4, 2]));\n```",
+                "Merge Sort divides the array into halves and then combines them in sorted order, using recursion to solve subproblems."
+            ]
+        },
+        {
+            "tag": "javascript_quick_sort",
+            "patterns": [
+                "quick sort in javascript",
+                "how to do quick sort in javascript",
+                "example of quick sort javascript",
+                "sort with quick sort javascript"
+            ],
+            "responses": [
+                "Here is an example of Quick Sort in JavaScript:\n```javascript\nfunction quickSort(arr) {\n    if (arr.length <= 1) return arr;\n    let pivot = arr[arr.length - 1];\n    let left = arr.filter(el => el < pivot);\n    let right = arr.filter(el => el > pivot);\n    return [...quickSort(left), pivot, ...quickSort(right)];\n}\nconsole.log(quickSort([5, 3, 8, 4, 2]));\n```",
+                "Quick Sort selects a pivot and divides the array into two subarrays: one with elements smaller than the pivot and another with elements larger. It then recursively sorts the parts."
+            ]
+        },
+        {
+            "tag": "javascript_insertion_sort",
+            "patterns": [
+                "insertion sort in javascript",
+                "how to do insertion sort in javascript",
+                "example of insertion sort javascript",
+                "sort with insertion sort javascript"
+            ],
+            "responses": [
+                "Here is an example of Insertion Sort in JavaScript:\n```javascript\nfunction insertionSort(arr) {\n    for (let i = 1; i < arr.length; i++) {\n        let current = arr[i];\n        let j = i - 1;\n        while (j >= 0 && arr[j] > current) {\n            arr[j + 1] = arr[j];\n            j--;\n        }\n        arr[j + 1] = current;\n    }\n    return arr;\n}\nconsole.log(insertionSort([5, 3, 8, 4, 2]));\n```",
+                "Insertion Sort builds the sorted list one element at a time, inserting each new element into its correct place."
+            ]
+        },
+        {
+            "tag": "javascript_selection_sort",
+            "patterns": [
+                "selection sort in javascript",
+                "how to do selection sort in javascript",
+                "example of selection sort javascript",
+                "sort with selection sort javascript"
+            ],
+            "responses": [
+                "Here is an example of Selection Sort in JavaScript:\n```javascript\nfunction selectionSort(arr) {\n    for (let i = 0; i < arr.length; i++) {\n        let minIndex = i;\n        for (let j = i + 1; j < arr.length; j++) {\n            if (arr[j] < arr[minIndex]) {\n                minIndex = j;\n            }\n        }\n        if (minIndex !== i) {\n            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];\n        }\n    }\n    return arr;\n}\nconsole.log(selectionSort([5, 3, 8, 4, 2]));\n```",
+                "Selection Sort finds the smallest element and places it in its correct position in each iteration."
+            ]
+        },
+        {
+            "tag": "javascript_heap_sort",
+            "patterns": [
+                "heap sort in javascript",
+                "how to do heap sort in javascript",
+                "example of heap sort javascript",
+                "sort with heap sort javascript"
+            ],
+            "responses": [
+                "Here is an example of Heap Sort in JavaScript:\n```javascript\nfunction heapify(arr, length, i) {\n    let largest = i;\n    let left = 2 * i + 1;\n    let right = 2 * i + 2;\n    if (left < length && arr[left] > arr[largest]) largest = left;\n    if (right < length && arr[right] > arr[largest]) largest = right;\n    if (largest !== i) {\n        [arr[i], arr[largest]] = [arr[largest], arr[i]];\n        heapify(arr, length, largest);\n    }\n}\n\nfunction heapSort(arr) {\n    let length = arr.length;\n    for (let i = Math.floor(length / 2 - 1); i >= 0; i--) {\n        heapify(arr, length, i);\n    }\n    for (let i = length - 1; i >= 0; i--) {\n        [arr[0], arr[i]] = [arr[i], arr[0]];\n        heapify(arr, i, 0);\n    }\n    return arr;\n}\nconsole.log(heapSort([5, 3, 8, 4, 2]));\n```",
+                "Heap Sort transforms the array into a heap, then extracts the largest element and rearranges the heap, repeating until everything is sorted."
+            ]
+        }
+    ]
+}
