@@ -2875,6 +2875,246 @@
         "Las manzanas son muy refrescantes.",
         "No tengo una fruta favorita, pero disfruto de muchas."
       ]
-    }
+    },
+    { 
+      "tag": "programacion_basica", 
+      "patterns": [ 
+        "qué es programación", 
+        "cómo empezar a programar", 
+        "conceptos básicos de programación", 
+        "fundamentos de programación" 
+      ], 
+      "responses": [ 
+        "La programación es el proceso de crear instrucciones para que una computadora realice tareas específicas. Los conceptos básicos incluyen variables, bucles, condicionales y funciones.", 
+        "Para empezar a programar, necesitas entender conceptos como algoritmos, variables, estructuras de control y funciones. Python es un buen lenguaje para principiantes." 
+      ] 
+    }, 
+    { 
+      "tag": "conceptos_oop", 
+      "patterns": [ 
+        "qué es POO", 
+        "programación orientada a objetos", 
+        "conceptos de OOP", 
+        "clases y objetos" 
+      ], 
+      "responses": [ 
+        "La Programación Orientada a Objetos (POO) es un paradigma que usa objetos y clases. Los conceptos principales son: encapsulamiento, herencia, polimorfismo y abstracción.", 
+        "En POO, las clases son plantillas para crear objetos que contienen datos y código. La herencia permite que una clase herede propiedades de otra." 
+      ] 
+    }, 
+    { 
+      "tag": "tecnologias_web", 
+      "patterns": [ 
+        "qué es desarrollo web", 
+        "tecnologías web", 
+        "frontend y backend", 
+        "que es HTML CSS JavaScript" 
+      ], 
+      "responses": [ 
+        "El desarrollo web involucra frontend (HTML, CSS, JavaScript) para la interfaz de usuario y backend (Python, Java, etc.) para la lógica del servidor.", 
+        "Las tecnologías web básicas son: HTML para estructura, CSS para diseño y JavaScript para interactividad." 
+      ] 
+    }, 
+    { 
+      "tag": "bases_datos", 
+      "patterns": [ 
+        "qué es una base de datos", 
+        "tipos de bases de datos", 
+        "SQL vs NoSQL", 
+        "como funciona una base de datos" 
+      ], 
+      "responses": [ 
+        "Una base de datos es un sistema organizado para almacenar y gestionar datos. Hay dos tipos principales: SQL (relacionales) y NoSQL (no relacionales).", 
+        "Las bases de datos SQL usan tablas relacionadas, mientras que NoSQL puede usar documentos, grafos o pares clave-valor." 
+      ] 
+    }, 
+    { 
+      "tag": "redes_computadoras", 
+      "patterns": [ 
+        "qué son las redes de computadoras", 
+        "protocolos de red", 
+        "TCP IP", 
+        "como funciona internet" 
+      ], 
+      "responses": [ 
+        "Las redes de computadoras permiten la comunicación entre dispositivos. Internet usa el protocolo TCP/IP para transmitir datos.", 
+        "Los protocolos más comunes son HTTP para web, FTP para archivos, y SMTP para correo electrónico." 
+      ] 
+    }, 
+    { 
+      "tag": "seguridad_informatica", 
+      "patterns": [ 
+        "qué es la seguridad informática", 
+        "ciberseguridad", 
+        "protección de datos", 
+        "hacking ético" 
+      ], 
+      "responses": [ 
+        "La seguridad informática protege los sistemas de ataques y garantiza la privacidad de los datos. El hacking ético busca identificar vulnerabilidades.", 
+        "La ciberseguridad incluye medidas como firewalls, cifrado, autenticación y copias de seguridad para proteger la información." 
+      ] 
+    }, 
+    { 
+      "tag": "inteligencia_artificial", 
+      "patterns": [ 
+        "qué es la inteligencia artificial", 
+        "aprendizaje automático", 
+        "redes neuronales", 
+        "aplicaciones de IA" 
+      ], 
+      "responses": [ 
+        "La inteligencia artificial es la simulación de la inteligencia humana por máquinas. El aprendizaje automático y las redes neuronales son técnicas comunes.", 
+        "Las aplicaciones de IA incluyen reconocimiento de voz, visión por computadora, chatbots, recomendaciones y conducción autónoma." 
+      ] 
+    }, 
+    { 
+      "tag": "tecnologias_emergentes", 
+      "patterns": [ 
+        "tecnologías emergentes", 
+        "blockchain", 
+        "internet de las cosas", 
+        "realidad aumentada" 
+      ], 
+      "responses": [ 
+        "Las tecnologías emergentes son innovaciones que están cambiando la forma en que vivimos y trabajamos. Blockchain, IoT y AR son ejemplos.", 
+        "Blockchain es una base de datos descentralizada, IoT conecta dispositivos a internet, y AR superpone información digital en el mundo real." 
+      ] 
+    }, 
+    { 
+      "tag": "desarrollo_personal", 
+      "patterns": [ 
+        "cómo mejorar habilidades", 
+        "crecimiento personal", 
+        "desarrollo de habilidades", 
+        "cómo ser más productivo" 
+      ], 
+      "responses": [ 
+        "El desarrollo personal implica mejorar habilidades, conocimientos y actitudes. La lectura, el ejercicio, la meditación y el aprendizaje continuo son formas de crecer.", 
+        "Para ser más productivo, establece metas claras, prioriza tareas, gestiona el tiempo, elimina distracciones y mantén un equilibrio entre trabajo y descanso." 
+      ] 
+    }, 
+    { 
+      "tag": "gestion_tiempo", 
+      "patterns": [ 
+        "cómo gestionar el tiempo", 
+        "técnicas de gestión del tiempo", 
+        "planificación y organización", 
+        "cómo ser más eficiente" 
+      ], 
+      "responses": [ 
+        "La gestión del tiempo implica planificar, organizar y priorizar tareas para ser más eficiente. Técnicas como el método Pomodoro y la matriz de Eisenhower pueden ayudar.", 
+        "Para ser más eficiente, establece horarios, evita multitareas, delega tareas, reduce distracciones y tomate descansos regulares." 
+      ] 
+    }, 
+    { 
+      "tag": "habitos_saludables", 
+      "patterns": [ 
+        "cómo tener hábitos saludables", 
+        "vida sana", 
+        "alimentación equilibrada", 
+        "ejercicio regular" 
+      ], 
+      "responses": [ 
+        "Los hábitos saludables incluyen una dieta equilibrada, ejercicio regular, sueño adecuado, hidratación, y manejo del estrés. Pequeños cambios pueden marcar la diferencia.", 
+        "Para tener una vida sana, come alimentos variados, haz ejercicio regularmente, duerme lo suficiente, bebe agua, y encuentra formas de relajarte y reducir el estrés." 
+      ] 
+    }, 
+    { 
+      "tag": "bienestar_mental", 
+      "patterns": [ 
+        "cómo cuidar la salud mental", 
+        "bienestar emocional", 
+        "manejo del estrés", 
+        "salud mental positiva" 
+      ], 
+      "responses": [ 
+        "El bienestar mental implica cuidar la salud emocional, manejar el estrés, practicar la gratitud, y buscar apoyo cuando sea necesario. La terapia y la meditación pueden ser útiles.", 
+        "Para cuidar la salud mental, practica la autocompasión, establece límites saludables, busca ayuda profesional si es necesario, y encuentra actividades que te relajen y te hagan feliz." 
+      ] 
+    }, 
+    { 
+      "tag": "relaciones_interpersonales", 
+      "patterns": [ 
+        "cómo mejorar relaciones", 
+        "habilidades sociales", 
+        "comunicación efectiva", 
+        "empatía y respeto" 
+      ], 
+      "responses": [ 
+        "Las relaciones interpersonales se basan en la comunicación efectiva, la empatía, el respeto y la resolución de conflictos. Escuchar activamente y ser comprensivo son clave.", 
+        "Para mejorar las relaciones, practica la escucha activa, sé honesto y respetuoso, muestra empatía, resuelve conflictos de manera constructiva, y establece límites saludables." 
+      ] 
+    },
+    {
+      "tag": "funciones_basicas",
+      "patterns": [
+        "qué es una función en programación",
+        "cómo crear funciones",
+        "para qué sirven las funciones",
+        "que es una funcion",
+        "definir funciones",
+        "conceptos básicos de funciones"
+      ],
+      "responses": [
+        "Una función es un bloque de código reutilizable que realiza una tarea específica. Ejemplo básico:\ndef saludar(nombre):\n    return f'Hola {nombre}!'",
+        "Las funciones permiten organizar y reutilizar código. Estructura básica:\ndef nombre_funcion(parametros):\n    # código\n    return resultado"
+      ]
+    },
+    {
+      "tag": "parametros_funciones",
+      "patterns": [
+        "qué son los parámetros de función",
+        "argumentos en funciones",
+        "parámetros por defecto",
+        "tipos de parámetros",
+        "args y kwargs"
+      ],
+      "responses": [
+        "Los parámetros son valores que una función recibe para procesar. Tipos:\ndef funcion(param_normal, param_default=10, *args, **kwargs):\n    # param_normal: parámetro obligatorio\n    # param_default: parámetro con valor por defecto\n    # *args: tupla de argumentos variables\n    # **kwargs: diccionario de argumentos nombrados",
+        "Ejemplos de parámetros:\ndef suma(a, b=0):  # b es opcional\n    return a + b\n\ndef multi_args(*nums):  # acepta cualquier número de argumentos\n    return sum(nums)"
+      ]
+    },
+    {
+      "tag": "retorno_funciones",
+      "patterns": [
+        "qué es el return en funciones",
+        "valores de retorno",
+        "múltiples returns",
+        "funciones sin return",
+        "retornar valores"
+      ],
+      "responses": [
+        "El return define el valor que una función devuelve. Ejemplo:\ndef cuadrado(x):\n    return x * x  # devuelve el cuadrado de x\n\ndef multi_return(x):\n    return x, x**2, x**3  # devuelve una tupla con tres valores",
+        "Una función puede retornar múltiples valores o None:\ndef operaciones(a, b):\n    suma = a + b\n    resta = a - b\n    return suma, resta  # retorna tupla (suma, resta)"
+      ]
+    },
+    {
+      "tag": "funciones_lambda",
+      "patterns": [
+        "qué son funciones lambda",
+        "funciones anónimas",
+        "crear lambda",
+        "uso de lambda",
+        "cuando usar lambda"
+      ],
+      "responses": [
+        "Las funciones lambda son funciones anónimas de una sola línea. Ejemplo:\ncuadrado = lambda x: x**2\nprint(cuadrado(5))  # Output: 25",
+        "Lambda es útil para funciones simples:\nlist(filter(lambda x: x > 0, [-1, 2, -3, 4]))  # filtra números positivos\nlist(map(lambda x: x*2, [1, 2, 3]))  # multiplica cada elemento por 2"
+      ]
+    },
+    {
+      "tag": "funciones_orden_superior",
+      "patterns": [
+        "qué son funciones de orden superior",
+        "map reduce filter",
+        "funciones como argumentos",
+        "retornar funciones",
+        "decoradores"
+      ],
+      "responses": [
+        "Las funciones de orden superior pueden recibir o retornar otras funciones. Ejemplo de map:\nnumeros = [1, 2, 3, 4]\ndobles = list(map(lambda x: x*2, numeros))  # [2, 4, 6, 8]",
+        "Ejemplo de decorador:\ndef mi_decorador(func):\n    def wrapper():\n        print('Antes')\n        func()\n        print('Después')\n    return wrapper\n\n@mi_decorador\ndef saludar():\n    print('¡Hola!')"
+      ]
+    } 
   ]
 }

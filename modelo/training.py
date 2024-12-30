@@ -111,7 +111,7 @@ sgd = SGD(learning_rate=lr_schedule , momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['acc'])
 
 # Definimos el callback de early stopping para evitar el sobreajuste
-early_stopping = EarlyStopping(monitor='val_loss', patience=150, restore_best_weights=True,min_delta=0.001,verbose=1)
+early_stopping = EarlyStopping(monitor='val_loss', patience=150, restore_best_weights=True,min_delta=0.001,verbose=0)
 
 #reduce lr on plateau
 reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=50, min_lr=0.0001)

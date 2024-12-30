@@ -3184,6 +3184,204 @@
                                 "Apples are very refreshing.",
                                 "I do not have a favorite fruit, but I enjoy many."
                         ]
+                },
+                {
+                        "tag": "basic_programming",
+                        "patterns": [
+                                "what is programming",
+                                "how to start programming",
+                                "basic programming concepts",
+                                "programming fundamentals"
+                        ],
+                        "responses": [
+                                "Programming is the process of creating instructions for a computer to perform specific tasks. Basic concepts include variables, loops, conditionals, and functions.",
+                                "To start programming, you need to understand concepts like algorithms, variables, control structures, and functions. Python is a good language for beginners."
+                        ]
+                },
+                {
+                        "tag": "oop_concepts",
+                        "patterns": [
+                                "what is OOP",
+                                "object oriented programming",
+                                "OOP concepts",
+                                "classes and objects"
+                        ],
+                        "responses": [
+                                "Object-Oriented Programming (OOP) is a paradigm that uses objects and classes. The main concepts are: encapsulation, inheritance, polymorphism, and abstraction.",
+                                "In OOP, classes are templates for creating objects that contain data and code. Inheritance allows one class to inherit properties from another."
+                        ]
+                },
+                {
+                        "tag": "web_technologies",
+                        "patterns": [
+                                "what is web development",
+                                "web technologies",
+                                "frontend and backend",
+                                "what is HTML CSS JavaScript"
+                        ],
+                        "responses": [
+                                "Web development involves frontend (HTML, CSS, JavaScript) for user interface and backend (Python, Java, etc.) for server logic.",
+                                "Basic web technologies are: HTML for structure, CSS for design, and JavaScript for interactivity."
+                        ]
+                },
+                {
+                        "tag": "databases",
+                        "patterns": [
+                                "what is a database",
+                                "types of databases",
+                                "SQL vs NoSQL",
+                                "how does a database work"
+                        ],
+                        "responses": [
+                                "A database is an organized system for storing and managing data. There are two main types: SQL (relational) and NoSQL (non-relational).",
+                                "SQL databases use related tables, while NoSQL can use documents, graphs, or key-value pairs."
+                        ]
+                },
+                {
+                        "tag": "computer_networks",
+                        "patterns": [
+                                "what are computer networks",
+                                "network protocols",
+                                "TCP IP",
+                                "how does internet work"
+                        ],
+                        "responses": [
+                                "Computer networks enable communication between devices. The Internet uses TCP/IP protocol to transmit data.",
+                                "Common protocols are HTTP for web, FTP for files, and SMTP for email."
+                        ]
+                },
+                {
+                        "tag": "favorite_sport",
+                        "patterns": [
+                                "What is your favorite sport?",
+                                "Preferred sport",
+                                "Do you like any sport?"
+                        ],
+                        "responses": [
+                                "I like soccer, it is exciting.",
+                                "Basketball is very fun.",
+                                "I do not have a favorite sport, but all of them are entertaining."
+                        ]
+                },
+                {
+                        "tag": "favorite_team",
+                        "patterns": [
+                                "What is your favorite team?",
+                                "Preferred team",
+                                "Do you like any team?"
+                        ],
+                        "responses": [
+                                "I like Real Madrid, it is a great team.",
+                                "Barcelona is very competitive.",
+                                "I do not have a favorite team, but all of them are valuable."
+                        ]
+                },
+                {
+                        "tag": "favorite_player",
+                        "patterns": [
+                                "What is your favorite player?",
+                                "Preferred player",
+                                "Do you like any player?"
+                        ],
+                        "responses": [
+                                "I like Lionel Messi, he is a great player.",
+                                "Cristiano Ronaldo is very talented.",
+                                "I do not have a favorite player, but all of them are skillful."
+                        ]
+                },
+                {
+                        "tag": "favorite_stadium",
+                        "patterns": [
+                                "What is your favorite stadium?",
+                                "Preferred stadium",
+                                "Do you like any stadium?"
+                        ],
+                        "responses": [
+                                "I like Camp Nou, it is a great stadium.",
+                                "Santiago Bernabéu is very impressive.",
+                                "I do not have a favorite stadium, but all of them are exciting."
+                        ]
+                },
+                {
+                        "tag": "favorite_championship",
+                        "patterns": [
+                                "What is your favorite championship?",
+                                "Preferred championship",
+                                "Do you like any championship?"
+                        ],
+                        "responses": [
+                                "I like the Champions League, it is very competitive.",
+                                "The World Cup is very exciting.",
+                                "I do not have a favorite championship, but all of them are important."
+                        ]
+                },
+                {
+                        "tag": "favorite_trophy",
+                        "patterns": [
+                                "What is your favorite trophy?",
+                                "Preferred trophy",
+                                "Do you like any trophy?"
+                        ],
+                        "responses": [
+                                "I like the Gold Cup, it is a great trophy.",
+                                "The Champions League is very prestigious and exciting."
+                        ]
+                },
+                {
+                        "tag": "mental_health",
+                        "patterns": [
+                                "how to take care of mental health",
+                                "emotional wellbeing",
+                                "stress management",
+                                "positive mental health"
+                        ],
+                        "responses": [
+                                "Mental wellbeing involves caring for emotional health, managing stress, practicing gratitude, and seeking support when needed. Therapy and meditation can be helpful.",
+                                "To care for mental health, practice self-compassion, set healthy boundaries, seek professional help if needed, and find activities that relax and make you happy."
+                        ]
+                },
+                {
+                        "tag": "interpersonal_relationships",
+                        "patterns": [
+                                "how to improve relationships",
+                                "social skills",
+                                "effective communication",
+                                "empathy and respect"
+                        ],
+                        "responses": [
+                                "Interpersonal relationships are based on effective communication, empathy, respect, and conflict resolution. Active listening and being understanding are key.",
+                                "To improve relationships, practice active listening, be honest and respectful, show empathy, resolve conflicts constructively, and establish healthy boundaries."
+                        ]
+                },
+                {
+                        "tag": "basic_functions",
+                        "patterns": [
+                                "what is a function in programming",
+                                "what is a function",
+                                "how to create functions",
+                                "what are functions used for",
+                                "what is a function",
+                                "define functions",
+                                "basic function concepts"
+                        ],
+                        "responses": [
+                                "A function is a reusable block of code that performs a specific task. Basic example:\ndef greet(name):\n    return f'Hello {name}!'",
+                                "Functions allow you to organize and reuse code. Basic structure:\ndef function_name(parameters):\n    # code\n    return result"
+                        ]
+                },
+                {
+                        "tag": "function_parameters",
+                        "patterns": [
+                                "what are function parameters",
+                                "function arguments",
+                                "default parameters",
+                                "types of parameters",
+                                "args and kwargs"
+                        ],
+                        "responses": [
+                                "Parameters are values that a function receives to process. Types:\ndef function(normal_param, default_param=10, *args, **kwargs):\n    # normal_param: required parameter\n    # default_param: parameter with default value\n    # *args: tuple of variable arguments\n    # **kwargs: dictionary of named arguments",
+                                "Examples of parameters:\ndef sum(a, b=0):  # b is optional\n    return a + b\n\ndef multi_args(*nums):  # accepts any number of arguments\n    return sum(nums)"
+                        ]
                 }
         ]
 }
