@@ -15,7 +15,7 @@ dir = Path(__file__).parent
 intents = json.loads(open(dir/'intents_combinate.json').read())
 words = pickle.load(open(dir/'words.pkl', 'rb'))
 classes = pickle.load(open(dir/'classes.pkl', 'rb'))
-model = load_model(dir/'chatbot_model.h5')
+model = load_model(dir/'chatbot_model.keras')
 model.summary()
 #Pasamos las palabras de oración a su forma raíz
 def clean_up_sentence(sentence):
@@ -60,8 +60,8 @@ def respuesta(message):
 print("Bot is running")
 
 #while True:
-#   message = input("You: ")
-# print('bot dice: ',respuesta(message.lower()))
+#    message = input("You: ")
+#    print('bot dice: ',respuesta(message.lower()))
 respuesta('welcome')
 
 def consulta(message):

@@ -28,6 +28,51 @@
                         "context_set": "greeting"
                 },
                 {
+                        "tag": "programming_greeting",
+                        "patterns": [
+                          "Hello what programming languages do you know",
+                          "Hello what programming languages are you familiar with",
+                          "Hello what programming languages do you master",
+                          "Hello what programming languages can you handle",
+                          "Hello what programming languages do you control"
+                        ],
+                        "responses": [
+                          "Hello! At the moment I only know basic programming languages, such as Python and JavaScript.",
+                          "Hello! I know basic programming languages, such as Python and JavaScript.",
+                          "Hello! I handle basic programming languages, such as Python and JavaScript."
+                        ]
+                },
+                {
+                        "tag":"knows_programming",
+                        "patterns":[
+                          "do you know programming?",
+                          "do you know about programming?",
+                          "are you familiar with programming?",
+                          "do you understand programming?",
+                          "do you know anything about programming?"
+                        ],
+                        "responses":[
+                          "Yes! I know programming, how can I help you?",
+                          "Of course! I know programming, how can I help you?",
+                          "Yes! I know programming, how can I help you today?"
+                        ]
+                },
+                {
+                        "tag":"programming_languages",
+                        "patterns":[
+                          "what programming languages do you know?",
+                          "what programming languages are you familiar with?",
+                          "what programming languages do you master?",
+                          "what programming languages can you handle?",
+                          "what programming languages do you control?"
+                        ],
+                        "responses":[
+                          "I know basic programming languages, such as Python and JavaScript.",
+                          "I handle basic programming languages, such as Python and JavaScript.",
+                          "I master basic programming languages, such as Python and JavaScript."
+                        ]
+                },
+                {
                         "tag": "goodbye",
                         "patterns": [
                                 "goodbye",
@@ -3381,6 +3426,176 @@
                         "responses": [
                                 "Parameters are values that a function receives to process. Types:\ndef function(normal_param, default_param=10, *args, **kwargs):\n    # normal_param: required parameter\n    # default_param: parameter with default value\n    # *args: tuple of variable arguments\n    # **kwargs: dictionary of named arguments",
                                 "Examples of parameters:\ndef sum(a, b=0):  # b is optional\n    return a + b\n\ndef multi_args(*nums):  # accepts any number of arguments\n    return sum(nums)"
+                        ]
+                },
+                {
+                        "tag": "programming_objects",
+                        "patterns": [
+                                "what are programming objects",
+                                "can you give me a definition of objects in programming"
+                        ],
+                        "responses": [
+                                "Objects are instances of classes that contain data and methods."
+                        ]
+                },
+                {
+                        "tag": "programming_classes",
+                        "patterns": [
+                                "what are programming classes"
+                        ],
+                        "responses": [
+                                "Classes are templates for creating objects."
+                        ]
+                },
+                {
+                        "tag": "programming_inheritance",
+                        "patterns": [
+                                "what is inheritance in programming",
+                                "can you explain inheritance in programming"
+                        ],
+                        "responses": [
+                                "Inheritance allows one class to inherit properties and methods from another.",
+                                "Inheritance is a key concept in object-oriented programming that allows one class to inherit properties and methods from another."
+                        ]
+                },
+                {
+                        "tag": "programming_polymorphism",
+                        "patterns": [
+                                "what is polymorphism in programming",
+                                "can you explain polymorphism in programming"
+                        ],
+                        "responses": [
+                                "Polymorphism allows an object to behave in multiple ways."
+                        ]
+                },
+                {
+                        "tag": "programming_encapsulation",
+                        "patterns": [
+                                "what is encapsulation in programming",
+                                "can you explain encapsulation in programming"
+                        ],
+                        "responses": [
+                                "Encapsulation hides the internal details of an object and only shows the interface."
+                        ]
+                },
+                {
+                        "tag": "programming_algorithms",
+                        "patterns": [
+                                "what is an algorithm",
+                                "how to create algorithms",
+                                "pseudocode",
+                                "algorithm examples"
+                        ],
+                        "responses": [
+                                "An algorithm is a set of steps to solve a problem. Example:\nAlgorithm to add two numbers:\n1. Input two numbers.\n2. Add the numbers.\n3. Show the result."
+                        ]
+                },
+                {
+                        "tag": "data_structures",
+                        "patterns": [
+                                "what are data structures",
+                                "types of data structures",
+                                "arrays and lists",
+                                "stacks and queues"
+                        ],
+                        "responses": [
+                                "Data structures are ways to organize and store data. Examples:\n- Arrays and lists\n- Stacks and queues\n- Trees and graphs"
+                        ]
+                },
+                {
+                        "tag": "sorting_algorithms",
+                        "patterns": [
+                                "what are sorting algorithms",
+                                "types of sorting",
+                                "bubble sort",
+                                "quick sort"
+                        ],
+                        "responses": [
+                                "Sorting algorithms organize elements in a sequence. Examples:\n- Bubble sort\n- Quick sort\n- Merge sort"
+                        ]
+                },
+                {
+                        "tag": "search_algorithms",
+                        "patterns": [
+                                "what are search algorithms",
+                                "types of search",
+                                "binary search",
+                                "sequential search"
+                        ],
+                        "responses": [
+                                "Search algorithms find an element in a sequence. Examples:\n- Binary search\n- Sequential search\n- Interpolation search"
+                        ]
+                },
+                {
+                        "tag": "machine_learning",
+                        "patterns": [
+                                "what is machine learning",
+                                "machine learning algorithms",
+                                "supervised and unsupervised learning",
+                                "deep learning"
+                        ],
+                        "responses": [
+                                "Machine learning is a field of AI that uses data to train models. Types:\n- Supervised learning\n- Unsupervised learning\n- Reinforcement learning"
+                        ]
+                },
+                {
+                        "tag": "deep_learning",
+                        "patterns": [
+                                "what is deep learning",
+                                "neural networks",
+                                "deep learning algorithms",
+                                "deep learning applications"
+                        ],
+                        "responses": [
+                                "Deep learning is a subset of machine learning that uses neural networks to model complex patterns."
+                        ]
+                },
+                {
+                        "tag": "neural_networks",
+                        "patterns": [
+                                "what are neural networks",
+                                "types of neural networks",
+                                "feedforward and recurrent networks",
+                                "convolutional networks"
+                        ],
+                        "responses": [
+                                "Neural networks are models inspired by the human brain. Types:\n- Feedforward neural networks\n- Recurrent neural networks\n- Convolutional neural networks"
+                        ]
+                },
+                {
+                        "tag": "natural_language_processing",
+                        "patterns": [
+                                "what is natural language processing",
+                                "NLP algorithms",
+                                "text processing",
+                                "NLP applications"
+                        ],
+                        "responses": [
+                                "Natural Language Processing (NLP) is a field of AI that deals with text and speech data. Applications:\n- Sentiment analysis\n- Machine translation\n- Chatbots"
+                        ]
+                },
+                {
+                        "tag": "computer_vision",
+                        "patterns": [
+                                "what is computer vision",
+                                "image processing",
+                                "CV algorithms",
+                                "object detection"
+                        ],
+                        "responses": [
+                                "Computer Vision (CV) is a field of AI that deals with visual data. Applications:\n- Image classification\n- Object detection\n- Facial recognition"
+                        ]
+                },
+                {
+                        "tag": "reinforcement_learning",
+                        "patterns": [
+                                "what is reinforcement learning",
+                                "RL algorithms",
+                                "Markov decision process",
+                                "Q-learning"
+                        ],
+                        "responses": [
+                                "Reinforcement Learning (RL) is a type of machine learning that uses rewards to train models."
                         ]
                 }
         ]

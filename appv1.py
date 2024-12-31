@@ -1,4 +1,5 @@
 import tkinter as tk
+from PIL import Image, ImageTk
 from tkinter import Text, messagebox,Label,Frame,Button,Entry,Scrollbar
 #import sys
 #from pathlib import Path
@@ -45,7 +46,10 @@ class ChatbotAPP:
         self.text_widget.config(state=tk.DISABLED,cursor="arrow")
             
     def create_input_area(self):
-        input_frame=Frame(self.root,bg="white")
+        chatIconSrc = Image.open("images/send2.png")
+        self.sendImage = ImageTk.PhotoImage(chatIconSrc.resize((35, 35)))
+        
+        input_frame=Frame(self.root,bg="#f1f1f1")
         input_frame.pack(fill=tk.X,pady=5)
         
         self.entry=Entry(input_frame,font=("Arial",12))
@@ -54,7 +58,7 @@ class ChatbotAPP:
         self.entry.bind("<Return>",self.send_message)
         self.entry.pack(side=tk.LEFT,padx=10,pady=5,fill=tk.X,expand=True)
                 
-        self.send_button=Button(input_frame,text="Enviar",bg="#007bff",fg="white",font=("Arial",12),command=lambda:self.send_message(None)) 
+        self.send_button=Button(input_frame,text="",image=self.sendImage,bg="#007bff",font=("Arial",12),command=lambda:self.send_message(None)) 
         self.send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
         self.send_button.pack(padx=10,pady=10,side=tk.RIGHT)
     

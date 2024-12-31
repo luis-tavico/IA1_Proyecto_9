@@ -3,10 +3,10 @@
         {
             "tag": "javascript_informacion",
             "patterns": [
-                "¿Qué temas puedes tratar en JavaScript?",
-                "¿Qué cosas puedo preguntar sobre JavaScript?",
-                "¿Sobre qué temas puedes hablar en JavaScript?",
-                "¿Qué me puedes enseñar de JavaScript?"
+                "¿qué temas puedes tratar en JavaScript?",
+                "¿qué cosas puedo preguntar sobre JavaScript?",
+                "¿sobre qué temas puedes hablar en JavaScript?",
+                "¿qué me puedes enseñar de JavaScript?"
             ],
             "responses": [
                 "Puedo ayudarte con varios temas de JavaScript, como condicionales, operadores, bucles, funciones, listas, objetos, manejo de errores y más.",

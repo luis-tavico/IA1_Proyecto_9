@@ -89,29 +89,44 @@ train_x = np.array(train_x)
 train_y = np.array(train_y)
 
 #Creamos la red neuronal
+#model = Sequential()
+#model.add(Dense(256, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
+#model.add(BatchNormalization())
+#model.add(Dropout(0.5, name="input_layer1"))
+#model.add(Dense(128, name="input_layer2", activation='relu'))
+#model.add(BatchNormalization())
+#model.add(Dropout(0.5, name="input_layer3"))
+#model.add(Dense(len(train_y[0]), name="output_layer", activation='softmax'))
+
 model = Sequential()
-model.add(Dense(256, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
+model.add(Dense(1024, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.5, name="input_layer1"))
-model.add(Dense(128, name="input_layer2", activation='relu'))
+model.add(Dropout(0.2, name="dropout_1"))
+model.add(Dense(512, name="hidden_layer1", activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.5, name="input_layer3"))
+model.add(Dropout(0.2, name="dropout_2"))
+model.add(Dense(256, name="hidden_layer2", activation='relu'))
+model.add(BatchNormalization())
+model.add(Dropout(0.2, name="dropout_3"))
+model.add(Dense(128, name="hidden_layer3", activation='relu'))
+model.add(BatchNormalization())
+model.add(Dropout(0.2, name="dropout_4"))
 model.add(Dense(len(train_y[0]), name="output_layer", activation='softmax'))
 
 #Creamos el programa de aprendizaje
 lr_schedule = schedules.ExponentialDecay(
     initial_learning_rate=0.0001,
-    decay_steps=10000,
+    decay_steps=5000,
     decay_rate=0.96,
     staircase=True,
 )
 #
 #Creamos el optimizador y lo compilamos
-sgd = SGD(learning_rate=lr_schedule , momentum=0.9, nesterov=True)
-model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['acc'])
+sgd = SGD(learning_rate=lr_schedule , momentum=0.96, nesterov=True)
+model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['accuracy', 'Precision', 'Recall'])
 
 # Definimos el callback de early stopping para evitar el sobreajuste
-early_stopping = EarlyStopping(monitor='val_loss', patience=150, restore_best_weights=True,min_delta=0.001,verbose=0)
+early_stopping = EarlyStopping(monitor='val_loss', patience=50, restore_best_weights=True,min_delta=0.0001,verbose=1)
 
 #reduce lr on plateau
 reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=50, min_lr=0.0001)
@@ -119,7 +134,7 @@ reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=50, min_l
 
 #Entrenamos el modelo y lo guardamos
 model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=8,validation_split=0.2, callbacks=[early_stopping,reduce_lr])
-model.save("chatbot_model.h5")
+model.save("chatbot_model.keras")
 model.summary()
 
 tfjs.converters.save_keras_model(model, 'model_js')

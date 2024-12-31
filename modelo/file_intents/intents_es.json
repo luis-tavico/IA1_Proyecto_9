@@ -22,6 +22,51 @@
       "context_set": "saludo"
     },
     {
+      "tag":"saludo_programacion",
+      "patterns":[
+        "Hola que lenguajes de programación conoces",
+        "Hola que lenguajes de programación sabes",
+        "Hola que lenguajes de programación dominas",
+        "Hola que lenguajes de programación manejas",
+        "Hola que lenguajes de programación controlas"
+      ],
+      "responses":[
+        "¡Hola! Por el momento solo conozco los lenguajes de programación básico, como Python y JavaScript .",
+        "¡Hola! Conozco los lenguajes de programación básico, como Python y JavaScript.",
+        "¡Hola! Manejo los lenguajes de programación básico, como Python y JavaScript."
+      ]
+    },
+    {
+      "tag":"sabe_programacion",
+      "patterns":[
+        "¿sabes programación?",
+        "¿sabes de programación?",
+        "¿sabes sobre programación?",
+        "¿sabes de programación?",
+        "¿sabes algo de programación?"
+      ],
+      "responses":[
+        "¡Sí! Sé programación, ¿en qué puedo ayudarte?",
+        "¡Claro! Sé programación, ¿en qué puedo ayudarte?",
+        "¡Sí! Sé programación, ¿en qué puedo ayudarte hoy?"
+      ]
+    },
+    {
+      "tag":"lenguajes_programacion",
+      "patterns":[
+        "¿qué lenguajes de programación conoces?",
+        "¿qué lenguajes de programación sabes?",
+        "¿qué lenguajes de programación dominas?",
+        "¿qué lenguajes de programación manejas?",
+        "¿qué lenguajes de programación controlas?"
+      ],
+      "responses":[
+        "Conozco los lenguajes de programación básico, como Python y JavaScript.",
+        "Manejo los lenguajes de programación básico, como Python y JavaScript.",
+        "Domino los lenguajes de programación básico, como Python y JavaScript."
+      ]
+    },
+    {
       "tag": "saludo",
       "patterns": [
         "¿como estas?",
@@ -3049,10 +3094,11 @@
       "tag": "funciones_basicas",
       "patterns": [
         "qué es una función en programación",
-        "cómo crear funciones",
-        "para qué sirven las funciones",
-        "que es una funcion",
-        "definir funciones",
+        "cómo crear funciones en programación",
+        "para qué sirven las funciones en programación",
+        "que es una funcion en programacion",
+        "como se define una funcion en programacion",
+        "definir funciones en programacion",
         "conceptos básicos de funciones"
       ],
       "responses": [
@@ -3077,11 +3123,11 @@
     {
       "tag": "retorno_funciones",
       "patterns": [
-        "qué es el return en funciones",
-        "valores de retorno",
-        "múltiples returns",
-        "funciones sin return",
-        "retornar valores"
+        "qué es el return en funciones de programación",
+        "valores de retorno en funciones de programación",
+        "múltiples returns en funciones de programación",
+        "funciones sin return en programación",
+        "retornar valores en funciones de programación"
       ],
       "responses": [
         "El return define el valor que una función devuelve. Ejemplo:\ndef cuadrado(x):\n    return x * x  # devuelve el cuadrado de x\n\ndef multi_return(x):\n    return x, x**2, x**3  # devuelve una tupla con tres valores",
@@ -3091,11 +3137,11 @@
     {
       "tag": "funciones_lambda",
       "patterns": [
-        "qué son funciones lambda",
-        "funciones anónimas",
-        "crear lambda",
-        "uso de lambda",
-        "cuando usar lambda"
+        "qué son funciones lambda en programación",
+        "funciones anónimas en programación",
+        "crear lambda en programación",
+        "uso de lambda en programación",
+        "cuando usar lambda en programación"
       ],
       "responses": [
         "Las funciones lambda son funciones anónimas de una sola línea. Ejemplo:\ncuadrado = lambda x: x**2\nprint(cuadrado(5))  # Output: 25",
@@ -3105,16 +3151,232 @@
     {
       "tag": "funciones_orden_superior",
       "patterns": [
-        "qué son funciones de orden superior",
-        "map reduce filter",
-        "funciones como argumentos",
-        "retornar funciones",
-        "decoradores"
+        "qué son funciones de orden superior en programación"
       ],
       "responses": [
-        "Las funciones de orden superior pueden recibir o retornar otras funciones. Ejemplo de map:\nnumeros = [1, 2, 3, 4]\ndobles = list(map(lambda x: x*2, numeros))  # [2, 4, 6, 8]",
-        "Ejemplo de decorador:\ndef mi_decorador(func):\n    def wrapper():\n        print('Antes')\n        func()\n        print('Después')\n    return wrapper\n\n@mi_decorador\ndef saludar():\n    print('¡Hola!')"
+        "Las funciones de orden superior pueden recibir o retornar otras funciones. Ejemplo de map:\nnumeros = [1, 2, 3, 4]\ndobles = list(map(lambda x: x*2, numeros))  # [2, 4, 6, 8]"
       ]
-    } 
+    },
+    {
+      "tag": "objetos_programacion",
+      "patterns": [
+        "que son los objetos de programacion",
+        "me puedes dar alguna definicion de los objetos en programacion"
+      ],
+      "responses": [
+        "Los objetos son instancias de clases que contienen datos y métodos."
+      ]
+    },
+    {
+      "tag": "clases_programacion",
+      "patterns": [
+        "que son las clases de programacion"
+      ],
+      "responses": [
+        "Las clases son plantillas para crear objetos."
+      ]
+    },
+    {
+      "tag": "herencia_programacion",
+      "patterns": [
+        "que es la herencia en programacion",
+        "me puedes explicar la herencia en programacion"
+      ],
+      "responses": [
+        "La herencia permite que una clase herede propiedades y métodos de otra.",
+        "La herencia es un concepto clave en la programación orientada a objetos y permite que una clase herede propiedades y y métodos de otra."
+      ]
+    },
+    {
+      "tag": "polimorfismo_programacion",
+      "patterns": [
+        "que es el polimorfismo en programacion",
+        "me puedes explicar el polimorfismo en programacion"
+      ],
+      "responses": [
+        "El polimorfismo permite que un objeto pueda comportarse de múltiples formas."
+      ]
+    },
+    {
+      "tag": "encapsulamiento_programacion",
+      "patterns": [
+        "que es el encapsulamiento en programacion",
+        "me puedes explicar el encapsulamiento en programacion"
+      ],
+      "responses": [
+        "El encapsulamiento oculta los detalles internos de un objeto y solo muestra la interfaz."
+      ]
+    },
+    {
+      "tag": "algoritmos_programacion",
+      "patterns": [
+        "qué es un algoritmo",
+        "cómo crear algoritmos",
+        "ejemplos de algoritmos"
+      ],
+      "responses": [
+        "Un algoritmo es un conjunto de pasos para resolver un problema. Ejemplo:\nAlgoritmo para sumar dos números:\n1. Ingresar dos números.\n2. Sumar los números.\n3. Mostrar el resultado."
+      ]
+    },
+    {
+      "tag": "pseudo_codigo_general",
+      "patterns": [
+        "qué es el pseudocódigo",
+        "cómo escribir pseudocódigo",
+        "ejemplos de pseudocódigo"
+      ],
+      "responses": [
+        "El pseudocódigo es un lenguaje informal para describir algoritmos. Ejemplo:\nInicio\n  Leer a, b\n  c = a + b\n  Mostrar c\nFin",
+        "El pseudocódigo es útil para planificar algoritmos antes de codificar, es fácil de entender y no está limitado por la sintaxis de un lenguaje de programación."
+      ]
+    },
+    {
+      "tag": "pseudo_codigo_ventaja",
+      "patterns": [
+        "Cuales son las ventajas del pseudocódigo",
+        "por qué usar pseudocódigo",
+        "beneficios del pseudocódigo"
+      ],
+      "responses": [
+        "El pseudocódigo es fácil de entender, no está limitado por la sintaxis de un lenguaje de programación y es útil para planificar algoritmos antes de codificar."
+      ]
+    },
+    {
+      "tag": "estructuras_datos",
+      "patterns": [
+        "qué son las estructuras de datos",
+        "tipos de estructuras de datos",
+        "arreglos y listas",
+        "pilas y colas"
+      ],
+      "responses": [
+        "Las estructuras de datos son formas de organizar y almacenar datos. Ejemplos:\n- Arreglos y listas\n- Pilas y colas\n- Árboles y grafos"
+      ]
+    },
+    {
+      "tag": "algoritmos_ordenamiento",
+      "patterns": [
+        "qué son los algoritmos de ordenamiento de programacion",
+        "ordenamiento rápido de programacion"
+      ],
+      "responses": [
+        "Los algoritmos de ordenamiento organizan elementos en una secuencia. Ejemplos:\n- Ordenamiento burbuja\n- Ordenamiento rápido\n- Ordenamiento por mezcla"
+      ]
+    },
+    {
+      "tag":"ordenamiento_rapido_progra",
+      "patterns": [
+        "qué es el ordenamiento rápido",
+        "cómo funciona el ordenamiento rápido",
+        "ejemplo de ordenamiento rápido"
+      ],
+      "responses": [
+        "El ordenamiento rápido divide una lista en dos partes y ordena cada parte por separado. Ejemplo:\n[5, 3, 8, 4, 2]\n[3, 2, 4, 5, 8]"
+      ]
+    },
+    {
+      "tag":"ordenamiento_burbuja",
+      "patterns": [
+        "qué es el ordenamiento burbuja",
+        "cómo funciona el ordenamiento burbuja",
+        "ejemplo de ordenamiento burbuja"
+      ],
+      "responses": [
+        "El ordenamiento burbuja compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto. Ejemplo:\n[5, 3, 8, 4, 2]\n[3, 5, 8, 4, 2]\n[3, 5, 4, 8, 2]\n[3, 5, 4, 2, 8]\n[3, 4, 5, 2, 8]\n[3, 4, 2, 5, 8]\n[3, 2, 4, 5, 8]\n[2, 3, 4, 5, 8]"
+      ]
+    },
+    {
+      "tag":"tipos_ordenamiento_progra",
+      "patterns": [
+        "cuales son los tipos de ordenamiento"
+      ],
+      "responses": [
+        "Los tipos de ordenamiento incluyen:\n- Burbuja\n- Selección\n- Inserción\n- Rápido\n- Mezcla\n- Montículos\n- Radix"
+      ]
+    },
+    {
+      "tag": "algoritmos_busqueda",
+      "patterns": [
+        "qué son los algoritmos de búsqueda",
+        "tipos de búsqueda",
+        "búsqueda binaria",
+        "búsqueda secuencial"
+      ],
+      "responses": [
+        "Los algoritmos de búsqueda encuentran un elemento en una secuencia. Ejemplos:\n- Búsqueda binaria\n- Búsqueda secuencial\n- Búsqueda por interpolación"
+      ]
+    },
+    {
+      "tag": "aprendizaje_maquina",
+      "patterns": [
+        "qué es el aprendizaje automático",
+        "algoritmos de machine learning",
+        "aprendizaje supervisado y no supervisado",
+        "deep learning"
+      ],
+      "responses": [
+        "El Machine Learning es un campo de la IA que usa datos para entrenar modelos. Tipos:\n- Aprendizaje supervisado\n- Aprendizaje no supervisado\n- Aprendizaje por refuerzo"
+      ]
+    },
+    {
+      "tag": "aprendizaje_profundo",
+      "patterns": [
+        "qué es deep learning",
+        "redes neuronales",
+        "algoritmos de deep learning",
+        "aplicaciones de deep learning"
+      ],
+      "responses": [
+        "El Deep Learning es una rama del Machine Learning que usa redes neuronales para modelar patrones complejos."
+      ]
+    },
+    {
+      "tag": "redes_neuronales",
+      "patterns": [
+        "qué son las redes neuronales",
+        "tipos de redes neuronales",
+        "redes feedforward y recurrentes",
+        "redes convolucionales"
+      ],
+      "responses": [
+        "Las redes neuronales son modelos inspirados en el cerebro humano. Tipos:\n- Redes neuronales feedforward\n- Redes neuronales recurrentes\n- Redes neuronales convolucionales"
+      ]
+    },
+    {
+      "tag": "procesamiento_lenguaje_natural",
+      "patterns": [
+        "qué es el procesamiento del lenguaje natural",
+        "algoritmos de NLP",
+        "procesamiento de texto",
+        "aplicaciones de NLP"
+      ],
+      "responses": [
+        "El Procesamiento del Lenguaje Natural (NLP) es un campo de la IA que trabaja con texto y voz. Aplicaciones:\n- Análisis de sentimientos\n- Traducción automática\n- Chatbots"
+      ]
+    },
+    {
+      "tag": "vision_computacional",
+      "patterns": [
+        "qué es la visión por computadora",
+        "procesamiento de imágenes",
+        "algoritmos de CV",
+        "detección de objetos"
+      ],
+      "responses": [
+        "La Visión por Computadora (CV) es un campo de la IA que trabaja con datos visuales. Aplicaciones:\n- Clasificación de imágenes\n- Detección de objetos\n- Reconocimiento facial"
+      ]
+    },
+    {
+      "tag": "aprendizaje_refuerzo",
+      "patterns": [
+        "qué es el aprendizaje por refuerzo",
+        "algoritmos de RL",
+        "proceso de decisión de Markov",
+        "Q-learning"
+      ],
+      "responses": [
+        "El Aprendizaje por Refuerzo (RL) es un tipo de Machine Learning que usa recompensas para entrenar modelos."
+      ]
+    }
   ]
 }
