@@ -22,45 +22,45 @@
       "context_set": "saludo"
     },
     {
-      "tag":"saludo_programacion",
-      "patterns":[
+      "tag": "saludo_programacion",
+      "patterns": [
         "Hola que lenguajes de programación conoces",
         "Hola que lenguajes de programación sabes",
         "Hola que lenguajes de programación dominas",
         "Hola que lenguajes de programación manejas",
         "Hola que lenguajes de programación controlas"
       ],
-      "responses":[
+      "responses": [
         "¡Hola! Por el momento solo conozco los lenguajes de programación básico, como Python y JavaScript .",
         "¡Hola! Conozco los lenguajes de programación básico, como Python y JavaScript.",
         "¡Hola! Manejo los lenguajes de programación básico, como Python y JavaScript."
       ]
     },
     {
-      "tag":"sabe_programacion",
-      "patterns":[
+      "tag": "sabe_programacion",
+      "patterns": [
         "¿sabes programación?",
         "¿sabes de programación?",
         "¿sabes sobre programación?",
         "¿sabes de programación?",
         "¿sabes algo de programación?"
       ],
-      "responses":[
+      "responses": [
         "¡Sí! Sé programación, ¿en qué puedo ayudarte?",
         "¡Claro! Sé programación, ¿en qué puedo ayudarte?",
         "¡Sí! Sé programación, ¿en qué puedo ayudarte hoy?"
       ]
     },
     {
-      "tag":"lenguajes_programacion",
-      "patterns":[
+      "tag": "lenguajes_programacion",
+      "patterns": [
         "¿qué lenguajes de programación conoces?",
         "¿qué lenguajes de programación sabes?",
         "¿qué lenguajes de programación dominas?",
         "¿qué lenguajes de programación manejas?",
         "¿qué lenguajes de programación controlas?"
       ],
-      "responses":[
+      "responses": [
         "Conozco los lenguajes de programación básico, como Python y JavaScript.",
         "Manejo los lenguajes de programación básico, como Python y JavaScript.",
         "Domino los lenguajes de programación básico, como Python y JavaScript."
@@ -2921,174 +2921,174 @@
         "No tengo una fruta favorita, pero disfruto de muchas."
       ]
     },
-    { 
-      "tag": "programacion_basica", 
-      "patterns": [ 
-        "qué es programación", 
-        "cómo empezar a programar", 
-        "conceptos básicos de programación", 
-        "fundamentos de programación" 
-      ], 
-      "responses": [ 
-        "La programación es el proceso de crear instrucciones para que una computadora realice tareas específicas. Los conceptos básicos incluyen variables, bucles, condicionales y funciones.", 
-        "Para empezar a programar, necesitas entender conceptos como algoritmos, variables, estructuras de control y funciones. Python es un buen lenguaje para principiantes." 
-      ] 
-    }, 
-    { 
-      "tag": "conceptos_oop", 
-      "patterns": [ 
-        "qué es POO", 
-        "programación orientada a objetos", 
-        "conceptos de OOP", 
-        "clases y objetos" 
-      ], 
-      "responses": [ 
-        "La Programación Orientada a Objetos (POO) es un paradigma que usa objetos y clases. Los conceptos principales son: encapsulamiento, herencia, polimorfismo y abstracción.", 
-        "En POO, las clases son plantillas para crear objetos que contienen datos y código. La herencia permite que una clase herede propiedades de otra." 
-      ] 
-    }, 
-    { 
-      "tag": "tecnologias_web", 
-      "patterns": [ 
-        "qué es desarrollo web", 
-        "tecnologías web", 
-        "frontend y backend", 
-        "que es HTML CSS JavaScript" 
-      ], 
-      "responses": [ 
-        "El desarrollo web involucra frontend (HTML, CSS, JavaScript) para la interfaz de usuario y backend (Python, Java, etc.) para la lógica del servidor.", 
-        "Las tecnologías web básicas son: HTML para estructura, CSS para diseño y JavaScript para interactividad." 
-      ] 
-    }, 
-    { 
-      "tag": "bases_datos", 
-      "patterns": [ 
-        "qué es una base de datos", 
-        "tipos de bases de datos", 
-        "SQL vs NoSQL", 
-        "como funciona una base de datos" 
-      ], 
-      "responses": [ 
-        "Una base de datos es un sistema organizado para almacenar y gestionar datos. Hay dos tipos principales: SQL (relacionales) y NoSQL (no relacionales).", 
-        "Las bases de datos SQL usan tablas relacionadas, mientras que NoSQL puede usar documentos, grafos o pares clave-valor." 
-      ] 
-    }, 
-    { 
-      "tag": "redes_computadoras", 
-      "patterns": [ 
-        "qué son las redes de computadoras", 
-        "protocolos de red", 
-        "TCP IP", 
-        "como funciona internet" 
-      ], 
-      "responses": [ 
-        "Las redes de computadoras permiten la comunicación entre dispositivos. Internet usa el protocolo TCP/IP para transmitir datos.", 
-        "Los protocolos más comunes son HTTP para web, FTP para archivos, y SMTP para correo electrónico." 
-      ] 
-    }, 
-    { 
-      "tag": "seguridad_informatica", 
-      "patterns": [ 
-        "qué es la seguridad informática", 
-        "ciberseguridad", 
-        "protección de datos", 
-        "hacking ético" 
-      ], 
-      "responses": [ 
-        "La seguridad informática protege los sistemas de ataques y garantiza la privacidad de los datos. El hacking ético busca identificar vulnerabilidades.", 
-        "La ciberseguridad incluye medidas como firewalls, cifrado, autenticación y copias de seguridad para proteger la información." 
-      ] 
-    }, 
-    { 
-      "tag": "inteligencia_artificial", 
-      "patterns": [ 
-        "qué es la inteligencia artificial", 
-        "aprendizaje automático", 
-        "redes neuronales", 
-        "aplicaciones de IA" 
-      ], 
-      "responses": [ 
-        "La inteligencia artificial es la simulación de la inteligencia humana por máquinas. El aprendizaje automático y las redes neuronales son técnicas comunes.", 
-        "Las aplicaciones de IA incluyen reconocimiento de voz, visión por computadora, chatbots, recomendaciones y conducción autónoma." 
-      ] 
-    }, 
-    { 
-      "tag": "tecnologias_emergentes", 
-      "patterns": [ 
-        "tecnologías emergentes", 
-        "blockchain", 
-        "internet de las cosas", 
-        "realidad aumentada" 
-      ], 
-      "responses": [ 
-        "Las tecnologías emergentes son innovaciones que están cambiando la forma en que vivimos y trabajamos. Blockchain, IoT y AR son ejemplos.", 
-        "Blockchain es una base de datos descentralizada, IoT conecta dispositivos a internet, y AR superpone información digital en el mundo real." 
-      ] 
-    }, 
-    { 
-      "tag": "desarrollo_personal", 
-      "patterns": [ 
-        "cómo mejorar habilidades", 
-        "crecimiento personal", 
-        "desarrollo de habilidades", 
-        "cómo ser más productivo" 
-      ], 
-      "responses": [ 
-        "El desarrollo personal implica mejorar habilidades, conocimientos y actitudes. La lectura, el ejercicio, la meditación y el aprendizaje continuo son formas de crecer.", 
-        "Para ser más productivo, establece metas claras, prioriza tareas, gestiona el tiempo, elimina distracciones y mantén un equilibrio entre trabajo y descanso." 
-      ] 
-    }, 
-    { 
-      "tag": "gestion_tiempo", 
-      "patterns": [ 
-        "cómo gestionar el tiempo", 
-        "técnicas de gestión del tiempo", 
-        "planificación y organización", 
-        "cómo ser más eficiente" 
-      ], 
-      "responses": [ 
-        "La gestión del tiempo implica planificar, organizar y priorizar tareas para ser más eficiente. Técnicas como el método Pomodoro y la matriz de Eisenhower pueden ayudar.", 
-        "Para ser más eficiente, establece horarios, evita multitareas, delega tareas, reduce distracciones y tomate descansos regulares." 
-      ] 
-    }, 
-    { 
-      "tag": "habitos_saludables", 
-      "patterns": [ 
-        "cómo tener hábitos saludables", 
-        "vida sana", 
-        "alimentación equilibrada", 
-        "ejercicio regular" 
-      ], 
-      "responses": [ 
-        "Los hábitos saludables incluyen una dieta equilibrada, ejercicio regular, sueño adecuado, hidratación, y manejo del estrés. Pequeños cambios pueden marcar la diferencia.", 
-        "Para tener una vida sana, come alimentos variados, haz ejercicio regularmente, duerme lo suficiente, bebe agua, y encuentra formas de relajarte y reducir el estrés." 
-      ] 
-    }, 
-    { 
-      "tag": "bienestar_mental", 
-      "patterns": [ 
-        "cómo cuidar la salud mental", 
-        "bienestar emocional", 
-        "manejo del estrés", 
-        "salud mental positiva" 
-      ], 
-      "responses": [ 
-        "El bienestar mental implica cuidar la salud emocional, manejar el estrés, practicar la gratitud, y buscar apoyo cuando sea necesario. La terapia y la meditación pueden ser útiles.", 
-        "Para cuidar la salud mental, practica la autocompasión, establece límites saludables, busca ayuda profesional si es necesario, y encuentra actividades que te relajen y te hagan feliz." 
-      ] 
-    }, 
-    { 
-      "tag": "relaciones_interpersonales", 
-      "patterns": [ 
-        "cómo mejorar relaciones", 
-        "habilidades sociales", 
-        "comunicación efectiva", 
-        "empatía y respeto" 
-      ], 
-      "responses": [ 
-        "Las relaciones interpersonales se basan en la comunicación efectiva, la empatía, el respeto y la resolución de conflictos. Escuchar activamente y ser comprensivo son clave.", 
-        "Para mejorar las relaciones, practica la escucha activa, sé honesto y respetuoso, muestra empatía, resuelve conflictos de manera constructiva, y establece límites saludables." 
-      ] 
+    {
+      "tag": "programacion_basica",
+      "patterns": [
+        "qué es programación",
+        "cómo empezar a programar",
+        "conceptos básicos de programación",
+        "fundamentos de programación"
+      ],
+      "responses": [
+        "La programación es el proceso de crear instrucciones para que una computadora realice tareas específicas. Los conceptos básicos incluyen variables, bucles, condicionales y funciones.",
+        "Para empezar a programar, necesitas entender conceptos como algoritmos, variables, estructuras de control y funciones. Python es un buen lenguaje para principiantes."
+      ]
+    },
+    {
+      "tag": "conceptos_oop",
+      "patterns": [
+        "qué es POO",
+        "programación orientada a objetos",
+        "conceptos de OOP",
+        "clases y objetos"
+      ],
+      "responses": [
+        "La Programación Orientada a Objetos (POO) es un paradigma que usa objetos y clases. Los conceptos principales son: encapsulamiento, herencia, polimorfismo y abstracción.",
+        "En POO, las clases son plantillas para crear objetos que contienen datos y código. La herencia permite que una clase herede propiedades de otra."
+      ]
+    },
+    {
+      "tag": "tecnologias_web",
+      "patterns": [
+        "qué es desarrollo web",
+        "tecnologías web",
+        "frontend y backend",
+        "que es HTML CSS JavaScript"
+      ],
+      "responses": [
+        "El desarrollo web involucra frontend (HTML, CSS, JavaScript) para la interfaz de usuario y backend (Python, Java, etc.) para la lógica del servidor.",
+        "Las tecnologías web básicas son: HTML para estructura, CSS para diseño y JavaScript para interactividad."
+      ]
+    },
+    {
+      "tag": "bases_datos",
+      "patterns": [
+        "qué es una base de datos",
+        "tipos de bases de datos",
+        "SQL vs NoSQL",
+        "como funciona una base de datos"
+      ],
+      "responses": [
+        "Una base de datos es un sistema organizado para almacenar y gestionar datos. Hay dos tipos principales: SQL (relacionales) y NoSQL (no relacionales).",
+        "Las bases de datos SQL usan tablas relacionadas, mientras que NoSQL puede usar documentos, grafos o pares clave-valor."
+      ]
+    },
+    {
+      "tag": "redes_computadoras",
+      "patterns": [
+        "qué son las redes de computadoras",
+        "protocolos de red",
+        "TCP IP",
+        "como funciona internet"
+      ],
+      "responses": [
+        "Las redes de computadoras permiten la comunicación entre dispositivos. Internet usa el protocolo TCP/IP para transmitir datos.",
+        "Los protocolos más comunes son HTTP para web, FTP para archivos, y SMTP para correo electrónico."
+      ]
+    },
+    {
+      "tag": "seguridad_informatica",
+      "patterns": [
+        "qué es la seguridad informática",
+        "ciberseguridad",
+        "protección de datos",
+        "hacking ético"
+      ],
+      "responses": [
+        "La seguridad informática protege los sistemas de ataques y garantiza la privacidad de los datos. El hacking ético busca identificar vulnerabilidades.",
+        "La ciberseguridad incluye medidas como firewalls, cifrado, autenticación y copias de seguridad para proteger la información."
+      ]
+    },
+    {
+      "tag": "inteligencia_artificial",
+      "patterns": [
+        "qué es la inteligencia artificial",
+        "aprendizaje automático",
+        "redes neuronales",
+        "aplicaciones de IA"
+      ],
+      "responses": [
+        "La inteligencia artificial es la simulación de la inteligencia humana por máquinas. El aprendizaje automático y las redes neuronales son técnicas comunes.",
+        "Las aplicaciones de IA incluyen reconocimiento de voz, visión por computadora, chatbots, recomendaciones y conducción autónoma."
+      ]
+    },
+    {
+      "tag": "tecnologias_emergentes",
+      "patterns": [
+        "tecnologías emergentes",
+        "blockchain",
+        "internet de las cosas",
+        "realidad aumentada"
+      ],
+      "responses": [
+        "Las tecnologías emergentes son innovaciones que están cambiando la forma en que vivimos y trabajamos. Blockchain, IoT y AR son ejemplos.",
+        "Blockchain es una base de datos descentralizada, IoT conecta dispositivos a internet, y AR superpone información digital en el mundo real."
+      ]
+    },
+    {
+      "tag": "desarrollo_personal",
+      "patterns": [
+        "cómo mejorar habilidades",
+        "crecimiento personal",
+        "desarrollo de habilidades",
+        "cómo ser más productivo"
+      ],
+      "responses": [
+        "El desarrollo personal implica mejorar habilidades, conocimientos y actitudes. La lectura, el ejercicio, la meditación y el aprendizaje continuo son formas de crecer.",
+        "Para ser más productivo, establece metas claras, prioriza tareas, gestiona el tiempo, elimina distracciones y mantén un equilibrio entre trabajo y descanso."
+      ]
+    },
+    {
+      "tag": "gestion_tiempo",
+      "patterns": [
+        "cómo gestionar el tiempo",
+        "técnicas de gestión del tiempo",
+        "planificación y organización",
+        "cómo ser más eficiente"
+      ],
+      "responses": [
+        "La gestión del tiempo implica planificar, organizar y priorizar tareas para ser más eficiente. Técnicas como el método Pomodoro y la matriz de Eisenhower pueden ayudar.",
+        "Para ser más eficiente, establece horarios, evita multitareas, delega tareas, reduce distracciones y tomate descansos regulares."
+      ]
+    },
+    {
+      "tag": "habitos_saludables",
+      "patterns": [
+        "cómo tener hábitos saludables",
+        "vida sana",
+        "alimentación equilibrada",
+        "ejercicio regular"
+      ],
+      "responses": [
+        "Los hábitos saludables incluyen una dieta equilibrada, ejercicio regular, sueño adecuado, hidratación, y manejo del estrés. Pequeños cambios pueden marcar la diferencia.",
+        "Para tener una vida sana, come alimentos variados, haz ejercicio regularmente, duerme lo suficiente, bebe agua, y encuentra formas de relajarte y reducir el estrés."
+      ]
+    },
+    {
+      "tag": "bienestar_mental",
+      "patterns": [
+        "cómo cuidar la salud mental",
+        "bienestar emocional",
+        "manejo del estrés",
+        "salud mental positiva"
+      ],
+      "responses": [
+        "El bienestar mental implica cuidar la salud emocional, manejar el estrés, practicar la gratitud, y buscar apoyo cuando sea necesario. La terapia y la meditación pueden ser útiles.",
+        "Para cuidar la salud mental, practica la autocompasión, establece límites saludables, busca ayuda profesional si es necesario, y encuentra actividades que te relajen y te hagan feliz."
+      ]
+    },
+    {
+      "tag": "relaciones_interpersonales",
+      "patterns": [
+        "cómo mejorar relaciones",
+        "habilidades sociales",
+        "comunicación efectiva",
+        "empatía y respeto"
+      ],
+      "responses": [
+        "Las relaciones interpersonales se basan en la comunicación efectiva, la empatía, el respeto y la resolución de conflictos. Escuchar activamente y ser comprensivo son clave.",
+        "Para mejorar las relaciones, practica la escucha activa, sé honesto y respetuoso, muestra empatía, resuelve conflictos de manera constructiva, y establece límites saludables."
+      ]
     },
     {
       "tag": "funciones_basicas",
@@ -3264,7 +3264,7 @@
       ]
     },
     {
-      "tag":"ordenamiento_rapido_progra",
+      "tag": "ordenamiento_rapido_progra",
       "patterns": [
         "qué es el ordenamiento rápido",
         "cómo funciona el ordenamiento rápido",
@@ -3275,7 +3275,7 @@
       ]
     },
     {
-      "tag":"ordenamiento_burbuja",
+      "tag": "ordenamiento_burbuja",
       "patterns": [
         "qué es el ordenamiento burbuja",
         "cómo funciona el ordenamiento burbuja",
@@ -3286,7 +3286,7 @@
       ]
     },
     {
-      "tag":"tipos_ordenamiento_progra",
+      "tag": "tipos_ordenamiento_progra",
       "patterns": [
         "cuales son los tipos de ordenamiento"
       ],
@@ -3376,6 +3376,96 @@
       ],
       "responses": [
         "El Aprendizaje por Refuerzo (RL) es un tipo de Machine Learning que usa recompensas para entrenar modelos."
+      ]
+    },
+    {
+      "tag": "uso_python",
+      "patterns": [
+        "¿Para qué sirve Python?",
+        "¿Qué puedo hacer con Python?",
+        "¿Para qué es útil Python?",
+        "¿Qué aplicaciones tiene Python?",
+        "¿Python sirve para qué?"
+      ],
+      "responses": [
+        "Python es un lenguaje de programación versátil. Puedes usarlo para desarrollo web, análisis de datos, inteligencia artificial, machine learning, automatización, y mucho más.",
+        "Python es ampliamente utilizado para desarrollo de software, análisis de datos, scripts de automatización, y proyectos de inteligencia artificial.",
+        "Python sirve para tareas como desarrollo de aplicaciones, procesamiento de datos, desarrollo de juegos, aprendizaje automático y muchas otras cosas."
+      ]
+    },
+    {
+      "tag": "uso_javascript",
+      "patterns": [
+        "¿Para qué sirve JavaScript?",
+        "¿Qué puedo hacer con JavaScript?",
+        "¿Qué aplicaciones tiene JavaScript?",
+        "¿JavaScript sirve para qué?",
+        "¿Por qué usar JavaScript?"
+      ],
+      "responses": [
+        "JavaScript es un lenguaje de programación esencial para el desarrollo web. Sirve para crear páginas interactivas, aplicaciones web dinámicas, y también se puede usar en desarrollo backend con Node.js.",
+        "JavaScript se usa principalmente para añadir interactividad a los sitios web, pero también es útil para desarrollo backend, aplicaciones móviles y mucho más.",
+        "JavaScript es ideal para desarrollo web frontend y backend, además de desarrollo de aplicaciones móviles y de escritorio con frameworks como React o Electron."
+      ]
+    },
+    {
+      "tag": "frameworks_python",
+      "patterns": [
+        "¿Qué frameworks tiene Python?",
+        "¿Qué frameworks puedo usar en Python?",
+        "¿Cuáles son los frameworks de Python?",
+        "Frameworks de Python",
+        "Librerías populares de Python"
+      ],
+      "responses": [
+        "Algunos frameworks populares de Python son Django y Flask para desarrollo web, PyTorch y TensorFlow para aprendizaje automático, y FastAPI para crear APIs rápidas.",
+        "Python tiene frameworks como Django, Flask, FastAPI para desarrollo web y de APIs, y herramientas como Pandas y NumPy para análisis de datos.",
+        "Puedes usar frameworks de Python como Django, Flask, Pyramid para desarrollo web, y PyTorch, TensorFlow para inteligencia artificial."
+      ]
+    },
+    {
+      "tag": "frameworks_javascript",
+      "patterns": [
+        "¿Qué frameworks tiene JavaScript?",
+        "¿Qué frameworks puedo usar en JavaScript?",
+        "¿Cuáles son los frameworks de JavaScript?",
+        "Frameworks de JavaScript",
+        "Librerías populares de JavaScript"
+      ],
+      "responses": [
+        "JavaScript tiene frameworks populares como React, Angular, y Vue.js para desarrollo frontend. Para backend, puedes usar Node.js y Express.",
+        "Algunos frameworks de JavaScript son React, Angular, y Vue.js para frontend, y Node.js, Express para backend.",
+        "Puedes usar frameworks como React, Angular, Vue.js para desarrollo frontend, y Node.js, Express para desarrollo backend."
+      ]
+    },
+    {
+      "tag": "ayuda_codigos",
+      "patterns": [
+        "¿Me puedes ayudar con un código?",
+        "¿Me ayudas a programar?",
+        "¿Puedes ayudarme a escribir código?",
+        "¿Puedes explicar un código?",
+        "¿Cómo puedo hacer un programa en Python o JavaScript?"
+      ],
+      "responses": [
+        "¡Claro! Puedo ayudarte con fragmentos de código o explicaciones. Por favor, dime qué necesitas hacer.",
+        "¡Por supuesto! Dime en qué lenguaje necesitas ayuda y qué problema estás intentando resolver.",
+        "Estoy aquí para ayudarte con ejemplos y explicaciones. ¿En qué lenguaje y qué tema necesitas?"
+      ]
+    },
+    {
+      "tag": "pregunta_variables",
+      "patterns": [
+        "¿Qué es una variable en programación?",
+        "¿Qué son las variables?",
+        "¿Para qué sirven las variables?",
+        "Dime qué es una variable en Python o JavaScript.",
+        "Explícame las variables en programación."
+      ],
+      "responses": [
+        "Una variable es un espacio de memoria donde se almacena un dato. Puedes usar variables para guardar números, textos, listas, entre otros tipos de datos.",
+        "En programación, una variable es un contenedor que almacena datos que pueden cambiar durante la ejecución del programa.",
+        "Las variables se usan para guardar datos temporales que necesitas usar en tu programa. En Python se definen sin declarar el tipo explícitamente, y en JavaScript puedes usar 'var', 'let' o 'const'."
       ]
     }
   ]

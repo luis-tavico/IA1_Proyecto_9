@@ -30,46 +30,46 @@
                 {
                         "tag": "programming_greeting",
                         "patterns": [
-                          "Hello what programming languages do you know",
-                          "Hello what programming languages are you familiar with",
-                          "Hello what programming languages do you master",
-                          "Hello what programming languages can you handle",
-                          "Hello what programming languages do you control"
+                                "Hello what programming languages do you know",
+                                "Hello what programming languages are you familiar with",
+                                "Hello what programming languages do you master",
+                                "Hello what programming languages can you handle",
+                                "Hello what programming languages do you control"
                         ],
                         "responses": [
-                          "Hello! At the moment I only know basic programming languages, such as Python and JavaScript.",
-                          "Hello! I know basic programming languages, such as Python and JavaScript.",
-                          "Hello! I handle basic programming languages, such as Python and JavaScript."
+                                "Hello! At the moment I only know basic programming languages, such as Python and JavaScript.",
+                                "Hello! I know basic programming languages, such as Python and JavaScript.",
+                                "Hello! I handle basic programming languages, such as Python and JavaScript."
                         ]
                 },
                 {
-                        "tag":"knows_programming",
-                        "patterns":[
-                          "do you know programming?",
-                          "do you know about programming?",
-                          "are you familiar with programming?",
-                          "do you understand programming?",
-                          "do you know anything about programming?"
+                        "tag": "knows_programming",
+                        "patterns": [
+                                "do you know programming?",
+                                "do you know about programming?",
+                                "are you familiar with programming?",
+                                "do you understand programming?",
+                                "do you know anything about programming?"
                         ],
-                        "responses":[
-                          "Yes! I know programming, how can I help you?",
-                          "Of course! I know programming, how can I help you?",
-                          "Yes! I know programming, how can I help you today?"
+                        "responses": [
+                                "Yes! I know programming, how can I help you?",
+                                "Of course! I know programming, how can I help you?",
+                                "Yes! I know programming, how can I help you today?"
                         ]
                 },
                 {
-                        "tag":"programming_languages",
-                        "patterns":[
-                          "what programming languages do you know?",
-                          "what programming languages are you familiar with?",
-                          "what programming languages do you master?",
-                          "what programming languages can you handle?",
-                          "what programming languages do you control?"
+                        "tag": "programming_languages",
+                        "patterns": [
+                                "what programming languages do you know?",
+                                "what programming languages are you familiar with?",
+                                "what programming languages do you master?",
+                                "what programming languages can you handle?",
+                                "what programming languages do you control?"
                         ],
-                        "responses":[
-                          "I know basic programming languages, such as Python and JavaScript.",
-                          "I handle basic programming languages, such as Python and JavaScript.",
-                          "I master basic programming languages, such as Python and JavaScript."
+                        "responses": [
+                                "I know basic programming languages, such as Python and JavaScript.",
+                                "I handle basic programming languages, such as Python and JavaScript.",
+                                "I master basic programming languages, such as Python and JavaScript."
                         ]
                 },
                 {
@@ -3596,6 +3596,96 @@
                         ],
                         "responses": [
                                 "Reinforcement Learning (RL) is a type of machine learning that uses rewards to train models."
+                        ]
+                },
+                {
+                        "tag": "python_usage",
+                        "patterns": [
+                                "What is Python used for?",
+                                "What can I do with Python?",
+                                "What is Python useful for?",
+                                "What applications does Python have?",
+                                "Python is used for what?"
+                        ],
+                        "responses": [
+                                "Python is a versatile programming language. You can use it for web development, data analysis, artificial intelligence, machine learning, automation, and much more.",
+                                "Python is widely used for software development, data analysis, automation scripts, and artificial intelligence projects.",
+                                "Python is suitable for tasks such as app development, data processing, game development, machine learning, and many other applications."
+                        ]
+                },
+                {
+                        "tag": "javascript_usage",
+                        "patterns": [
+                                "What is JavaScript used for?",
+                                "What can I do with JavaScript?",
+                                "What applications does JavaScript have?",
+                                "JavaScript is used for what?",
+                                "Why use JavaScript?"
+                        ],
+                        "responses": [
+                                "JavaScript is an essential programming language for web development. It is used to create interactive pages, dynamic web applications, and can also be used for backend development with Node.js.",
+                                "JavaScript is primarily used to add interactivity to websites, but it's also useful for backend development, mobile applications, and more.",
+                                "JavaScript is ideal for frontend and backend web development, as well as mobile and desktop app development using frameworks like React or Electron."
+                        ]
+                },
+                {
+                        "tag": "python_frameworks",
+                        "patterns": [
+                                "What frameworks does Python have?",
+                                "What frameworks can I use with Python?",
+                                "Which frameworks are available for Python?",
+                                "Python frameworks",
+                                "Popular Python libraries"
+                        ],
+                        "responses": [
+                                "Some popular Python frameworks include Django and Flask for web development, PyTorch and TensorFlow for machine learning, and FastAPI for creating fast APIs.",
+                                "Python offers frameworks like Django, Flask, FastAPI for web and API development, and tools like Pandas and NumPy for data analysis.",
+                                "You can use Python frameworks such as Django, Flask, Pyramid for web development, and PyTorch, TensorFlow for artificial intelligence."
+                        ]
+                },
+                {
+                        "tag": "javascript_frameworks",
+                        "patterns": [
+                                "What frameworks does JavaScript have?",
+                                "What frameworks can I use with JavaScript?",
+                                "Which frameworks are available for JavaScript?",
+                                "JavaScript frameworks",
+                                "Popular JavaScript libraries"
+                        ],
+                        "responses": [
+                                "JavaScript has popular frameworks like React, Angular, and Vue.js for frontend development. For backend, you can use Node.js and Express.",
+                                "Some JavaScript frameworks include React, Angular, and Vue.js for frontend, and Node.js, Express for backend.",
+                                "You can use frameworks such as React, Angular, Vue.js for frontend development, and Node.js, Express for backend development."
+                        ]
+                },
+                {
+                        "tag": "code_help",
+                        "patterns": [
+                                "Can you help me with a code?",
+                                "Can you help me program?",
+                                "Can you help me write code?",
+                                "Can you explain a code?",
+                                "How can I create a program in Python or JavaScript?"
+                        ],
+                        "responses": [
+                                "Of course! I can help with code snippets or explanations. Please tell me what you need to do.",
+                                "Sure! Let me know which programming language you need help with and what problem you are trying to solve.",
+                                "I'm here to help with examples and explanations. What language and topic do you need help with?"
+                        ]
+                },
+                {
+                        "tag": "variables_question",
+                        "patterns": [
+                                "What is a variable in programming?",
+                                "What are variables?",
+                                "What are variables used for?",
+                                "Tell me what a variable is in Python or JavaScript.",
+                                "Explain variables in programming."
+                        ],
+                        "responses": [
+                                "A variable is a memory space where data is stored. You can use variables to store numbers, text, lists, among other data types.",
+                                "In programming, a variable is a container that stores data which can change during the program's execution.",
+                                "Variables are used to temporarily store data you need in your program. In Python, they are defined without explicitly declaring the type, and in JavaScript, you can use 'var', 'let', or 'const'."
                         ]
                 }
         ]

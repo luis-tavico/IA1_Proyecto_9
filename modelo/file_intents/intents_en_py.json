@@ -1009,6 +1009,54 @@
                 "The `os` module provides functions to interact with the operating system. Example:\nimport os\nprint(os.getcwd())  # Shows the current working directory\nos.mkdir('my_directory')  # Creates a directory",
                 "The `os` module also allows working with paths, files, and directories:\nos.remove('file.txt')  # Deletes a file"
             ]
-        }
+        },
+        {
+            "tag": "python_bubble_sort",
+            "patterns": [
+                "how does bubble sort work in python",
+                "example of bubble sort in python",
+                "bubble sort code in python",
+                "bubble sort in python"
+            ],
+            "responses": [
+                "Bubble sort compares adjacent elements and swaps them if they are in the wrong order. Here's an example:\n\n                def bubble_sort(lst):\n                    for i in range(len(lst)):\n                        for j in range(0, len(lst) - i - 1):\n                            if lst[j] > lst[j + 1]:\n                                lst[j], lst[j + 1] = lst[j + 1], lst[j]\n                    return lst\n\n                numbers = [5, 3, 8, 6, 2]\n                print(bubble_sort(numbers))"
+            ]
+        },
+        {
+            "tag": "python_insertion_sort",
+            "patterns": [
+                "how does insertion sort work in python",
+                "example of insertion sort in python",
+                "insertion sort code in python",
+                "insertion sort in python"
+            ],
+            "responses": [
+                "Insertion sort builds the sorted list element by element. Here's an example:\n\n                def insertion_sort(lst):\n                    for i in range(1, len(lst)):\n                        key = lst[i]\n                        j = i - 1\n                        while j >= 0 and key < lst[j]:\n                            lst[j + 1] = lst[j]\n                            j -= 1\n                        lst[j + 1] = key\n                    return lst\n\n                numbers = [5, 3, 8, 6, 2]\n                print(insertion_sort(numbers))"
+            ]
+        },
+        {
+            "tag": "python_selection_sort",
+            "patterns": [
+                "how does selection sort work in python",
+                "example of selection sort in python",
+                "selection sort code in python",
+                "selection sort in python"
+            ],
+            "responses": [
+                "Selection sort finds the smallest element and places it at the start. Here's an example:\n\n                def selection_sort(lst):\n                    for i in range(len(lst)):\n                        min_index = i\n                        for j in range(i + 1, len(lst)):\n                            if lst[j] < lst[min_index]:\n                                min_index = j\n                        lst[i], lst[min_index] = lst[min_index], lst[i]\n                    return lst\n\n                numbers = [5, 3, 8, 6, 2]\n                print(selection_sort(numbers))"
+            ]
+        },
+        {
+            "tag": "python_quick_sort",
+            "patterns": [
+                "how does quick sort work in python",
+                "example of quick sort in python",
+                "quick sort code in python",
+                "quick sort in python"
+            ],
+            "responses": [
+                "Quick sort uses a pivot to divide the list into smaller and larger sublists. Here's an example:\n\n                def quick_sort(lst):\n                    if len(lst) <= 1:\n                        return lst\n                    else:\n                        pivot = lst[0]\n                        smaller = [x for x in lst[1:] if x <= pivot]\n                        larger = [x for x in lst[1:] if x > pivot]\n                        return quick_sort(smaller) + [pivot] + quick_sort(larger)\n\n                numbers = [5, 3, 8, 6, 2]\n                print(quick_sort(numbers))"
+            ]
+        }        
     ]
 }

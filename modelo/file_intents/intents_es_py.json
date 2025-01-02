@@ -1011,6 +1011,54 @@
                 "El modulo `os` proporciona funciones para interactuar con el sistema operativo. Ejemplo:\nimport os\nprint(os.getcwd())  # Muestra el directorio de trabajo actual\nos.mkdir('mi_directorio')  # Crea un directorio",
                 "El modulo `os` tambien permite trabajar con rutas, archivos y directorios:\nos.remove('archivo.txt')  # Elimina un archivo"
             ]
+        },
+        {
+            "tag": "python_ordenamiento_burbuja",
+            "patterns": [
+                "como funciona el ordenamiento burbuja en python",
+                "ejemplo de ordenamiento burbuja en python",
+                "codigo de ordenamiento burbuja python",
+                "ordenamiento burbuja en python"
+            ],
+            "responses": [
+                "El ordenamiento burbuja compara elementos adyacentes y los intercambia si están en el orden incorrecto. Aquí tienes un ejemplo:\n\n                def ordenamiento_burbuja(lista):\n                    for i in range(len(lista)):\n                        for j in range(0, len(lista) - i - 1):\n                            if lista[j] > lista[j + 1]:\n                                lista[j], lista[j + 1] = lista[j + 1], lista[j]\n                    return lista\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_burbuja(numeros))"
+            ]
+        },
+        {
+            "tag": "python_ordenamiento_insercion",
+            "patterns": [
+                "como funciona el ordenamiento por insercion en python",
+                "ejemplo de ordenamiento por insercion en python",
+                "codigo de ordenamiento por insercion python",
+                "ordenamiento por insercion en python"
+            ],
+            "responses": [
+                "El ordenamiento por inserción construye la lista ordenada elemento por elemento. Aquí tienes un ejemplo:\n\n                def ordenamiento_insercion(lista):\n                    for i in range(1, len(lista)):\n                        clave = lista[i]\n                        j = i - 1\n                        while j >= 0 and clave < lista[j]:\n                            lista[j + 1] = lista[j]\n                            j -= 1\n                        lista[j + 1] = clave\n                    return lista\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_insercion(numeros))"
+            ]
+        },
+        {
+            "tag": "python_ordenamiento_seleccion",
+            "patterns": [
+                "como funciona el ordenamiento por seleccion en python",
+                "ejemplo de ordenamiento por seleccion en python",
+                "codigo de ordenamiento por seleccion python",
+                "ordenamiento por seleccion en python"
+            ],
+            "responses": [
+                "El ordenamiento por selección encuentra el menor elemento y lo coloca al inicio. Aquí tienes un ejemplo:\n\n                def ordenamiento_seleccion(lista):\n                    for i in range(len(lista)):\n                        minimo = i\n                        for j in range(i + 1, len(lista)):\n                            if lista[j] < lista[minimo]:\n                                minimo = j\n                        lista[i], lista[minimo] = lista[minimo], lista[i]\n                    return lista\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_seleccion(numeros))"
+            ]
+        },
+        {
+            "tag": "python_ordenamiento_rapido",
+            "patterns": [
+                "como funciona el ordenamiento rapido en python",
+                "ejemplo de ordenamiento rapido en python",
+                "codigo de ordenamiento rapido python",
+                "ordenamiento rapido en python"
+            ],
+            "responses": [
+                "El ordenamiento rápido (Quicksort) utiliza un pivote para dividir la lista en sublistas menores y mayores. Aquí tienes un ejemplo:\n\n                def ordenamiento_rapido(lista):\n                    if len(lista) <= 1:\n                        return lista\n                    else:\n                        pivote = lista[0]\n                        menores = [x for x in lista[1:] if x <= pivote]\n                        mayores = [x for x in lista[1:] if x > pivote]\n                        return ordenamiento_rapido(menores) + [pivote] + ordenamiento_rapido(mayores)\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_rapido(numeros))"
+            ]
         }
     ]
 }
