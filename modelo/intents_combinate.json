@@ -4238,6 +4238,96 @@
             ]
         },
         {
+            "tag": "uso_python",
+            "patterns": [
+                "¿Para qué sirve Python?",
+                "¿Qué puedo hacer con Python?",
+                "¿Para qué es útil Python?",
+                "¿Qué aplicaciones tiene Python?",
+                "¿Python sirve para qué?"
+            ],
+            "responses": [
+                "Python es un lenguaje de programación versátil. Puedes usarlo para desarrollo web, análisis de datos, inteligencia artificial, machine learning, automatización, y mucho más.",
+                "Python es ampliamente utilizado para desarrollo de software, análisis de datos, scripts de automatización, y proyectos de inteligencia artificial.",
+                "Python sirve para tareas como desarrollo de aplicaciones, procesamiento de datos, desarrollo de juegos, aprendizaje automático y muchas otras cosas."
+            ]
+        },
+        {
+            "tag": "uso_javascript",
+            "patterns": [
+                "¿Para qué sirve JavaScript?",
+                "¿Qué puedo hacer con JavaScript?",
+                "¿Qué aplicaciones tiene JavaScript?",
+                "¿JavaScript sirve para qué?",
+                "¿Por qué usar JavaScript?"
+            ],
+            "responses": [
+                "JavaScript es un lenguaje de programación esencial para el desarrollo web. Sirve para crear páginas interactivas, aplicaciones web dinámicas, y también se puede usar en desarrollo backend con Node.js.",
+                "JavaScript se usa principalmente para añadir interactividad a los sitios web, pero también es útil para desarrollo backend, aplicaciones móviles y mucho más.",
+                "JavaScript es ideal para desarrollo web frontend y backend, además de desarrollo de aplicaciones móviles y de escritorio con frameworks como React o Electron."
+            ]
+        },
+        {
+            "tag": "frameworks_python",
+            "patterns": [
+                "¿Qué frameworks tiene Python?",
+                "¿Qué frameworks puedo usar en Python?",
+                "¿Cuáles son los frameworks de Python?",
+                "Frameworks de Python",
+                "Librerías populares de Python"
+            ],
+            "responses": [
+                "Algunos frameworks populares de Python son Django y Flask para desarrollo web, PyTorch y TensorFlow para aprendizaje automático, y FastAPI para crear APIs rápidas.",
+                "Python tiene frameworks como Django, Flask, FastAPI para desarrollo web y de APIs, y herramientas como Pandas y NumPy para análisis de datos.",
+                "Puedes usar frameworks de Python como Django, Flask, Pyramid para desarrollo web, y PyTorch, TensorFlow para inteligencia artificial."
+            ]
+        },
+        {
+            "tag": "frameworks_javascript",
+            "patterns": [
+                "¿Qué frameworks tiene JavaScript?",
+                "¿Qué frameworks puedo usar en JavaScript?",
+                "¿Cuáles son los frameworks de JavaScript?",
+                "Frameworks de JavaScript",
+                "Librerías populares de JavaScript"
+            ],
+            "responses": [
+                "JavaScript tiene frameworks populares como React, Angular, y Vue.js para desarrollo frontend. Para backend, puedes usar Node.js y Express.",
+                "Algunos frameworks de JavaScript son React, Angular, y Vue.js para frontend, y Node.js, Express para backend.",
+                "Puedes usar frameworks como React, Angular, Vue.js para desarrollo frontend, y Node.js, Express para desarrollo backend."
+            ]
+        },
+        {
+            "tag": "ayuda_codigos",
+            "patterns": [
+                "¿Me puedes ayudar con un código?",
+                "¿Me ayudas a programar?",
+                "¿Puedes ayudarme a escribir código?",
+                "¿Puedes explicar un código?",
+                "¿Cómo puedo hacer un programa en Python o JavaScript?"
+            ],
+            "responses": [
+                "¡Claro! Puedo ayudarte con fragmentos de código o explicaciones. Por favor, dime qué necesitas hacer.",
+                "¡Por supuesto! Dime en qué lenguaje necesitas ayuda y qué problema estás intentando resolver.",
+                "Estoy aquí para ayudarte con ejemplos y explicaciones. ¿En qué lenguaje y qué tema necesitas?"
+            ]
+        },
+        {
+            "tag": "pregunta_variables",
+            "patterns": [
+                "¿Qué es una variable en programación?",
+                "¿Qué son las variables?",
+                "¿Para qué sirven las variables?",
+                "Dime qué es una variable en Python o JavaScript.",
+                "Explícame las variables en programación."
+            ],
+            "responses": [
+                "Una variable es un espacio de memoria donde se almacena un dato. Puedes usar variables para guardar números, textos, listas, entre otros tipos de datos.",
+                "En programación, una variable es un contenedor que almacena datos que pueden cambiar durante la ejecución del programa.",
+                "Las variables se usan para guardar datos temporales que necesitas usar en tu programa. En Python se definen sin declarar el tipo explícitamente, y en JavaScript puedes usar 'var', 'let' o 'const'."
+            ]
+        },
+        {
             "tag": "javascript_information",
             "patterns": [
                 "What topics can you cover in JavaScript?",
@@ -8695,6 +8785,96 @@
             ]
         },
         {
+            "tag": "python_usage",
+            "patterns": [
+                "What is Python used for?",
+                "What can I do with Python?",
+                "What is Python useful for?",
+                "What applications does Python have?",
+                "Python is used for what?"
+            ],
+            "responses": [
+                "Python is a versatile programming language. You can use it for web development, data analysis, artificial intelligence, machine learning, automation, and much more.",
+                "Python is widely used for software development, data analysis, automation scripts, and artificial intelligence projects.",
+                "Python is suitable for tasks such as app development, data processing, game development, machine learning, and many other applications."
+            ]
+        },
+        {
+            "tag": "javascript_usage",
+            "patterns": [
+                "What is JavaScript used for?",
+                "What can I do with JavaScript?",
+                "What applications does JavaScript have?",
+                "JavaScript is used for what?",
+                "Why use JavaScript?"
+            ],
+            "responses": [
+                "JavaScript is an essential programming language for web development. It is used to create interactive pages, dynamic web applications, and can also be used for backend development with Node.js.",
+                "JavaScript is primarily used to add interactivity to websites, but it's also useful for backend development, mobile applications, and more.",
+                "JavaScript is ideal for frontend and backend web development, as well as mobile and desktop app development using frameworks like React or Electron."
+            ]
+        },
+        {
+            "tag": "python_frameworks",
+            "patterns": [
+                "What frameworks does Python have?",
+                "What frameworks can I use with Python?",
+                "Which frameworks are available for Python?",
+                "Python frameworks",
+                "Popular Python libraries"
+            ],
+            "responses": [
+                "Some popular Python frameworks include Django and Flask for web development, PyTorch and TensorFlow for machine learning, and FastAPI for creating fast APIs.",
+                "Python offers frameworks like Django, Flask, FastAPI for web and API development, and tools like Pandas and NumPy for data analysis.",
+                "You can use Python frameworks such as Django, Flask, Pyramid for web development, and PyTorch, TensorFlow for artificial intelligence."
+            ]
+        },
+        {
+            "tag": "javascript_frameworks",
+            "patterns": [
+                "What frameworks does JavaScript have?",
+                "What frameworks can I use with JavaScript?",
+                "Which frameworks are available for JavaScript?",
+                "JavaScript frameworks",
+                "Popular JavaScript libraries"
+            ],
+            "responses": [
+                "JavaScript has popular frameworks like React, Angular, and Vue.js for frontend development. For backend, you can use Node.js and Express.",
+                "Some JavaScript frameworks include React, Angular, and Vue.js for frontend, and Node.js, Express for backend.",
+                "You can use frameworks such as React, Angular, Vue.js for frontend development, and Node.js, Express for backend development."
+            ]
+        },
+        {
+            "tag": "code_help",
+            "patterns": [
+                "Can you help me with a code?",
+                "Can you help me program?",
+                "Can you help me write code?",
+                "Can you explain a code?",
+                "How can I create a program in Python or JavaScript?"
+            ],
+            "responses": [
+                "Of course! I can help with code snippets or explanations. Please tell me what you need to do.",
+                "Sure! Let me know which programming language you need help with and what problem you are trying to solve.",
+                "I'm here to help with examples and explanations. What language and topic do you need help with?"
+            ]
+        },
+        {
+            "tag": "variables_question",
+            "patterns": [
+                "What is a variable in programming?",
+                "What are variables?",
+                "What are variables used for?",
+                "Tell me what a variable is in Python or JavaScript.",
+                "Explain variables in programming."
+            ],
+            "responses": [
+                "A variable is a memory space where data is stored. You can use variables to store numbers, text, lists, among other data types.",
+                "In programming, a variable is a container that stores data which can change during the program's execution.",
+                "Variables are used to temporarily store data you need in your program. In Python, they are defined without explicitly declaring the type, and in JavaScript, you can use 'var', 'let', or 'const'."
+            ]
+        },
+        {
             "tag": "python_condicionales",
             "patterns": [
                 "condicionales en python",
@@ -9707,6 +9887,54 @@
             ]
         },
         {
+            "tag": "python_ordenamiento_burbuja",
+            "patterns": [
+                "como funciona el ordenamiento burbuja en python",
+                "ejemplo de ordenamiento burbuja en python",
+                "codigo de ordenamiento burbuja python",
+                "ordenamiento burbuja en python"
+            ],
+            "responses": [
+                "El ordenamiento burbuja compara elementos adyacentes y los intercambia si están en el orden incorrecto. Aquí tienes un ejemplo:\n\n                def ordenamiento_burbuja(lista):\n                    for i in range(len(lista)):\n                        for j in range(0, len(lista) - i - 1):\n                            if lista[j] > lista[j + 1]:\n                                lista[j], lista[j + 1] = lista[j + 1], lista[j]\n                    return lista\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_burbuja(numeros))"
+            ]
+        },
+        {
+            "tag": "python_ordenamiento_insercion",
+            "patterns": [
+                "como funciona el ordenamiento por insercion en python",
+                "ejemplo de ordenamiento por insercion en python",
+                "codigo de ordenamiento por insercion python",
+                "ordenamiento por insercion en python"
+            ],
+            "responses": [
+                "El ordenamiento por inserción construye la lista ordenada elemento por elemento. Aquí tienes un ejemplo:\n\n                def ordenamiento_insercion(lista):\n                    for i in range(1, len(lista)):\n                        clave = lista[i]\n                        j = i - 1\n                        while j >= 0 and clave < lista[j]:\n                            lista[j + 1] = lista[j]\n                            j -= 1\n                        lista[j + 1] = clave\n                    return lista\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_insercion(numeros))"
+            ]
+        },
+        {
+            "tag": "python_ordenamiento_seleccion",
+            "patterns": [
+                "como funciona el ordenamiento por seleccion en python",
+                "ejemplo de ordenamiento por seleccion en python",
+                "codigo de ordenamiento por seleccion python",
+                "ordenamiento por seleccion en python"
+            ],
+            "responses": [
+                "El ordenamiento por selección encuentra el menor elemento y lo coloca al inicio. Aquí tienes un ejemplo:\n\n                def ordenamiento_seleccion(lista):\n                    for i in range(len(lista)):\n                        minimo = i\n                        for j in range(i + 1, len(lista)):\n                            if lista[j] < lista[minimo]:\n                                minimo = j\n                        lista[i], lista[minimo] = lista[minimo], lista[i]\n                    return lista\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_seleccion(numeros))"
+            ]
+        },
+        {
+            "tag": "python_ordenamiento_rapido",
+            "patterns": [
+                "como funciona el ordenamiento rapido en python",
+                "ejemplo de ordenamiento rapido en python",
+                "codigo de ordenamiento rapido python",
+                "ordenamiento rapido en python"
+            ],
+            "responses": [
+                "El ordenamiento rápido (Quicksort) utiliza un pivote para dividir la lista en sublistas menores y mayores. Aquí tienes un ejemplo:\n\n                def ordenamiento_rapido(lista):\n                    if len(lista) <= 1:\n                        return lista\n                    else:\n                        pivote = lista[0]\n                        menores = [x for x in lista[1:] if x <= pivote]\n                        mayores = [x for x in lista[1:] if x > pivote]\n                        return ordenamiento_rapido(menores) + [pivote] + ordenamiento_rapido(mayores)\n\n                numeros = [5, 3, 8, 6, 2]\n                print(ordenamiento_rapido(numeros))"
+            ]
+        },
+        {
             "tag": "python_conditionals",
             "patterns": [
                 "conditionals in python",
@@ -10714,6 +10942,54 @@
             "responses": [
                 "The `os` module provides functions to interact with the operating system. Example:\nimport os\nprint(os.getcwd())  # Shows the current working directory\nos.mkdir('my_directory')  # Creates a directory",
                 "The `os` module also allows working with paths, files, and directories:\nos.remove('file.txt')  # Deletes a file"
+            ]
+        },
+        {
+            "tag": "python_bubble_sort",
+            "patterns": [
+                "how does bubble sort work in python",
+                "example of bubble sort in python",
+                "bubble sort code in python",
+                "bubble sort in python"
+            ],
+            "responses": [
+                "Bubble sort compares adjacent elements and swaps them if they are in the wrong order. Here's an example:\n\n                def bubble_sort(lst):\n                    for i in range(len(lst)):\n                        for j in range(0, len(lst) - i - 1):\n                            if lst[j] > lst[j + 1]:\n                                lst[j], lst[j + 1] = lst[j + 1], lst[j]\n                    return lst\n\n                numbers = [5, 3, 8, 6, 2]\n                print(bubble_sort(numbers))"
+            ]
+        },
+        {
+            "tag": "python_insertion_sort",
+            "patterns": [
+                "how does insertion sort work in python",
+                "example of insertion sort in python",
+                "insertion sort code in python",
+                "insertion sort in python"
+            ],
+            "responses": [
+                "Insertion sort builds the sorted list element by element. Here's an example:\n\n                def insertion_sort(lst):\n                    for i in range(1, len(lst)):\n                        key = lst[i]\n                        j = i - 1\n                        while j >= 0 and key < lst[j]:\n                            lst[j + 1] = lst[j]\n                            j -= 1\n                        lst[j + 1] = key\n                    return lst\n\n                numbers = [5, 3, 8, 6, 2]\n                print(insertion_sort(numbers))"
+            ]
+        },
+        {
+            "tag": "python_selection_sort",
+            "patterns": [
+                "how does selection sort work in python",
+                "example of selection sort in python",
+                "selection sort code in python",
+                "selection sort in python"
+            ],
+            "responses": [
+                "Selection sort finds the smallest element and places it at the start. Here's an example:\n\n                def selection_sort(lst):\n                    for i in range(len(lst)):\n                        min_index = i\n                        for j in range(i + 1, len(lst)):\n                            if lst[j] < lst[min_index]:\n                                min_index = j\n                        lst[i], lst[min_index] = lst[min_index], lst[i]\n                    return lst\n\n                numbers = [5, 3, 8, 6, 2]\n                print(selection_sort(numbers))"
+            ]
+        },
+        {
+            "tag": "python_quick_sort",
+            "patterns": [
+                "how does quick sort work in python",
+                "example of quick sort in python",
+                "quick sort code in python",
+                "quick sort in python"
+            ],
+            "responses": [
+                "Quick sort uses a pivot to divide the list into smaller and larger sublists. Here's an example:\n\n                def quick_sort(lst):\n                    if len(lst) <= 1:\n                        return lst\n                    else:\n                        pivot = lst[0]\n                        smaller = [x for x in lst[1:] if x <= pivot]\n                        larger = [x for x in lst[1:] if x > pivot]\n                        return quick_sort(smaller) + [pivot] + quick_sort(larger)\n\n                numbers = [5, 3, 8, 6, 2]\n                print(quick_sort(numbers))"
             ]
         }
     ]

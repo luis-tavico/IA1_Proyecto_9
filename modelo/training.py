@@ -98,6 +98,7 @@ train_y = np.array(train_y)
 #model.add(Dropout(0.5, name="input_layer3"))
 #model.add(Dense(len(train_y[0]), name="output_layer", activation='softmax'))
 
+# agregando mas neuronas al proyecto
 model = Sequential()
 model.add(Dense(1024, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
 model.add(BatchNormalization())

@@ -5,12 +5,12 @@
 block_cipher = None
 
 a = Analysis(
-    ['app.py'],
+    ['appv2.py'],
     pathex=[],
     binaries=[],
     datas=[
         ('modelo/intents_combinate.json', 'modelo'),
-        ('modelo/chatbot_model.h5', 'modelo'),
+        ('modelo/chatbot_model.keras', 'modelo'),
         ('modelo/classes.pkl','modelo'),
         ('modelo/words.pkl','modelo')
     ],
