@@ -59,10 +59,10 @@ def respuesta(message):
     return res
 print("Bot is running")
 
-#while True:
-#    message = input("You: ")
-#    print('bot dice: ',respuesta(message.lower()))
-respuesta('welcome')
-
-def consulta(message):
-    return respuesta(message.lower())
+while True:
+    message = input("You: ")
+    print('bot dice: ',respuesta(message.lower()))
+#respuesta('welcome')
+#
+#def consulta(message):
+#    return respuesta(message.lower())

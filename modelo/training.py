@@ -102,16 +102,16 @@ train_y = np.array(train_y)
 model = Sequential()
 model.add(Dense(1024, input_shape=(len(train_x[0]),), name="input_layer", activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.2, name="dropout_1"))
+model.add(Dropout(0.5, name="dropout_1"))
 model.add(Dense(512, name="hidden_layer1", activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.2, name="dropout_2"))
+model.add(Dropout(0.5, name="dropout_2"))
 model.add(Dense(256, name="hidden_layer2", activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.2, name="dropout_3"))
+model.add(Dropout(0.5, name="dropout_3"))
 model.add(Dense(128, name="hidden_layer3", activation='relu'))
 model.add(BatchNormalization())
-model.add(Dropout(0.2, name="dropout_4"))
+model.add(Dropout(0.5, name="dropout_4"))
 model.add(Dense(len(train_y[0]), name="output_layer", activation='softmax'))
 
 #Creamos el programa de aprendizaje
@@ -127,10 +127,10 @@ sgd = SGD(learning_rate=lr_schedule , momentum=0.96, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer = sgd, metrics = ['accuracy', 'Precision', 'Recall'])
 
 # Definimos el callback de early stopping para evitar el sobreajuste
-early_stopping = EarlyStopping(monitor='val_loss', patience=50, restore_best_weights=True,min_delta=0.0001,verbose=1)
+early_stopping = EarlyStopping(monitor='val_loss', patience=250, restore_best_weights=True,min_delta=0.00001,verbose=1,mode='min')
 
 #reduce lr on plateau
-reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=50, min_lr=0.0001)
+reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=50, min_lr=0.00001)
 
 
 #Entrenamos el modelo y lo guardamos
