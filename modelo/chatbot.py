@@ -1,7 +1,7 @@
 import random
 import json
 import pickle
-import os
+import os,re
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -13,10 +13,12 @@ dir = Path(__file__).parent
 
 #Importamos los archivos generados en el código anterior
 intents = json.loads(open(dir/'intents_combinate.json').read())
+constraints = json.loads(open(dir/'constractions.json').read())
 words = pickle.load(open(dir/'words.pkl', 'rb'))
 classes = pickle.load(open(dir/'classes.pkl', 'rb'))
 model = load_model(dir/'chatbot_model.keras')
 model.summary()
+
 #Pasamos las palabras de oración a su forma raíz
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -57,12 +59,17 @@ def respuesta(message):
     print(ints)
     res = get_response(ints, intents)
     return res
+def expand_contractions(text, contractions_dict):
+    pattern = re.compile(r'\b(' + '|'.join(re.escape(key) for key in contractions_dict.keys()) + r')\b')
+    return pattern.sub(lambda match: contractions_dict[match.group()], text)
+
 print("Bot is running")
 
-while True:
-    message = input("You: ")
-    print('bot dice: ',respuesta(message.lower()))
-#respuesta('welcome')
-#
-#def consulta(message):
-#    return respuesta(message.lower())
+#while True:
+#    message = input("You: ")
+#    print('bot dice: ',respuesta(message.lower()))
+respuesta('welcome')
+
+def consulta(message):
+    processed_message = expand_contractions(message.lower(), constraints)
+    return respuesta(processed_message)
